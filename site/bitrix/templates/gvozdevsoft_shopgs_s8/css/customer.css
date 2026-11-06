@@ -1,0 +1,118 @@
+/* customer css */
+#header .header-slider__shadow {
+    background: none;
+}
+#header .header-inner-main-page {
+    position: relative;
+    top: auto;
+    left: auto;
+    background: rgba(35, 44, 53, 0.92);
+}
+#header .header-inner {
+    background: rgba(0, 0, 0, 0.4);
+}
+.head_slide {
+    overflow: hidden;
+}
+.header-slider.owl-carousel {
+    display: block !important;
+}
+#header .header-inner-main-page > .container > a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-blick__btn,
+.btn-link {
+    background: #CD2122;
+}
+#header .header-main-page {
+    height: auto;
+    max-width: 100%;
+}
+#header .header-slider {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+}
+#header .header-slider__img {
+    min-height: 0;
+    height: auto;
+    background: none;
+}
+#header .header-slider__img picture,
+#header .header-slider__img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#header .hero-title {
+    margin: 0;
+    padding: 28px 16px 8px;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
+    line-height: 1.2;
+    color: #111;
+    background: #fff;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+#header .header-slider__img {
+    background: #fff;
+}
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -48px;
+    z-index: 10000;
+    background: #fff;
+    color: #111;
+    padding: 8px 12px;
+}
+.skip-link:focus {
+    top: 8px;
+}
+@media (max-width: 991px) {
+    #header .header-phone__link {
+        white-space: normal;
+    }
+    #header .header-top .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #header .header-top [class*="col"] {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    #header .header-phone,
+    #header .hero-title {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+    #header .header-slider__inner {
+        max-height: none !important;
+        height: auto;
+    }
+    #header .header-top .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+#flvmenu {
+    max-width: 1350px;
+}
+.hdslide_inn {
+    max-width: 1350px;
+}
+#flvmenu > ul > li > a {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+.services-news-detail__form-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

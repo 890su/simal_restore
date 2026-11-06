@@ -1,0 +1,22 @@
+/*slider main page */
+#header .header-main-page {
+height: 750px;
+}
+#header .header-slider__inner {
+height: 750px;
+}
+#header .header-form__inner {
+margin-top: 115px;
+}
+#header .header-slider__offer {
+top: 36%;
+}
+#header .header-slider__title {
+font-size: 2.6em;
+}
+#header .header-slider__price {
+font-size: 2em;
+}
+.form-slider-main__form {
+background: rgba(255, 255, 255, 0.7) !important;
+}

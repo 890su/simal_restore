@@ -1,0 +1,33 @@
+.img_zoom {
+	width:100%; 
+	overflow:hidden;
+}
+
+.img_zoom a {
+	position:relative; 
+	float:left;
+}
+
+.img_zoom a span::before { 
+	color: #fff;
+    content: "\f00e";
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
+.img_zoom a span {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+	border-radius: 4px;
+    font-size: 24px;
+    height: 40px;
+    left: 30px;
+	display: none;
+    line-height: 40px;
+    margin: -20px 0 0 -20px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    transition: color 0.15s ease 0s, background 0.15s ease 0s, opacity 0.15s ease 0s, border 0.15s ease 0s;
+    width: 40px;
+	cursor:pointer;
+}

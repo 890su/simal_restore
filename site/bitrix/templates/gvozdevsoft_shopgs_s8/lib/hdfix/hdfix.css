@@ -1,0 +1,119 @@
+.head_slide {
+	left: 0;
+	margin: 0;
+	position: fixed;
+	right: 0;
+	top: -60px;
+	height: 50px;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	-webkit-transition: top 0.7s ease;
+}
+.hdslide_inn {
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 10px;
+}
+.hdslide_home {
+	float: left;
+	background: #cc0000;
+	color: #fff;
+	height: 50px;
+	margin-right: 3%;
+}
+.hdslide_home img {
+	width: auto;
+	height: 50px;
+}
+.hdslide_contact {
+	position: relative;
+	float: right;
+	margin: 13px 20px 0 0;
+	text-align: right;
+}
+.hdslide_contact_nomer {
+	font-size: 1.2em;
+}
+#header .hdslide_inn .header-phone__main-phone:before {
+	display: none;
+}
+#header .header-fix-phone a {
+	color: #000;
+}
+#header .header-fix-phone .header-phone__popup-link-phone {
+	font-size: 0.9em;
+}
+.header-fix-phone .header-phone__popup {
+	border-width: 1px;
+}
+.hdslide_contact_zayvka {
+	float: right;
+	margin: 0;
+}
+.hdslide_contact_zayvka a {
+	display: block;
+	height: 50px;
+	padding: 17px 15px;
+	border-radius: 0;
+}
+.hdslide_search {
+	float: left;
+}
+.hdslide_search form {
+	position: relative;
+	width: 300px;
+}
+.hdslide_search input, button {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.hdslide_search input {
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 37px;
+	margin-top: 7px;
+	background: #fff;
+	color: #000;
+	padding: 0 40px 0 15px;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+}
+.hdslide_search button {
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	background: none;
+	cursor: pointer;
+}
+.hdslide_search button:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #000;
+	font-size: 1.4em;
+}
+@media (max-width: 1199px) {
+	.hdslide_search form {
+		width: 220px;
+	}
+}
+@media (max-width: 1024px) {
+	.hdslide_contact_email {
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+	.hdslide_search {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.head_slide {
+		display: none;
+	}
+}

@@ -1,0 +1,281 @@
+/* block struktury */
+#flvmenu {
+	display: block;
+	margin: 0 auto;
+	max-width: 1220px;
+	position: relative;
+}
+#flvmenu > ul > li > a, #flvmenu > ul > li > ul > li > a, #flvmenu > ul > li > ul > li  > ul > li > a, #flvmenu > ul > li > ul > li  > ul > li > ul > li > a {
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}
+#flvmenu > ul > li {
+	display: inline-block;
+	position: relative;
+	margin-right: -4px;
+}
+#flvmenu > ul > li > ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+#flvmenu > ul > li > ul  > li > ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1000;
+}
+#flvmenu > ul > li > ul  > li > ul > li > ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1000;
+}
+#flvmenu > ul > li:last-child  > ul  > li > ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 1000;
+}
+#flvmenu > ul > li:last-child > ul  > li > ul > li > ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 1001;
+}
+#flvmenu > ul > li ul li {
+	display: block;
+	position: relative;
+}
+
+#flvmenu > ul > li:hover > ul {
+	display: block;
+}
+#flvmenu > ul > li > ul > li:hover > ul {
+	display: block;
+}
+#flvmenu > ul > li > ul > li > ul > li:hover > ul {
+	display: block;
+}
+
+#flvmenu > ul > #fllast {
+	display: none;
+	font-weight: 500;
+}
+
+/* block stile */
+#flvmenu {
+	font-size: 14px;
+}
+#flvmenu ul > li ul{
+	background-color: #fff;
+}
+.minmenu {
+	display:none;
+}
+#flvmenu > ul > li ul li {
+	width: 200px;
+	border-top: 1px solid #eeeeee;
+	box-sizing: border-box;
+}
+#flvmenu > ul > li ul li:first-child {
+	border-top: 0;
+}
+#flvmenu > ul > li ul {
+	box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+}
+#flvmenu > ul > li a {
+	display: inline-block;
+	padding: 15px 30px;
+	font-weight: 400;
+}
+#flvmenu > ul > li > a{
+	color: #fff;
+	padding: 20px 37px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.95em;
+	font-weight: 600;
+}
+#flvmenu > ul > li a:hover {
+	color: #fff;
+}
+#flvmenu > ul > li ul li a {
+	padding: 15px 25px 15px 0;
+	padding-left: 20px;
+	color: #000;
+	font-size: 1em;
+}
+#flvmenu > ul > li > .flarr {
+	top: 16px;
+	right: 0px;
+}
+#flvmenu > ul > li ul li .flarr {
+	top: 8px;
+	right: 0px;
+}
+#flvmenu > ul > li .flarr {
+	padding: 0;
+}
+#flvmenu > ul > li > a.flarr:after {
+	content: "\f107";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -30px;
+	margin-right: 10px;
+}
+#flvmenu > ul > li ul li a.flarr:after {
+	content: "\f105";
+	font-family: FontAwesome;
+	position: absolute;
+	display: inline-block;
+	top: 15px;
+	right: 15px;
+	color: #000;
+}
+#flvmenu > ul > li ul li:hover a.flarr {
+	color: #000;
+}
+#flvmenu > ul > li ul li:hover > a.flarr:after {
+	color: #000;
+}
+#flvmenu > ul > li ul li:hover>a {
+	color: #000;
+}
+#flvmenu > ul > li ul li.root-item-selected>a {
+	color: #fff;
+}
+#flvmenu > ul > li ul li.item-selected > a.flarr:after {
+	color: #000;
+}
+#flvmenu ul li:hover,
+#flvmenu ul li.root-item-selected,
+#flvmenu ul li.item-selected {
+	background: rgba(0, 0, 0, .2);
+}
+.menu-line #flvmenu > ul > li:hover:before,
+.menu-line #flvmenu > ul > li.root-item-selected:before,
+.menu-line #flvmenu > ul > li.item-selected:before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #c42021 ;
+}
+
+@media (max-width:1199px){
+	#flvmenu > ul > li > a {
+		padding: 20px 30px;
+	}
+	#flvmenu > ul > li > a.flarr:after {
+		margin-left: -24px;
+	}
+}
+
+@media (max-width:768px){
+	
+	.minmenu {
+		display: block;
+		cursor: pointer;
+	}
+	.minmenu i{
+		padding-left: 25px;
+		line-height: 45px;
+		font-size: 24px;
+		color: #fff;
+	}
+	.minmenu a{
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 45px;
+		font-size: 20px;
+		color: #fff;
+		text-decoration: none;
+	}
+	#flvmenu > ul {
+		position: relative;
+		left: 0;
+		top: 100%;
+		z-index: 999;
+	}
+	#flvmenu > ul  li {
+		width: 100%;
+	}
+	
+	#flvmenu > ul > li > ul, #flvmenu > ul > li > ul > li > ul, #flvmenu > ul > li > ul > li > ul > li > ul {
+		display: block;
+		position: relative;
+		overflow-y: hidden;
+		width: auto;
+		left: 0;
+	}
+	#flvmenu > ul > li > ul > li, #flvmenu > ul > li > ul > li > ul > li, #flvmenu > ul > li > ul > li > ul > li > ul > li{
+		width: auto;
+	}
+	
+	/* block style */
+	#flvmenu > ul {
+		background-color: #2c4668;
+		width: 100%;
+	}
+	#flvmenu > ul li ul{
+		background-color: #2c4668;
+	}
+	#flvmenu > ul li a{
+		color: #fff !important;
+		display: block;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#flvmenu > ul > li {
+		display: block;
+	}
+	#flvmenu > ul > li > a{
+		font-size: 0.95em;
+	}
+	.menu-line #flvmenu > ul > li:hover:before, .menu-line #flvmenu > ul > li.root-item-selected:before, .menu-line #flvmenu > ul > li.item-selected:before {
+		background: none !important;
+	}
+	#flvmenu > ul > li > ul > li > a{
+		font-size: 0.95em;
+	}
+	#flvmenu > ul > li > ul , #flvmenu > ul > li > ul > li > ul{
+		border: none;
+	}
+	#flvmenu > ul > li > ul > li a {
+		padding-left: 40px;
+	}
+	#flvmenu > ul > li > ul > li > ul > li a {
+		padding-left: 55px;
+	}
+	#flvmenu > ul > li > ul > li > ul > li > ul > li a {
+		padding-left: 70px;
+	}
+	#flvmenu > ul > li > a.flarr:after, #flvmenu > ul > li ul li a.flarr:after {
+		content: "";
+	}
+	#flvmenu > ul > li ul {
+		box-shadow: none;
+	}
+	#flvmenu > ul > li .flarr, #flvmenu > ul > li ul li a.flarr {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		padding: 15px;
+	}
+	#flvmenu > ul > li ul li {
+		border-top: 0;
+	}
+}
+div.menu-clear-left
+{
+	clear:left;
+}
