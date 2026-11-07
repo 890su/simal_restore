@@ -5,7 +5,7 @@ import FavoriteButton from '../FavoriteButton.astro';
 import ProductCard from '../ProductCard.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
 import { categories, productsForLanguage, categoryTitle, categoryUrl, textFor } from '../../lib/catalog';
-import { messages, formatPrice, localePath, infoPath } from '../../lib/i18n';
+import { basePath, messages, formatPrice, localePath, infoPath } from '../../lib/i18n';
 import type { Route } from '../../lib/types';
 interface Props {
   route: Route;
@@ -35,7 +35,7 @@ const breadcrumbs = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { name: t.home, item: new URL(lang === 'ru' ? '/' : lang === 'en' ? '/en/' : '/ge/', Astro.site).href },
+    { name: t.home, item: new URL(basePath(lang), Astro.site).href },
     { name: t.catalog, item: new URL(localePath(lang, 'catalog'), Astro.site).href },
     ...(category
       ? [

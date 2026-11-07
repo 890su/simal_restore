@@ -25,7 +25,8 @@ function routesFor(catalog, pages = []) {
         if (String(name).endsWith('pages.json')) return JSON.stringify({ pages });
         throw new Error('Unexpected route-builder filesystem access');
       } };
-      if (specifier.startsWith('.')) return load(path.resolve(path.dirname(filename), `${specifier}.ts`));
+      if (specifier.endsWith('.mjs')) return nativeRequire(path.resolve(path.dirname(filename), specifier));
+      if (specifier.startsWith('.')) return load(path.resolve(path.dirname(filename), specifier.endsWith('.ts') ? specifier : `${specifier}.ts`));
       return nativeRequire(specifier);
     };
     new Function('require', 'module', 'exports', 'process', outputText)(require, module, module.exports, { cwd: () => root });
@@ -58,14 +59,21 @@ function information(lang, route, reasons = []) {
 
 test('RU EN KA homes, catalogues and translated products remain indexable despite translation flags', () => {
   const routes = routesFor(fixture());
+  const paths = {
+    ka: { home: '/', catalog: '/shop/', product: '/item/bed-1/' },
+    ru: { home: '/ru/', catalog: '/ru/catalog/', product: '/ru/product/bed-1/' },
+    en: { home: '/en/', catalog: '/en/catalog/', product: '/en/product/bed-1/' },
+  };
   for (const lang of ['ru', 'en', 'ka']) {
     for (const kind of ['home', 'catalog']) {
       const route = routes.find(entry => entry.lang === lang && entry.kind === kind);
       assert.ok(route, `${lang} ${kind} exists`);
+      assert.equal(route.path, paths[lang][kind]);
       assert.ok(!route.noindex, `${lang} ${kind} is indexable`);
     }
     const product = routes.find(entry => entry.lang === lang && entry.product?.id === 'bed-1');
     assert.ok(product && !product.noindex, `${lang} translated product is indexable`);
+    assert.equal(product.path, paths[lang].product);
     assert.deepEqual(product.alternates.map(alternate => alternate.lang), ['ru', 'en', 'ka']);
     for (const alternate of product.alternates) {
       const target = routes.find(entry => entry.path === alternate.path);
@@ -85,8 +93,8 @@ test('missing archived locale URL or description alone does not disable indexing
 test('translation-only content review is indexable and has reciprocal language alternates', () => {
   const pages = [information('ru', '/kompaniya/'), information('en', '/en/kompaniya/', [translationReason]), information('ka', '/ge/kompaniya/', [translationReason])];
   const routes = routesFor(fixture(), pages);
-  for (const page of pages) {
-    const route = routes.find(entry => entry.path === page.path);
+  for (const path of ['/ru/kompaniya/', '/en/kompaniya/', '/about/']) {
+    const route = routes.find(entry => entry.path === path);
     assert.ok(!route.noindex);
     assert.deepEqual(route.alternates.map(alternate => alternate.lang), ['ru', 'en', 'ka']);
   }
@@ -99,7 +107,7 @@ test('cart, wishlist, search, archived promotions and actual content gaps keep n
   ];
   const routes = routesFor(fixture(), pages);
   for (const route of routes.filter(entry => ['cart', 'favorites', 'search'].includes(entry.kind) || entry.product?.id === 'bed-gap')) assert.equal(route.noindex, true);
-  assert.equal(routes.find(route => route.path === pages[0].path).noindex, true);
+  assert.equal(routes.find(route => route.path === '/offers/old-promotion/').noindex, true);
   assert.equal(routes.find(route => route.path === pages[1].path).noindex, true);
 });
 

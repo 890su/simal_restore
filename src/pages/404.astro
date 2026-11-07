@@ -1,11 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
+import { localePath } from '../lib/i18n';
 const route = {
   path: '/404/',
-  lang: 'ru' as const,
+  lang: 'ka' as const,
   kind: 'content' as const,
-  title: 'Страница не найдена | SIMAL',
-  description: 'Вернитесь в каталог мебели SIMAL.',
+  title: 'გვერდი ვერ მოიძებნა | SIMAL',
+  description: 'დაუბრუნდით SIMAL-ის ავეჯის კატალოგს.',
   noindex: true,
 };
 ---
@@ -13,9 +14,9 @@ const route = {
 <Base route={route}>
   <div class="container not-found">
     <h1>404</h1>
-    <p>Эта страница не найдена. Возможно, товар сменил адрес.</p>
-    <a class="button" href="/catalog/">
-      Перейти в каталог
+    <p>გვერდი ვერ მოიძებნა. შესაძლოა, პროდუქტის მისამართი შეიცვალა.</p>
+    <a class="button" href={localePath(route.lang, 'catalog')}>
+      კატალოგის ნახვა
     </a>
   </div>
 </Base>

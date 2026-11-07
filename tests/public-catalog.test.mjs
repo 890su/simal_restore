@@ -17,6 +17,8 @@ test('public payload excludes archive evidence while retaining display and serve
   const text = JSON.stringify(output);
   assert.doesNotMatch(text, /internal-|sourceReport|priceEvidence|imageCandidates|description/);
   assert.equal(output.products[0].translations.ru.title, 'Точное название');
+  assert.equal(output.products[0].translations.ru.url, '/ru/catalog/sofas/p1/');
+  assert.equal(output.categories[0].translations.ru.url, '/ru/catalog/sofas/');
   assert.equal(output.products[0].translations.ru.summary, 'Краткое описание');
   assert.equal(output.products[0].active, false);
   assert.equal(output.products[0].price, 120);

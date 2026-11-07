@@ -1,4 +1,4 @@
-import { messages, formatPrice, formatProductCount } from '../lib/i18n';
+import { localePath, messages, formatPrice, formatProductCount } from '../lib/i18n';
 import type { Catalog, Language, Product } from '../lib/types';
 import {
   STORAGE_KEY,
@@ -140,7 +140,7 @@ function productText(p: Product) {
   );
 }
 function productLink(p: Product) {
-  return productText(p).url || p.translations.ru?.url || '/catalog/';
+  return productText(p).url || p.translations.ru?.url || localePath(lang, 'catalog');
 }
 function syncControls() {
   $$('[data-count]').forEach((el) => {
@@ -226,7 +226,7 @@ function renderSelection() {
     const title = product ? productText(product).title : entry.id;
     const links = $$<HTMLAnchorElement>('[data-row-link],[data-row-title]', clone);
     for (const link of links) {
-      link.href = product ? productLink(product) : '/catalog/';
+      link.href = product ? productLink(product) : localePath(lang, 'catalog');
     }
     setText(clone, '[data-row-title]', title);
     const image = $<HTMLImageElement>('[data-row-image]', clone)!;

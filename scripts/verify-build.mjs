@@ -28,7 +28,7 @@ if (fs.existsSync(path.join(dist, '_redirects')))
   for (const line of fs.readFileSync(path.join(dist, '_redirects'), 'utf8').split('\n')) {
     if (!line.trim() || line.startsWith('#')) continue;
     const [from, to] = line.trim().split(/\s+/);
-    redirects.set(from, to);
+    redirects.set(decodeURI(from), decodeURI(to));
   }
 function localURL(value, base) {
   if (!value || value.startsWith('#') || /^(?:data:|mailto:|tel:|blob:)/i.test(value)) return null;
@@ -59,12 +59,16 @@ const htmlNodes = (source) =>
 for (const file of htmlFiles) {
   const source = fs.readFileSync(file, 'utf8');
   const nodes = htmlNodes(source);
-  const route = routeOf(file);
+  const route = decodeURI(routeOf(file));
   const noindex = nodes.some(
     (n) => n.tag === 'meta' && n.attrs.name === 'robots' && /noindex/i.test(n.attrs.content),
   );
   const canonicals = nodes.filter((n) => n.tag === 'link' && n.attrs.rel === 'canonical');
-  pages.set(route, { noindex, file });
+  const lang = nodes.find((node) => node.tag === 'html')?.attrs.lang;
+  const alternates = new Map(nodes
+    .filter((node) => node.tag === 'link' && node.attrs.hreflang)
+    .map((node) => [node.attrs.hreflang, localURL(node.attrs.href, route)]));
+  pages.set(route, { noindex, file, lang, alternates });
   if (nodes.filter((n) => n.tag === 'h1').length !== 1)
     issue('h1', file, 'Expected exactly one h1.');
   if (route !== '/404.html' && canonicals.length !== 1)
@@ -84,6 +88,8 @@ for (const file of htmlFiles) {
     for (const name of ['href', 'src', 'poster']) {
       const url = localURL(node.attrs?.[name], route);
       if (url && !exists(url)) issue('missing-resource', file, `${name}=${url}`);
+      if (node.tag === 'a' && name === 'href' && redirects.has(url))
+        issue('internal-link-redirects', file, url);
       if (url?.startsWith('/bitrix/')) issue('bitrix-resource', file, url);
     }
     if (node.attrs?.srcset)
@@ -95,13 +101,14 @@ for (const file of htmlFiles) {
   if (/\bBX\.(?:message|setJSList)|siteInclude\s*\(/.test(source))
     issue('legacy-code', file, 'Archived Bitrix/runtime include code remains.');
 }
-for (const file of htmlFiles) {
-  const route = routeOf(file);
-  for (const node of htmlNodes(fs.readFileSync(file, 'utf8'))) {
-    if (node.tag !== 'link' || !node.attrs.hreflang) continue;
-    const target = localURL(node.attrs.href, route);
-    if (target && pages.get(target)?.noindex)
-      issue('hreflang-noindex', file, `${node.attrs.hreflang}: ${target}`);
+for (const [route, page] of pages) {
+  for (const [lang, target] of page.alternates) {
+    const alternate = pages.get(target);
+    const expected = lang === 'x-default' ? 'ka' : lang;
+    if (!alternate || alternate.noindex || alternate.lang !== expected || redirects.has(target))
+      issue('invalid-hreflang', page.file, `${lang}: ${target}`);
+    else if (alternate.alternates.get(page.lang) !== route)
+      issue('hreflang-not-reciprocal', page.file, `${lang}: ${target}`);
   }
 }
 for (const file of files.filter((f) => f.endsWith('.css'))) {
@@ -122,6 +129,7 @@ else {
   }
 }
 for (const [from, to] of redirects) {
+  if (pages.has(from)) issue('redirect-shadows-page', path.join(dist, '_redirects'), from);
   if (from === to || redirects.has(to))
     issue('redirect-chain', path.join(dist, '_redirects'), `${from} -> ${to}`);
   if (!pages.has(to)) issue('redirect-target', path.join(dist, '_redirects'), `${from} -> ${to}`);
