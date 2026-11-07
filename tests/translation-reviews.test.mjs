@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { applyTranslationReviews } from '../scripts/apply-translation-reviews.mjs';
+import { runImport } from '../scripts/import-catalog.mjs';
 
 function fixture() {
   return {
@@ -112,7 +113,7 @@ test('checked English overrides fix mismatched models, dimensions and bench tran
   assert.equal(document.products['9756'].description, undefined);
   assert.equal(document.products['13538'], undefined);
   assert.equal(document.categories['banketki-i-pufy'].title, 'Benches and ottomans');
-  const catalog = JSON.parse(await readFile(new URL('../data/normalized-catalog.json', import.meta.url), 'utf8'));
+  const catalog = await runImport({ archive: true, check: true });
   for (const product of catalog.products) {
     const override = document.products[product.id];
     if (!override || !product.translations.ru.title) continue;

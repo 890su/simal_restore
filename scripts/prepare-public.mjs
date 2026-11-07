@@ -61,6 +61,18 @@ for (const page of readJSON('data/pages.json').pages) {
   if (!owners.has(page.path)) register(page.path, 'content');
 }
 const products = catalog.products.filter((p) => p.active);
+const retiredProducts = readJSON('data/catalog-retired-products.json');
+const retiredPaths = new Map();
+for (const product of catalog.products) {
+  if (product.active || !Object.hasOwn(retiredProducts, product.id)) continue;
+  const destinationId = retiredProducts[product.id];
+  const aliases = retiredPaths.get(destinationId) ?? [];
+  retiredPaths.set(destinationId, [
+    ...aliases,
+    ...product.legacyUrls,
+    ...Object.values(product.translations).map((translation) => translation.url),
+  ]);
+}
 const categories = catalog.categories.filter((c) =>
   products.some((p) => p.categoryIds.includes(c.id)),
 );
@@ -81,11 +93,13 @@ for (const [kind, entries] of [
   ['product', products],
   ['category', categories],
 ]) {
-  for (const entry of entries)
-    for (const source of entry.legacyUrls ?? []) {
+  for (const entry of entries) {
+    const aliases = new Set([...(entry.legacyUrls ?? []), ...(kind === 'product' ? retiredPaths.get(entry.id) ?? [] : [])]);
+    for (const source of aliases) {
+      if (!validRoute(source)) continue;
       const lang = language(source);
       const destination = entry.translations[lang]?.url;
-      if (!validRoute(source) || !validRoute(destination) || source === destination) continue;
+      if (!validRoute(destination) || source === destination) continue;
       if (conflictingAliases.has(source)) continue;
       if (owners.has(source)) {
         skipped.push({ source, destination, reason: 'existing-route-owner' });
@@ -103,6 +117,7 @@ for (const [kind, entries] of [
       }
       redirects.set(source, destination);
     }
+  }
 }
 // Every target is a real canonical route, never another redirect: no chains or loops.
 const lines = [...redirects]

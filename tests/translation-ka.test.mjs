@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-const catalog = JSON.parse(fs.readFileSync(new URL('../data/normalized-catalog.json', import.meta.url), 'utf8'));
+import { runImport } from '../scripts/import-catalog.mjs';
+const catalog = await runImport({ archive: true, check: true });
 const review = JSON.parse(fs.readFileSync(new URL('../data/translations-reviewed-ka.json', import.meta.url), 'utf8'));
 const numbers = (text) => String(text).match(/\d+(?:[.,]\d+)?/g) ?? [];
 
