@@ -137,6 +137,38 @@ function send(f, body = input(), extra = {}) {
   return handleQuote({ request: request(body), env: f.env, fetch: f.fetcher, ...extra });
 }
 
+test('menu enquiry saves and sends to the configured Telegram chat without a catalog', async (t) => {
+  const f = fixture(t, { TELEGRAM_BOT_TOKEN: 'test-token', TELEGRAM_CHAT_ID: 'test-chat' });
+  const calls = [];
+  const fetcher = async (url, options) => {
+    assert.equal(new URL(url).hostname, 'api.telegram.org');
+    calls.push(JSON.parse(options.body));
+    return Response.json({ ok: true, result: { message_id: 1 } });
+  };
+  const pending = [];
+  const extra = { fetch: fetcher, waitUntil: (promise) => pending.push(promise) };
+  const payload = input({ kind: 'enquiry', items: [], comment: 'Вопрос о доставке <дома>' });
+  const first = await send(f, payload, extra);
+  const receipt = await first.json();
+  assert.equal(first.status, 201);
+  await Promise.all(pending);
+  assert.equal(f.db.count('quotes'), 1);
+  assert.equal(f.db.count('quote_items'), 0);
+  assert.equal(f.db.count('notification_outbox'), 1);
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].chat_id, 'test-chat');
+  assert.ok(calls[0].text.includes(`запрос с сайта ${receipt.id}`));
+  assert.ok(calls[0].text.includes('Вопрос о доставке &lt;дома&gt;'));
+
+  const repeat = await send(f, payload, extra);
+  assert.equal(repeat.status, 200);
+  assert.equal((await repeat.json()).id, receipt.id);
+  assert.equal(calls.length, 1);
+  for (const invalid of [input({ items: [] }), { ...payload, contact: 'person@example.com' }, { ...payload, comment: '' }]) {
+    assert.equal((await send(f, invalid, extra)).status, 400);
+  }
+});
+
 test('acceptance persists server-side product snapshot and outbox before any notification', async (t) => {
   const f = fixture(t);
   const response = await send(

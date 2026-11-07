@@ -17,6 +17,11 @@ const topCategories = categories.filter((c) => !c.parentId && categoryProducts(c
 const translations = route.alternates || [{ lang, path: route.path }];
 const homeFallback = (l: 'ru' | 'en' | 'ka') =>
   translations.find((a) => a.lang === l)?.path || basePath(l);
+const languageLinks = (['ru', 'en', 'ka'] as const).map((language) => ({
+  href: homeFallback(language),
+  lang: language,
+  label: language === 'ka' ? 'ქარ' : language.toUpperCase(),
+}));
 const organization = {
   '@context': 'https://schema.org',
   '@type': 'FurnitureStore',
@@ -79,16 +84,54 @@ const organization = {
     </a>
     <div class="topbar">
       <div class="container topbar__inner">
-        <span>{t.heroEyebrow}</span>
+        <span>SIMAL · {t.headerTagline}</span>
         <a href="tel:+995571100515">+995 571 10 05 15</a>
         <div class="language-switch" aria-label="Language">
-          {(['ru', 'en', 'ka'] as const).map((l) => (
-            <a href={homeFallback(l)} lang={l} aria-current={l === lang ? 'page' : undefined}>
-              {l === 'ka' ? 'ქარ' : l.toUpperCase()}
+          {languageLinks.map((link) => (
+            <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
+              {link.label}
             </a>
           ))}
         </div>
       </div>
+    </div>
+    <div class="mobile-header">
+      <div class="container mobile-topbar">
+        <a class="mobile-brand" href={basePath(lang)}>
+          <img src="/images/brand-logo.png" alt="" width="922" height="503" />
+          <span><strong>SIMAL</strong><small>{t.headerTagline}</small></span>
+        </a>
+        <nav class="language-switch" aria-label="Language">
+          {languageLinks.map((link) => (
+            <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <button type="button" class="icon-button mobile-menu-button" aria-label={t.menu}
+          aria-controls="mobile-navigation" aria-expanded="false" data-menu-toggle>
+          <Icon name="menu" />
+        </button>
+      </div>
+      <nav id="mobile-navigation" class="mobile-navigation" hidden aria-label={t.menu}>
+        <div class="container">
+          <a href={localePath(lang, 'catalog')}>{t.allCatalog}</a>
+          {topCategories.map((c) => (
+            <a href={categoryUrl(c, lang)}>{categoryTitle(c, lang)}</a>
+          ))}
+          <a href={infoPath(lang, 'delivery')}>{t.delivery}</a>
+          <a href={infoPath(lang, 'contact')}>{t.contact}</a>
+          <div class="mobile-navigation__actions">
+            <div class="mobile-contact-links">
+              <a class="icon-button" href="tel:+995571100515" aria-label={t.callUs}><Icon name="phone" /></a>
+              <a class="icon-button" href="https://t.me/+995571100515" aria-label="Telegram"><Icon name="telegram" /></a>
+              <a class="icon-button" href="https://wa.me/995571100515" aria-label="WhatsApp"><Icon name="whatsapp" /></a>
+            </div>
+            <button class="button button--dark" type="button" aria-haspopup="dialog"
+              aria-controls="mobile-enquiry" data-enquiry-open>{t.enquiry}</button>
+          </div>
+        </div>
+      </nav>
     </div>
     <header class="site-header">
       <div class="container header-main">
@@ -131,15 +174,6 @@ const organization = {
             </span>
             <span>{t.cart}</span>
           </a>
-          <button
-            class="icon-button mobile-menu-button"
-            aria-label={t.menu}
-            aria-controls="mobile-navigation"
-            aria-expanded="false"
-            data-menu-toggle
-          >
-            <Icon name="menu" />
-          </button>
         </div>
       </div>
       <nav class="category-nav" aria-label={t.catalog}>
@@ -158,17 +192,46 @@ const organization = {
           </a>
         </div>
       </nav>
-      <nav id="mobile-navigation" class="mobile-navigation" hidden aria-label={t.menu}>
-        <div class="container">
-          <a href={localePath(lang, 'catalog')}>{t.allCatalog}</a>
-          {topCategories.map((c) => (
-            <a href={categoryUrl(c, lang)}>{categoryTitle(c, lang)}</a>
-          ))}
-          <a href={infoPath(lang, 'delivery')}>{t.delivery}</a>
-          <a href={infoPath(lang, 'contact')}>{t.contact}</a>
-        </div>
-      </nav>
     </header>
+    <div class="mobile-actions">
+      <div class="container mobile-actions__inner">
+        <button type="button" class="button" aria-haspopup="dialog"
+          aria-controls="mobile-enquiry" data-enquiry-open>{t.leaveEnquiry}</button>
+        <button type="button" class="button button--outline" popovertarget="mobile-call-options">
+          <Icon name="phone" size={18} />
+          {t.callUs}
+        </button>
+        <div id="mobile-call-options" class="mobile-call-options" popover>
+          <a href="tel:+995571100515"><strong>{t.batumi}</strong><span>+995 571 10 05 15</span></a>
+          <a href="tel:+995579404041"><strong>{t.tbilisi}</strong><span>+995 579 40 40 41</span></a>
+        </div>
+      </div>
+    </div>
+    <dialog id="mobile-enquiry" class="enquiry-dialog" aria-labelledby="mobile-enquiry-title">
+      <div class="enquiry-dialog__heading">
+        <h2 id="mobile-enquiry-title">{t.enquiry}</h2>
+        <button type="button" class="icon-button" aria-label={t.close} data-enquiry-close>
+          <Icon name="close" />
+        </button>
+      </div>
+      <form data-enquiry-form>
+        <fieldset class="quote-fields">
+          <label class="field"><span>{t.name}</span>
+            <input name="customerName" autocomplete="name" required minlength="2" maxlength="100" autofocus />
+          </label>
+          <label class="field"><span>{t.enquiryPhone}</span>
+            <input name="contact" type="tel" autocomplete="tel" required maxlength="120" />
+          </label>
+          <label class="field"><span>{t.enquiryDetails}</span>
+            <textarea name="comment" required minlength="2" maxlength="1500" rows="3"></textarea>
+          </label>
+          <div hidden><input name="website" tabindex="-1" autocomplete="off" /></div>
+          <button class="button button--dark" type="submit">{t.submit}</button>
+        </fieldset>
+        <p class="form-policy">{t.consent} <a href={infoPath(lang, 'privacy')}>{t.consentLink}</a>.</p>
+        <p class="form-message" role="status" data-enquiry-status></p>
+      </form>
+    </dialog>
     <main id="main">
       <slot />
     </main>

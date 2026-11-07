@@ -37,19 +37,21 @@ export function normalizeInput(body) {
     throw new QuoteError('invalid_request');
   if (typeof body.requestId !== 'string' || !UUID.test(body.requestId))
     throw new QuoteError('invalid_request_id');
+  const enquiry = body.kind === 'enquiry';
+  if (body.kind !== undefined && !enquiry) throw new QuoteError('invalid_request');
   const name = textField(body.name, 100, 'invalid_name', 2);
   const contact = textField(body.contact ?? body.phone, 120, 'invalid_contact', 5);
+  const phone = /^[+\d\s()\-]+$/.test(contact) && contact.replace(/\D/g, '').length >= 7;
   if (!(
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact) ||
-    (/^[+\d\s()\-]+$/.test(contact) && contact.replace(/\D/g, '').length >= 7)
+    phone || (!enquiry && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact))
   ))
     throw new QuoteError('invalid_contact');
-  const comment = textField(body.comment ?? '', 1500, 'invalid_comment');
+  const comment = textField(body.comment ?? '', 1500, 'invalid_comment', enquiry ? 2 : 0);
   const lang = body.lang ?? 'ru';
   if (!['ru', 'en', 'ka'].includes(lang)) throw new QuoteError('invalid_language');
   if (body.website !== undefined && (typeof body.website !== 'string' || body.website.length))
     throw new QuoteError('invalid_request');
-  if (!Array.isArray(body.items) || !body.items.length || body.items.length > 50)
+  if (!Array.isArray(body.items) || (enquiry ? body.items.length !== 0 : !body.items.length || body.items.length > 50))
     throw new QuoteError('invalid_items');
   const seen = new Set();
   const items = body.items
@@ -76,7 +78,8 @@ export function normalizeInput(body) {
       const right = `${b.id}\0${b.variantId || ''}`;
       return left < right ? -1 : left > right ? 1 : 0;
     });
-  return { requestId: body.requestId.toLowerCase(), name, contact, comment, lang, items };
+  // Keep the original shape and hash for retries of existing cart requests.
+  return { requestId: body.requestId.toLowerCase(), name, contact, comment, lang, items, ...(enquiry ? { kind: 'enquiry' } : {}) };
 }
 
 export async function sha256(value) {
@@ -213,18 +216,19 @@ function escapeHtml(value) {
 // Escape one Unicode code point at a time: neither surrogate pairs nor HTML
 // entities nor markup can be cut across Telegram message boundaries.
 export function messageParts(number, input, items) {
+  const enquiry = input.kind === 'enquiry';
   const content = [
     `Имя: ${input.name}`,
     `Контакт: ${input.contact}`,
     `Язык: ${input.lang}`,
-    input.comment ? `Комментарий: ${input.comment}` : '',
+    input.comment ? `${enquiry ? 'Подробности' : 'Комментарий'}: ${input.comment}` : '',
     '',
     ...items.map(
       (item, index) =>
         `${index + 1}. ${item.title}\nКод: ${item.id}${item.variantId ? ` / ${item.variantId}` : ''}; количество: ${item.quantity}\nЦена из каталога: ${item.price === null ? 'по запросу' : `${item.price} GEL`}; статус: ${item.availability}\n${item.url}`,
     ),
     '',
-    'Заявка на уточнение условий; наличие и цена не зарезервированы.',
+    enquiry ? '' : 'Заявка на уточнение условий; наличие и цена не зарезервированы.',
   ].join('\n');
   const parts = [];
   let current = '';
@@ -239,7 +243,7 @@ export function messageParts(number, input, items) {
   if (current) parts.push(current);
   return parts.map(
     (part, index) =>
-      `SIMAL — заявка ${escapeHtml(number)}\nЧасть ${index + 1}/${parts.length}\n\n${part}`,
+      `SIMAL — ${enquiry ? 'запрос с сайта' : 'заявка'} ${escapeHtml(number)}\nЧасть ${index + 1}/${parts.length}\n\n${part}`,
   );
 }
 
@@ -338,18 +342,21 @@ export async function handleQuote(context) {
     );
     await rateLimit(db, ipHash, now);
     await checkTurnstile(body, request, env, fetcher);
-    let catalog;
-    try {
-      const url = new URL('/data/catalog.json', request.url);
-      const response = env.ASSETS?.fetch
-        ? await env.ASSETS.fetch(new Request(url))
-        : await fetcher(url, { signal: AbortSignal.timeout(8000) });
-      if (!response.ok) throw new Error();
-      catalog = await response.json();
-    } catch {
-      throw new QuoteError('catalog_unavailable', 503);
+    let items = [];
+    if (input.items.length) {
+      let catalog;
+      try {
+        const url = new URL('/data/catalog.json', request.url);
+        const response = env.ASSETS?.fetch
+          ? await env.ASSETS.fetch(new Request(url))
+          : await fetcher(url, { signal: AbortSignal.timeout(8000) });
+        if (!response.ok) throw new Error();
+        catalog = await response.json();
+      } catch {
+        throw new QuoteError('catalog_unavailable', 503);
+      }
+      items = resolveItems(input, catalog);
     }
-    const items = resolveItems(input, catalog);
     const number = `SIM-${new Date(now).toISOString().slice(0, 10).replaceAll('-', '')}-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
     const statements = [
       db

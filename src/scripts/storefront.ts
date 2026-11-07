@@ -27,39 +27,69 @@ const $$ = <T extends Element = HTMLElement>(selector: string, root: ParentNode 
 let state: State = normalizeState(null),
   storageAvailable = true,
   catalog: Catalog | undefined;
-let memoryHash = '',
-  memoryRequestId = '',
-  busy = false,
+let busy = false,
   toastTimer: ReturnType<typeof setTimeout>;
-const ATTEMPT_KEY = 'simal:quote-attempt:v1';
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-async function requestIdFor(serialized: string): Promise<string> {
-  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(serialized));
-  const hash = [...new Uint8Array(digest)]
-    .map((byte) => byte.toString(16).padStart(2, '0'))
-    .join('');
-  if (memoryHash === hash && UUID.test(memoryRequestId)) return memoryRequestId;
-  let previous: { hash?: string; requestId?: string } | undefined;
-  try {
-    previous = JSON.parse(sessionStorage.getItem(ATTEMPT_KEY) || 'null') || undefined;
-  } catch {
-    /* Memory still permits retries when session storage is blocked. */
+function createAttempt(key: string) {
+  let memoryHash = '';
+  let memoryRequestId = '';
+  async function requestIdFor(serialized: string): Promise<string> {
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(serialized));
+    const hash = [...new Uint8Array(digest)]
+      .map((byte) => byte.toString(16).padStart(2, '0'))
+      .join('');
+    if (memoryHash === hash && UUID.test(memoryRequestId)) return memoryRequestId;
+    let previous: { hash?: string; requestId?: string } | undefined;
+    try {
+      previous = JSON.parse(sessionStorage.getItem(key) || 'null') || undefined;
+    } catch {
+      /* Memory still permits retries when session storage is blocked. */
+    }
+    memoryHash = hash;
+    memoryRequestId =
+      previous?.hash === hash &&
+      typeof previous.requestId === 'string' &&
+      UUID.test(previous.requestId)
+        ? previous.requestId
+        : crypto.randomUUID();
+    // A digest and opaque UUID let a retry recover an uncertain prior attempt.
+    try {
+      sessionStorage.setItem(key, JSON.stringify({ hash, requestId: memoryRequestId }));
+    } catch {
+      /* Optional persistence; retain the in-memory attempt. */
+    }
+    return memoryRequestId;
   }
-  memoryHash = hash;
-  memoryRequestId =
-    previous?.hash === hash &&
-    typeof previous.requestId === 'string' &&
-    UUID.test(previous.requestId)
-      ? previous.requestId
-      : crypto.randomUUID();
-  // Persist only a digest and an opaque UUID. Contacts and comments stay in the
-  // form; re-entering them after reload can recover an uncertain prior attempt.
-  try {
-    sessionStorage.setItem(ATTEMPT_KEY, JSON.stringify({ hash, requestId: memoryRequestId }));
-  } catch {
-    /* Optional persistence; retain the in-memory attempt. */
+  function clear() {
+    memoryHash = '';
+    memoryRequestId = '';
+    try {
+      sessionStorage.removeItem(key);
+    } catch {
+      /* No persistent attempt was required. */
+    }
   }
-  return memoryRequestId;
+  return { requestIdFor, clear };
+}
+const cartAttempt = createAttempt('simal:quote-attempt:v1');
+const enquiryAttempt = createAttempt('simal:enquiry-attempt:v1');
+
+async function postQuote(payload: object, requestId: string) {
+  const response = await fetch('/api/quote', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...payload, requestId }),
+    signal: AbortSignal.timeout(20000),
+  });
+  const result = await response.json().catch(() => null);
+  const receipt = response.ok &&
+    result?.status === 'accepted' &&
+    typeof result.id === 'string' &&
+    /^SIM-\d{8}-[A-F0-9]{8}$/.test(result.id) &&
+    result.requestId === requestId
+      ? { id: result.id as string, pending: result.notification === 'pending' }
+      : null;
+  return { status: response.status, receipt };
 }
 function readStored(): State {
   try {
@@ -357,50 +387,27 @@ function initSelection() {
     const previousLabel = label?.textContent;
     if (label) label.textContent = t.sending;
     status.textContent = '';
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 20000);
     try {
       // Busy is set before the first await, preventing double clicks while hashing.
-      const requestId = await requestIdFor(serialized);
-      const response = await fetch('/api/quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...payload, requestId }),
-        signal: controller.signal,
-      });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok) {
+      const requestId = await cartAttempt.requestIdFor(serialized);
+      const { status: responseStatus, receipt } = await postQuote(payload, requestId);
+      if (!receipt) {
         status.textContent =
-          response.status === 503
+          responseStatus === 503
             ? t.unavailableServer
-            : response.status === 400 || response.status === 409
+            : responseStatus === 400 || responseStatus === 409
               ? t.serverInvalid
               : t.sendError;
         return;
       }
-      if (
-        result.status !== 'accepted' ||
-        typeof result.id !== 'string' ||
-        !/^SIM-\d{8}-[A-F0-9]{8}$/.test(result.id) ||
-        result.requestId !== requestId
-      ) {
-        status.textContent = t.sendError;
-        return;
-      }
       const success = $('[data-quote-success]')!;
-      setText(success, '[data-quote-number]', result.id);
-      $('[data-notification-pending]', success)!.hidden = result.notification !== 'pending';
+      setText(success, '[data-quote-number]', receipt.id);
+      $('[data-notification-pending]', success)!.hidden = !receipt.pending;
       success.hidden = false;
       // Read other tabs' latest basket before consuming only the submitted snapshot.
       state = readStored();
       save(consumeSnapshot(state, snapshot));
-      memoryHash = '';
-      memoryRequestId = '';
-      try {
-        sessionStorage.removeItem(ATTEMPT_KEY);
-      } catch {
-        /* No persistent attempt was required. */
-      }
+      cartAttempt.clear();
       form.reset();
       updateCommentLimit();
       status.classList.remove('form-message--error');
@@ -412,12 +419,62 @@ function initSelection() {
     } catch {
       status.textContent = t.sendError;
     } finally {
-      clearTimeout(timer);
       busy = false;
       fieldset.disabled = false;
       if (label) label.textContent = previousLabel || t.submit;
       syncControls();
       renderSelection();
+    }
+  });
+}
+function initEnquiry() {
+  const dialog = $<HTMLDialogElement>('#mobile-enquiry');
+  const form = dialog && $<HTMLFormElement>('[data-enquiry-form]', dialog);
+  if (!dialog || !form) return;
+  const fieldset = $<HTMLFieldSetElement>('fieldset', form)!;
+  const submit = $<HTMLButtonElement>('button[type="submit"]', form)!;
+  const status = $('[data-enquiry-status]', form)!;
+  for (const opener of $$('[data-enquiry-open]')) {
+    opener.addEventListener('click', () => dialog.showModal());
+  }
+  $('[data-enquiry-close]', dialog)?.addEventListener('click', () => dialog.close());
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (fieldset.disabled) return;
+    const data = new FormData(form);
+    const value = (name: string) => String(data.get(name) || '').trim();
+    const payload = {
+      kind: 'enquiry', name: value('customerName'), contact: value('contact'),
+      comment: value('comment'), website: value('website'), lang, items: [],
+    };
+    if (payload.name.length < 2 || payload.comment.length < 2 ||
+      !/^[+\d\s()\-]+$/.test(payload.contact) || payload.contact.replace(/\D/g, '').length < 7) {
+      status.textContent = t.enquiryInvalid;
+      status.classList.add('form-message--error');
+      return;
+    }
+    fieldset.disabled = true;
+    submit.textContent = t.sending;
+    status.textContent = '';
+    status.classList.remove('form-message--error');
+    try {
+      const requestId = await enquiryAttempt.requestIdFor(JSON.stringify(payload));
+      const { status: responseStatus, receipt } = await postQuote(payload, requestId);
+      if (receipt) {
+        form.reset();
+        enquiryAttempt.clear();
+        status.textContent = `${t.received}. ${receipt.id}${receipt.pending ? ` · ${t.pendingNotification}` : ''}`;
+        return;
+      }
+      status.textContent = responseStatus === 400 ? t.enquiryInvalid : t.enquiryError;
+      status.classList.add('form-message--error');
+    } catch {
+      status.textContent = t.enquiryError;
+      status.classList.add('form-message--error');
+    } finally {
+      fieldset.disabled = false;
+      submit.textContent = t.submit;
     }
   });
 }
@@ -541,7 +598,8 @@ $('[data-menu-toggle]')?.addEventListener('click', (event) => {
   $<HTMLElement>('#mobile-navigation')!.hidden = !open;
 });
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
+  if (event.key === 'Escape' && !$('dialog[open]')) {
+    if (CSS.supports('selector(:popover-open)') && $('.mobile-call-options:popover-open')) return;
     const menu = $<HTMLElement>('#mobile-navigation');
     if (menu && !menu.hidden) {
       menu.hidden = true;
@@ -591,6 +649,7 @@ window.addEventListener('storage', (event) => {
   }
 });
 syncControls();
+initEnquiry();
 fetch('/data/catalog.json')
   .then(async (response) => {
     if (!response.ok) throw new Error('catalog');
