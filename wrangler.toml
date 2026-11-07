@@ -1,3 +1,15 @@
 name = "simal"
 compatibility_date = "2026-11-05"
 pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "QUOTES_DB"
+database_name = "simal-quotes-prod"
+database_id = "51ec5964-2865-4e5f-84d4-1770abc5d65c"
+migrations_dir = "migrations"
+
+[[env.preview.d1_databases]]
+binding = "QUOTES_DB"
+database_name = "simal-quotes-preview"
+database_id = "6b38d8fc-c6c5-4a8c-8cbb-d9181adbe689"
+migrations_dir = "migrations"
