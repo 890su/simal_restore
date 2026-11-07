@@ -1,0 +1,24 @@
+---
+import Icon from './Icon.astro';
+import { basePath, messages } from '../lib/i18n';
+import type { Language } from '../lib/types';
+interface Props {
+  lang: Language;
+  items: { title: string; url?: string }[];
+}
+const { lang, items } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label={lang === 'ru' ? 'Хлебные крошки' : 'Breadcrumbs'}>
+  <a href={basePath(lang)}>{messages(lang).home}</a>
+  {items.map((item) => (
+    <>
+      <Icon name="chevron" size={12} />
+      {item.url ? (
+        <a href={item.url}>{item.title}</a>
+      ) : (
+        <span aria-current="page">{item.title}</span>
+      )}
+    </>
+  ))}
+</nav>

@@ -1,0 +1,7349 @@
+{
+  "schemaVersion": 1,
+  "language": "ka",
+  "reviewedAt": "2026-11-07",
+  "products": {
+    "9753": {
+      "title": "ორსართულიანი საწოლი დივანით ARIZONA",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        }
+      ]
+    },
+    "9756": {
+      "title": "საწოლი GARMONIA 1800 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "194 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "180×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "9757": {
+      "title": "საწოლი IMPERIA 1600 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "110 სმ"
+        }
+      ]
+    },
+    "9758": {
+      "title": "საწოლი ODRI 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "173 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×198 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "98 სმ"
+        }
+      ]
+    },
+    "9759": {
+      "title": "საწოლი PRIMA 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "149 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "94 სმ"
+        }
+      ]
+    },
+    "9760": {
+      "title": "საწოლი PRIMA 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "90×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "94 სმ"
+        }
+      ]
+    },
+    "9761": {
+      "title": "დივან-საწოლი BRAVO",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "198 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "87 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "45 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "145 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "198 სმ"
+        }
+      ]
+    },
+    "9762": {
+      "title": "დივან-საწოლი GRAND (დამოუკიდებელი ზამბარების ბლოკი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "255 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "112 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "48 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9763": {
+      "title": "დივან-საწოლი PALERMO (დამოუკიდებელი ზამბარების ბლოკი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "232 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "97 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "86 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "152 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9764": {
+      "title": "დივან-საწოლი CITY (დამოუკიდებელი ზამბარების ბლოკი) 192 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "192 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "153 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "192 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "91 სმ"
+        }
+      ]
+    },
+    "9765": {
+      "title": "დივან-საწოლი TOKIO (დამოუკიდებელი ზამბარების ბლოკი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "220 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "94 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "92 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "148 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "192 სმ"
+        }
+      ]
+    },
+    "9766": {
+      "title": "კუთხის დივან-საწოლი NIKOL 2700",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "152 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "92 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "152 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "237 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "270 სმ"
+        }
+      ]
+    },
+    "9767": {
+      "title": "საწოლი BOSS",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "103,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "210 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "90×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "83 სმ"
+        }
+      ]
+    },
+    "9768": {
+      "title": "საწოლი ELIZA",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "101 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "90×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "68 სმ"
+        }
+      ]
+    },
+    "9769": {
+      "title": "საწოლი VENECIA 1600 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "184 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "215 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "114 სმ"
+        }
+      ]
+    },
+    "9770": {
+      "title": "სავარძელი-საწოლი CITY",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წონა",
+          "value": "43 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "79 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "94 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "83 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "66 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "186 სმ"
+        }
+      ]
+    },
+    "9771": {
+      "title": "ტოპერი ELITE 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "4 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9772": {
+      "title": "მატრასი AKTIV 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9773": {
+      "title": "მატრასი IMPERIAL 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9785": {
+      "title": "მატრასი ROYAL 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9786": {
+      "title": "მატრასი EXTRA HARD 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9787": {
+      "title": "სტელაჟი NOVO",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "73 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "174 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლამინირებული დსპ (16 მმ)"
+        }
+      ]
+    },
+    "9788": {
+      "title": "სტელაჟი OBI",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "105,6 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "105,6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლამინირებული დსპ (16 მმ)"
+        }
+      ]
+    },
+    "9789": {
+      "title": "ბალიში LUX",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "48×68 სმ"
+        }
+      ]
+    },
+    "9790": {
+      "title": "ბალიში RELAX",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "48×68 სმ"
+        }
+      ]
+    },
+    "9791": {
+      "title": "ბალიში Memory Anatomic 1",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "36 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "11 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "58 სმ"
+        }
+      ]
+    },
+    "9792": {
+      "title": "პატარა მაგიდა STAN",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიმაღლე",
+          "value": "54,5 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "MDF + PVC (15 მმ)"
+        },
+        {
+          "name": "დიამეტრი",
+          "value": "50 სმ"
+        }
+      ]
+    },
+    "9813": {
+      "title": "საწოლი ODRI 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "153 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×198 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "98 სმ"
+        }
+      ]
+    },
+    "9814": {
+      "title": "საწოლი PRIMA 1600 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "9815": {
+      "title": "საწოლი PRIMA 1800 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "189 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "180×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "9816": {
+      "title": "მატრასი AKTIV 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9817": {
+      "title": "მატრასი AKTIV 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9818": {
+      "title": "მატრასი EXTRA HARD 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9819": {
+      "title": "მატრასი HARD 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9820": {
+      "title": "მატრასი IMPERIAL 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წონა",
+          "value": "36 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9821": {
+      "title": "მატრასი IMPERIAL 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "9822": {
+      "title": "საწოლი GARMONIA 1600 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "174 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "9823": {
+      "title": "დალიანდაგებული საწოლის გადასაფარებელი IMPERIA 140×230",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "140×230 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხავერდი"
+        }
+      ]
+    },
+    "9824": {
+      "title": "დალიანდაგებული საწოლის გადასაფარებელი IMPERIA 117×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "117×200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხავერდი"
+        }
+      ]
+    },
+    "9825": {
+      "title": "თეთრეულის კომპლექტი ROYAL",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "9826": {
+      "title": "თეთრეულის კომპლექტი ROYAL",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "9827": {
+      "title": "თეთრეულის კომპლექტი IMPERIA",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "9828": {
+      "title": "კუთხის დივან-საწოლი SANTA",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "152 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "152 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "237 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "277 სმ"
+        }
+      ]
+    },
+    "9830": {
+      "title": "კუთხის დივან-საწოლი NIKOLLETTI 326 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "183 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "89 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "161 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "294 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "326 სმ"
+        }
+      ]
+    },
+    "9831": {
+      "title": "დივან-საწოლი NIKOL",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "231 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "104 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "86 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "163 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10317": {
+      "title": "სტელაჟი FORA 8 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "146 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10318": {
+      "title": "სტელაჟი FORA 4 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10319": {
+      "title": "სტელაჟი FORA 3 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "112 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10320": {
+      "title": "სტელაჟი FORA 12 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "112 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10321": {
+      "title": "თარო FORA 4.1 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "1.5 სმ"
+        }
+      ]
+    },
+    "10322": {
+      "title": "გამოსაწევი უჯრების კომპლექტი FORA 4.2 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "33.6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10323": {
+      "title": "კარი FORA 4.3 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "33 სმ"
+        }
+      ]
+    },
+    "10324": {
+      "title": "კედლის თარო FORA 1.4 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "40 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "3.7 სმ"
+        }
+      ]
+    },
+    "10325": {
+      "title": "კედლის თარო FORA 1.6 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "60 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "3.7 სმ"
+        }
+      ]
+    },
+    "10326": {
+      "title": "სტელაჟი FORA 16 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10327": {
+      "title": "თარო FORA E100 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "30 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "27 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "97 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10333": {
+      "title": "სტელაჟი FORA 8 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "146 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10334": {
+      "title": "სტელაჟი FORA 4 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "76 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10335": {
+      "title": "სტელაჟი FORA 3 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა / თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "112 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10336": {
+      "title": "სტელაჟი FORA 12 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი/გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "112 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10337": {
+      "title": "თარო FORA 4.1 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "1.5 სმ"
+        }
+      ]
+    },
+    "10338": {
+      "title": "გამოსაწევი უჯრების კომპლექტი FORA 4.2 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10339": {
+      "title": "კარი FORA 4.3 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "33 სმ"
+        }
+      ]
+    },
+    "10340": {
+      "title": "სტელაჟი FORA 16 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "147 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10341": {
+      "title": "თარო FORA E100 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "30 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "27 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "97 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10342": {
+      "title": "მაგიდა ENKEL 50 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10343": {
+      "title": "მაგიდა ENKEL 50 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10344": {
+      "title": "მაგიდა ENKEL 90 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "82 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10346": {
+      "title": "ტელევიზორის ტუმბო ENKEL 12 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "36.8 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10347": {
+      "title": "ტელევიზორის ტუმბო ENKEL 16 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "36.8 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10348": {
+      "title": "ტელევიზორის ტუმბო ENKEL 12 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "36.8 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10349": {
+      "title": "ტელევიზორის ტუმბო ENKEL 16 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "36.8 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10350": {
+      "title": "მაგიდა ENKEL 90 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "82 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10351": {
+      "title": "კომოდი VARMA 4D",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "40 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10352": {
+      "title": "კომოდი VARMA 4D",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "40 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "45 სმ"
+        }
+      ]
+    },
+    "10355": {
+      "title": "საწერი მაგიდა INGAR 140 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "55 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "73 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10356": {
+      "title": "საწერი მაგიდა INGAR 120 (გათეთრებული მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "გათეთრებული მუხა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "55 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "73 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10357": {
+      "title": "საწერი მაგიდა INGAR 140 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "55 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "73 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10358": {
+      "title": "საწერი მაგიდა INGAR 120 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "55 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "73 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10363": {
+      "title": "საწოლის ტუმბო SIRIUS (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "39.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41.2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "53.1 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10364": {
+      "title": "კომოდი SIRIUS 4 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41.2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "123.4 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10365": {
+      "title": "კომოდი SIRIUS 3 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41.2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "94.6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10366": {
+      "title": "სტელაჟი SIRIUS (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "34.8 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10367": {
+      "title": "ტანსაცმლის საკიდი SIRIUS (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "31.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10368": {
+      "title": "სარკე SIRIUS (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "6 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "1.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ, მინა"
+        }
+      ]
+    },
+    "10369": {
+      "title": "ფეხსაცმლის კარადა SIRIUS 1 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "60.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "48.9 სმ"
+        }
+      ]
+    },
+    "10371": {
+      "title": "კარადა SIRIUS 2 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50.2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10372": {
+      "title": "კარადა SIRIUS 3 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "117.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "59 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "220 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10374": {
+      "title": "საწოლი VENECIA 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "164 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "215 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "114 სმ"
+        }
+      ]
+    },
+    "10375": {
+      "title": "საწოლი IMPERIA 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "149 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "110 სმ"
+        }
+      ]
+    },
+    "10376": {
+      "title": "საწოლი IMPERIA 1800 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "189 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "180×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "110 სმ"
+        }
+      ]
+    },
+    "10377": {
+      "title": "საწოლი ODRI 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "193 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "180×198 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "98 სმ"
+        }
+      ]
+    },
+    "10378": {
+      "title": "მატრასი AKTIV 800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "10379": {
+      "title": "მატრასი ROYAL 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10380": {
+      "title": "მატრასი EXTRA HARD 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10381": {
+      "title": "ტოპერი ELITE 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "4 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10382": {
+      "title": "ტოპერი ELITE 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "4 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10383": {
+      "title": "ტოპერი ELITE 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "4 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10388": {
+      "title": "დივან-საწოლი NIKOLLETTI CLASSIC",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "249 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "104 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "93 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "163 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10389": {
+      "title": "დივან-საწოლი CITY COMPACT (154 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "154 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "104 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "74 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "186 სმ"
+        }
+      ]
+    },
+    "10390": {
+      "title": "საწოლი NIKOLLETTI 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "10391": {
+      "title": "საწოლი NIKOLLETTI 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "149 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "10392": {
+      "title": "ორსართულიანი საწოლი ELIZA GOLD",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "150×190 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "68 სმ"
+        }
+      ]
+    },
+    "10393": {
+      "title": "მატრასი IMPERIAL 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10395": {
+      "title": "ბალიში ROYAL LUX",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "48×68 სმ"
+        }
+      ]
+    },
+    "10396": {
+      "title": "სტელაჟი Transformer",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "93,4 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "28,8 სმ"
+        }
+      ]
+    },
+    "10397": {
+      "title": "საწოლის ტუმბო CASTOR 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37.3 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "49.2 სმ"
+        }
+      ]
+    },
+    "10398": {
+      "title": "ტუმბო CASTOR 4",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "129.7 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "54.2 სმ"
+        }
+      ]
+    },
+    "10399": {
+      "title": "ტუმბო CASTOR 6",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "194.4 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "54.2 სმ"
+        }
+      ]
+    },
+    "10400": {
+      "title": "კომოდი CASTOR 3",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "65 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "71.6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10401": {
+      "title": "კომოდი CASTOR 5",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "65 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "111.6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10402": {
+      "title": "კომოდი CASTOR 6",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "129.7 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "71.4 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10403": {
+      "title": "კარადა MAX 2 (თეთრი) 75 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "60.7 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "10405": {
+      "title": "გამოსაწევი უჯრა MAX 75 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "67.9 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "57.9 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15.9 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10482": {
+      "title": "სტელაჟი FORA 4 L",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "42 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "147 სმ"
+        }
+      ]
+    },
+    "10483": {
+      "title": "სკამი „კრისტოფერი“ МДК-63 (დარიჩინისფერი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "44.5 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "51 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "107.5 სმ"
+        }
+      ]
+    },
+    "10484": {
+      "title": "სკამი VENGE 82",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "44.5 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "48 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "104.5 სმ"
+        }
+      ]
+    },
+    "10485": {
+      "title": "სკამი \"TIMOTHY\" МДК-66",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "46 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "47 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96 სმ"
+        }
+      ]
+    },
+    "10486": {
+      "title": "სკამი МДК-99 (ემალი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "46 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "47 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96 სმ"
+        }
+      ]
+    },
+    "10515": {
+      "title": "მაგიდა МД-415-02.2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "93.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "78 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "147 სმ"
+        }
+      ]
+    },
+    "10516": {
+      "title": "მაგიდა МД-438-02.2 (ემალი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "94.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "94.5 სმ"
+        }
+      ]
+    },
+    "10517": {
+      "title": "მაგიდა МД-44130-04.2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "70.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "74.5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "144.5 სმ"
+        }
+      ]
+    },
+    "10521": {
+      "title": "მაგიდა МД-438-02.2 (ვენგე)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "94.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "94.5 სმ"
+        }
+      ]
+    },
+    "10523": {
+      "title": "მაგიდა МД-75-01.2 (ემალი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "148 სმ"
+        }
+      ]
+    },
+    "10524": {
+      "title": "სკამი „კრისტოფერი“ МДК-63 (ლოდი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "44.5 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "51 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "107.5 სმ"
+        }
+      ]
+    },
+    "10525": {
+      "title": "სკამი МДК 82.1 (ემალი, ლოდი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წონა",
+          "value": "5.75 კგ"
+        },
+        {
+          "name": "სიგანე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "51 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "107.5 სმ"
+        }
+      ]
+    },
+    "10526": {
+      "title": "სკამი Б-2230.1 (ატინა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "54.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96.5 სმ"
+        }
+      ]
+    },
+    "10527": {
+      "title": "სკამი Б-2230.1 (დარიჩინისფერი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "43 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "54.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96.5 სმ"
+        }
+      ]
+    },
+    "10529": {
+      "title": "სკამი 82.1",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "51 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "107.5 სმ"
+        }
+      ]
+    },
+    "10530": {
+      "title": "ბენჩი МДК-81",
+      "reviewedFields": [
+        "title",
+        "attributes",
+        "summary",
+        "description"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "42.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "48 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "62.5 სმ"
+        }
+      ],
+      "description": "ბენჩი დამატებითი დასაჯდომია დერეფნისთვის, საძინებლისთვის ან მისაღები ოთახისთვის. დერეფანში მასზე ჯდომა ფეხსაცმლის ჩაცმისას მოსახერხებელია, ხოლო საწოლის ფეხთან შეიძლება პლედის ან ბალიშების დასადებად გამოიყენოთ. ფერის ვარიანტები მენეჯერთან დააზუსტეთ.",
+      "summary": "ბენჩი დერეფნისთვის, საძინებლისთვის ან მისაღები ოთახისთვის — დამატებითი დასაჯდომი და ადგილი პლედის ან ბალიშების დასადებად."
+    },
+    "10532": {
+      "title": "ბენჩი МДК-81-01",
+      "reviewedFields": [
+        "title",
+        "attributes",
+        "summary",
+        "description"
+      ],
+      "attributes": [
+        {
+          "name": "სიღრმე",
+          "value": "42.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "48 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "92.5 სმ"
+        }
+      ],
+      "description": "ბენჩი დერეფანში, საძინებელში ან მისაღებ ოთახში დამატებით დასაჯდომად გამოდგება. საწოლის ფეხთან მასზე შეგიძლიათ პლედი ან ბალიშები დადოთ, დერეფანში კი ფეხსაცმლის ჩაცმისას ჩამოჯდეთ. ფერის ვარიანტები მენეჯერთან დააზუსტეთ.",
+      "summary": "ბენჩი დერეფნისთვის, საძინებლისთვის ან მისაღები ოთახისთვის — დამატებითი დასაჯდომი."
+    },
+    "10566": {
+      "title": "საწოლი LOFT 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "26 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "201 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "69 სმ"
+        }
+      ]
+    },
+    "10567": {
+      "title": "საწოლი LOFT 900",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "90.5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "27.8 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "194 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "90×190 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "69 სმ"
+        }
+      ]
+    },
+    "10668": {
+      "title": "ტოპერი MEMORY FORM 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10669": {
+      "title": "ტოპერი MEMORY FORM 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10670": {
+      "title": "ტოპერი MEMORY FORM 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10671": {
+      "title": "დივნის ბალიში LAGOON A",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "40×40 სმ"
+        }
+      ]
+    },
+    "10672": {
+      "title": "ბალიში Memory Anatomic 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "36 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "11 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "58 სმ"
+        }
+      ]
+    },
+    "10673": {
+      "title": "დივან-საწოლი BELINI",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "96 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "87 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "45 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "150 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10675": {
+      "title": "დივან-საწოლი JUNIOR 2 (143 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "143 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "40 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "133 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "188 სმ"
+        }
+      ]
+    },
+    "10676": {
+      "title": "კუთხის დივან-საწოლი LUIGI",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "141 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "135 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        }
+      ]
+    },
+    "10677": {
+      "title": "დივან-საწოლი PRIMA 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "151 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "104 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "83 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "186 სმ"
+        }
+      ]
+    },
+    "10690": {
+      "title": "საწოლი NIKOLLETTI 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "189 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "213 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "180×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "10694": {
+      "title": "ტოპერი ELITE 1200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "4 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "10829": {
+      "title": "საწოლი MONACO 1600 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "160×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "10830": {
+      "title": "საწოლი GARMONIA 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "154 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "31 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "10831": {
+      "title": "სტელაჟი NORD",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "50.2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "196.2 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლამინირებული დსპ (16 მმ)"
+        }
+      ]
+    },
+    "10832": {
+      "title": "კომოდი CASTOR 3 (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "65 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "71 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "39 სმ"
+        }
+      ]
+    },
+    "10833": {
+      "title": "კომოდი CASTOR 5 (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "65 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "111.6 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "10834": {
+      "title": "კომოდი CASTOR 3 (ვენგე მუხა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "65 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "71 სმ"
+        }
+      ]
+    },
+    "10835": {
+      "title": "კომოდი CASTOR 6 (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "129.7 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "71.4"
+        }
+      ]
+    },
+    "10838": {
+      "title": "ფეხსაცმლის კარადა SIRIUS 3 (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "60.2"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "142.8"
+        }
+      ]
+    },
+    "10839": {
+      "title": "ტუმბო SIRIUS 2 კარით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "47 სმ"
+        }
+      ]
+    },
+    "10840": {
+      "title": "ფეხსაცმლის კარადა SIRIUS 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "60"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "89"
+        }
+      ]
+    },
+    "10991": {
+      "title": "მატრასი IMPERIAL 800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "24 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "11152": {
+      "title": "მაგიდა МД-415-02.2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "935 მმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "780 მმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "1470 მმ გაშლილ მდგომარეობაში 1915 მმ"
+        }
+      ]
+    },
+    "11153": {
+      "title": "სასადილო მაგიდა МД 44130-05.2 (ემალი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "800 მმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "750 მმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "1200 მმ გაშლილ მდგომარეობაში 1600 მმ"
+        }
+      ]
+    },
+    "11155": {
+      "title": "სკამი МДК-93 (ემალი)",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "11202": {
+      "title": "მატრასი IMPERIAL 1200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "11351": {
+      "title": "დივან-საწოლი ATLANTA",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "222 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "94 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "89 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "148 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "11352": {
+      "title": "საწოლი PALERMO 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        }
+      ]
+    },
+    "11353": {
+      "title": "საწოლი KELN 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "169 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        }
+      ]
+    },
+    "11904": {
+      "title": "დივან-საწოლი SOLO 2 (151 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "151 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "103 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "84 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "120 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "188 სმ"
+        }
+      ]
+    },
+    "11907": {
+      "title": "საწოლი MONACO 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "149"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "140×200"
+        }
+      ]
+    },
+    "11908": {
+      "title": "საწოლი KELN 1400 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "146"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212"
+        }
+      ]
+    },
+    "11909": {
+      "title": "საწოლი KELN 1200 ამწევი მექანიზმით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "126"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "120"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212"
+        }
+      ]
+    },
+    "11918": {
+      "title": "დივან-საწოლი MADRID (დამოუკიდებელი ზამბარების ბლოკი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "222 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "94 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "92 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "148 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "192 სმ"
+        }
+      ]
+    },
+    "11921": {
+      "title": "ტახტა PORTU",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "104 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "83 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "210 სმ"
+        },
+        {
+          "name": "საძილე ადგილი",
+          "value": "90×200 სმ"
+        }
+      ]
+    },
+    "11922": {
+      "title": "სავარძელი Marsel 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ფერის სხვადასხვა ვარიანტი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "6 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "82 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "86 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "46 სმ"
+        },
+        {
+          "name": "ფეხების სიმაღლე",
+          "value": "12 სმ"
+        }
+      ]
+    },
+    "13041": {
+      "title": "კარადა SIRIUS 3 (თეთრი) სარკით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "117.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "59 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "220 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13042": {
+      "title": "კარადა SIRIUS 3 (მუხა ვენგე) სარკით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ვენგე"
+        },
+        {
+          "name": "წონა",
+          "value": "79 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "117.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "59 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "220 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13043": {
+      "title": "კარადა SIRIUS 3 (მუხა სონომა) სარკით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა (მუხა)"
+        },
+        {
+          "name": "წონა",
+          "value": "79 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "117.1 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "59 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "220 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13044": {
+      "title": "კარადა MAX 2 (მუხა სონომა) 75 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა სონომა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "60.7 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13045": {
+      "title": "კარადა MAX 2 (თეთრი) 100 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "61 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13046": {
+      "title": "კარადა MAX 2 (ნაცრისფერი) 100 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "61 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13047": {
+      "title": "კარადა MAX 2 (მუხა ვენგე) 100 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა ვენგე"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "61 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13048": {
+      "title": "კარადის თარო თეთრი 75 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "71,4 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "58,5 სმ"
+        }
+      ]
+    },
+    "13052": {
+      "title": "გამოსაწევი უჯრა MAX 100 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი, ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "93 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "57.9 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "15.9 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13053": {
+      "title": "კარადის თარო 100 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი, ნაცრისფერი, მუხა ვენგე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "96,4 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "58,5 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "1,8 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხისბოჭკოვანი ფილა"
+        }
+      ]
+    },
+    "13054": {
+      "title": "ტუმბო 3 უჯრითა და 2 კარით (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "156 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41,2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "94,7 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხისბოჭკოვანი ფილა"
+        }
+      ]
+    },
+    "13055": {
+      "title": "ტუმბო 3 უჯრითა და 2 კარით (მუხა სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა სონომა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "156 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41,2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "94,7 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხისბოჭკოვანი ფილა"
+        }
+      ]
+    },
+    "13056": {
+      "title": "ტუმბო 2 მინის კარით (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78,2 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41,2 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "94,7 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ხისბოჭკოვანი ფილა/მინა"
+        }
+      ]
+    },
+    "13114": {
+      "title": "კომპიუტერის მაგიდა CASTOR 800×500 მმ (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        }
+      ]
+    },
+    "13182": {
+      "title": "მცურავი საწოლი IMPERIA GOLD 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "1700 მმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "1600 მმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "2000 მმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "2160 მმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "1200 მმ"
+        },
+        {
+          "name": "გვერდითი ჩარჩოს სიმაღლე",
+          "value": "375 მმ"
+        }
+      ]
+    },
+    "13196": {
+      "title": "საწოლის ძირი 70 - 200 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "მწარმოებელი",
+          "value": "SIMAL"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო/ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "700 მმ-დან"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "250 მმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "1900-2000 მმ არჩევანის მიხედვით"
+        },
+        {
+          "name": "მასალა",
+          "value": "პროფილური მილი"
+        }
+      ]
+    },
+    "13346": {
+      "title": "ლითონის საწოლი 140×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნებისმიერ ფერში შეღებვა"
+        },
+        {
+          "name": "წონა",
+          "value": "40 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "143 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "210 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლითონი"
+        }
+      ]
+    },
+    "13347": {
+      "title": "ლითონის საწოლი 160×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნებისმიერ ფერში შეღებვა"
+        },
+        {
+          "name": "წონა",
+          "value": "40 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "163 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "210 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლითონი"
+        }
+      ]
+    },
+    "13348": {
+      "title": "ორადგილიანი ლითონის საწოლი 180×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნებისმიერ ფერში შეღებვა"
+        },
+        {
+          "name": "წონა",
+          "value": "46 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "183 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "210 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ლითონი"
+        }
+      ]
+    },
+    "13375": {
+      "title": "საწოლი Britania 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "168 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "215 სმ"
+        }
+      ]
+    },
+    "13385": {
+      "title": "უზამბარო მატრასი CARBON 160×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წონა",
+          "value": "15 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "17 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "პოლიურეთანის ქაფი"
+        }
+      ]
+    },
+    "13386": {
+      "title": "კედლის პანელები 600×600 მმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა სონომა, იფანი, ნაცრისფერი, მუქი ფირუზისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "600 მმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "18 მმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "600 მმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "MDF"
+        }
+      ]
+    },
+    "13387": {
+      "title": "დეკორატიული პანელები 2760×300 მმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        }
+      ]
+    },
+    "13388": {
+      "title": "კუთხის დივანი GRAND 340 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "340 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "96 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "48 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "285 სმ"
+        }
+      ]
+    },
+    "13389": {
+      "title": "ინტერიერის ნახატი „ფენიქსი“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "80×80 სმ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "აკრილი"
+        }
+      ]
+    },
+    "13390": {
+      "title": "აბსტრაქტული ნახატი „ფეერია“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ზომები",
+          "value": "100×80 სმ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "სიგანე",
+          "value": "100 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "80 სმ"
+        }
+      ]
+    },
+    "13395": {
+      "title": "აკრილით შესრულებული ნახატი „ნიღაბი“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "50"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "70"
+        },
+        {
+          "name": "მასალა",
+          "value": "აკრილი"
+        }
+      ]
+    },
+    "13396": {
+      "title": "ნახატი „ქალის ჩრდილი“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "60 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "80 სმ"
+        }
+      ]
+    },
+    "13397": {
+      "title": "ინტერიერის ნახატი „ღამის ზღვა“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "60"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "50"
+        },
+        {
+          "name": "მასალა",
+          "value": "აკრილი"
+        }
+      ]
+    },
+    "13398": {
+      "title": "კუთხის დივანი Sergio (230 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "230"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "152"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "87"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "152"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200"
+        }
+      ]
+    },
+    "13399": {
+      "title": "კუთხის დივან-საწოლი Toronto (212 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "141 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "135 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        }
+      ]
+    },
+    "13400": {
+      "title": "სავარძელი-საწოლი Prima (106 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "106 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "106 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "191 სმ"
+        }
+      ]
+    },
+    "13402": {
+      "title": "კარადა MAX (ნაცრისფერი) 233×75×38",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "წონა",
+          "value": "54 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13403": {
+      "title": "კარადა MAX თეთრი 233×75×38",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წონა",
+          "value": "54 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13404": {
+      "title": "საწოლის ტუმბო CASTOR 2 (ნაცრისფერი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37.3 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "49.2 სმ"
+        }
+      ]
+    },
+    "13405": {
+      "title": "საწოლის ტუმბო CASTOR 2",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "37.3 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39.6 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "49.2 სმ"
+        }
+      ]
+    },
+    "13406": {
+      "title": "ტუმბო SIRIUS 2 კარითა და 2 უჯრით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "156 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "47 სმ"
+        }
+      ]
+    },
+    "13407": {
+      "title": "ტუმბო SIRIUS 2 კარითა და 2 უჯრით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "156 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "47 სმ"
+        }
+      ]
+    },
+    "13408": {
+      "title": "ტუმბო SIRIUS 2 კარითა და 2 უჯრით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "156 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "41 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "47 სმ"
+        }
+      ]
+    },
+    "13409": {
+      "title": "კარადა MAX (სონომა) 233×75×38",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წონა",
+          "value": "54 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "75 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "38 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "233 სმ"
+        }
+      ]
+    },
+    "13410": {
+      "title": "ინტერიერის ნახატი „სახეები“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "60 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "აკრილი"
+        }
+      ]
+    },
+    "13411": {
+      "title": "დეკორატიული ნახატი „გოგონა“",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "საქართველო"
+        },
+        {
+          "name": "სიგანე",
+          "value": "60 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "აკრილი + პატინა"
+        }
+      ]
+    },
+    "13412": {
+      "title": "ტუმბო MINI 2 უჯრით (თეთრი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "49 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "43 სმ"
+        }
+      ]
+    },
+    "13413": {
+      "title": "დივან-საწოლი SOLO 1 (181 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "181"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "106"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "88"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "150"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190"
+        }
+      ]
+    },
+    "13414": {
+      "title": "მცურავი საწოლი IMPERIA GOLD 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "150 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "120 სმ"
+        }
+      ]
+    },
+    "13415": {
+      "title": "პუფი ფეხებით",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "13416": {
+      "title": "პუფი ფეხებით",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "13417": {
+      "title": "პუფი ბალიშით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        }
+      ]
+    },
+    "13418": {
+      "title": "მცურავი საწოლი IMPERIA GOLD 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "190"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "216"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "120"
+        }
+      ]
+    },
+    "13419": {
+      "title": "მცურავი საწოლი TIFFANI GOLD 1600",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "170 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "218 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "121 სმ"
+        }
+      ]
+    },
+    "13420": {
+      "title": "კომპიუტერის მაგიდა CASTOR 800×500 მმ (ნაცრისფერი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        }
+      ]
+    },
+    "13421": {
+      "title": "კომპიუტერის მაგიდა CASTOR 800×500 მმ (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "80 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "50 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "75 სმ"
+        }
+      ]
+    },
+    "13423": {
+      "title": "სარკე SIRIUS (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "78"
+        }
+      ]
+    },
+    "13424": {
+      "title": "სარკე SIRIUS (მუხა ვენგე)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა ვენგე"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "78"
+        }
+      ]
+    },
+    "13425": {
+      "title": "ტანსაცმლის საკიდი SIRIUS (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "13426": {
+      "title": "ტანსაცმლის საკიდი SIRIUS (მუხა ვენგე)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა ვენგე"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "78 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "100 სმ"
+        }
+      ]
+    },
+    "13427": {
+      "title": "ტუმბო MINI 2 უჯრით (ნაცრისფერი)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "49 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "43 სმ"
+        }
+      ]
+    },
+    "13428": {
+      "title": "ტუმბო MINI 2 უჯრით (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "49 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "43 სმ"
+        }
+      ]
+    },
+    "13429": {
+      "title": "ტუმბო MINI 2 უჯრით (თეთრი, სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი, სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "49 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "43 სმ"
+        }
+      ]
+    },
+    "13430": {
+      "title": "ტუმბო MINI 2 უჯრით (ნაცრისფერი, სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი, სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "49 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "43 სმ"
+        }
+      ]
+    },
+    "13447": {
+      "title": "დიდი ბენჩი",
+      "reviewedFields": [
+        "title",
+        "attributes",
+        "summary",
+        "description"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        }
+      ],
+      "description": "დიდი ბენჩი რბილი, ქსოვილით გადაკრული დასაჯდომით. მისი გამოყენება შეგიძლიათ დერეფანში, საძინებელში, მისაღებ ოთახში ან გარდერობის სივრცეში. ზომები, ფერის ვარიანტები და მიწოდების პირობები მენეჯერთან დააზუსტეთ.",
+      "summary": "დიდი ბენჩი რბილი, ქსოვილით გადაკრული დასაჯდომით — დერეფნისთვის, საძინებლისთვის ან მისაღები ოთახისთვის."
+    },
+    "13497": {
+      "title": "დივანი Gannover",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი, ბეჟი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "221,5 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "94 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "91,5 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "44 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "191,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "148 სმ"
+        }
+      ]
+    },
+    "13499": {
+      "title": "კომპაქტური დივანი Junior (119 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "119 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "85 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "40 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "109 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "13500": {
+      "title": "ორადგილიანი დივანი Monreal (231 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი, ყავისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "231 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "97 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "43,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "198 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "152 სმ"
+        }
+      ]
+    },
+    "13502": {
+      "title": "სტელაჟი SIRIUS ორი უჯრით 39×190 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი, სონომა (მუხა)"
+        },
+        {
+          "name": "წონა",
+          "value": "30 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "33 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "13503": {
+      "title": "სტელაჟი ორი უჯრით 39×190 სმ თეთრი",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წონა",
+          "value": "30 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "39 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "30 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "190 სმ"
+        }
+      ]
+    },
+    "13504": {
+      "title": "წყალგაუმტარი ზეწარი რეზინით 160×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13506": {
+      "title": "საწოლი Britania 1400",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "148 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "215 სმ"
+        }
+      ]
+    },
+    "13511": {
+      "title": "მატრასების დამზადება შეკვეთით",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "სიგანე",
+          "value": "ნებისმიერი"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "ნებისმიერი"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "ნებისმიერი"
+        }
+      ]
+    },
+    "13512": {
+      "title": "ფერადი ზეწარი რეზინით 160×200 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სხვადასხვა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "თურქეთი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13513": {
+      "title": "ზეწარი რეზინით 160×200 და ბალიშის 2 პირი 50×70",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "თურქეთი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "100% ბამბა"
+        }
+      ]
+    },
+    "13514": {
+      "title": "წყალგაუმტარი მატრასის დამცავი 160×200 სმ",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "თურქეთი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13517": {
+      "title": "დივან-საწოლი SOLO (171 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი, ყავისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "171 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "106 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "88 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "ქსოვილი"
+        }
+      ]
+    },
+    "13518": {
+      "title": "გასაშლელი დივან-საწოლი BOSTON",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "96 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "45 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "150 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "87 სმ"
+        }
+      ]
+    },
+    "13519": {
+      "title": "საწოლი ამწევი მექანიზმით MONAKO 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ბეჟი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "189 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "212 სმ"
+        }
+      ]
+    },
+    "13520": {
+      "title": "ორადგილიანი „მცურავი“ საწოლი TIFANI 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ბეჟი, ნაცრისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "190 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "37,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "180 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "218 სმ"
+        },
+        {
+          "name": "სათავის სიმაღლე",
+          "value": "121 სმ"
+        }
+      ]
+    },
+    "13521": {
+      "title": "საწოლი Britania 1800",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "168 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30,5 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "215 სმ"
+        }
+      ]
+    },
+    "13527": {
+      "title": "ფეხსაცმლის კარადა SIRIUS 2 (სონომა)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "სონომა"
+        },
+        {
+          "name": "სიგანე",
+          "value": "60"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "25"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "89"
+        }
+      ]
+    },
+    "13535": {
+      "title": "ორადგილიანი მატრასი 160×200 სმ კომფორტული ძილისთვის",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "30 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13544": {
+      "title": "კომფორტული მატრასი Varberg 90×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "18 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13551": {
+      "title": "კომფორტული დივანი KELN (245 სმ)",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "ნაცრისფერი, ზღვის ტალღისფერი"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "245 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "96 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "90 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "42 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "199 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "150 სმ"
+        }
+      ]
+    },
+    "13569": {
+      "title": "კედლის საწოლი-ტრანსფორმერი D-18",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი/კვამლისფერი/ნაცრისფერი/მუხა სონომა"
+        },
+        {
+          "name": "წონა",
+          "value": "145 კგ"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "171 სმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "30 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "215,5 სმ"
+        },
+        {
+          "name": "დასაჯდომის სიმაღლე",
+          "value": "45 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        }
+      ]
+    },
+    "13665": {
+      "title": "საწოლი-კარადა SM-18",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "თეთრი/კვამლისფერი/ნაცრისფერი/მუხა სონომა/კაპუჩინო"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "1745 მმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "350 მმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "2191 მმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "გაშლილ მდგომარეობაში 2229 მმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13667": {
+      "title": "საწოლი-ტრანსფორმერი W-18 პატარა ოთახებისთვის",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "ფერი",
+          "value": "მუხა სონომა"
+        },
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "გარანტია",
+          "value": "12 თვე"
+        },
+        {
+          "name": "სიგანე",
+          "value": "2145 მმ"
+        },
+        {
+          "name": "სიღრმე",
+          "value": "420 მმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "1828 მმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგანე",
+          "value": "160 სმ"
+        },
+        {
+          "name": "საძილე ადგილის სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "დსპ"
+        }
+      ]
+    },
+    "13707": {
+      "title": "ორადგილიანი უზამბარო მატრასი CARBON 140×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "17 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "პოლიურეთანის ქაფი"
+        }
+      ]
+    },
+    "13708": {
+      "title": "უზამბარო მატრასი CARBON 140×200",
+      "reviewedFields": [
+        "title",
+        "attributes"
+      ],
+      "attributes": [
+        {
+          "name": "წარმოების ქვეყანა",
+          "value": "ბელარუსი"
+        },
+        {
+          "name": "სიგანე",
+          "value": "140 სმ"
+        },
+        {
+          "name": "სიმაღლე",
+          "value": "17 სმ"
+        },
+        {
+          "name": "სიგრძე",
+          "value": "200 სმ"
+        },
+        {
+          "name": "მასალა",
+          "value": "პოლიურეთანის ქაფი"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "banketki-i-pufy": {
+      "title": "ბენჩები და პუფები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "dekorativnye-paneli-mdf": {
+      "title": "MDF-ის დეკორატიული პანელები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "kartiny": {
+      "title": "ნახატები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "komody": {
+      "title": "კომოდები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "kresla-i-kresla-krovati": {
+      "title": "სავარძლები და გასაშლელი სავარძლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "kresla-test": {
+      "title": "სავარძლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovati": {
+      "title": "საწოლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovati-dvukhyarusnye-krovati": {
+      "title": "ორსართულიანი საწოლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovati-dvuspalnye-krovati": {
+      "title": "ორადგილიანი საწოლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovati-krovat-transformer-krovat-shkaf": {
+      "title": "ტრანსფორმირებადი საწოლები / საწოლი-კარადები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovati-odnospalnye-krovati": {
+      "title": "ერთადგილიანი საწოლები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "krovatnoe-osnovanie-osnovanie-pod-matras": {
+      "title": "საწოლის ძირები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy": {
+      "title": "მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-bespruzhinnye-matrasy": {
+      "title": "უზამბარო მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-detskie-matrasy": {
+      "title": "საბავშვო მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-dlya-gostinits-i-oteley": {
+      "title": "მატრასები სასტუმროებისთვის",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-dvuspalnye-matrasy": {
+      "title": "ორადგილიანი მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-matrasy-na-zakaz": {
+      "title": "მატრასები შეკვეთით",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-namatrasniki-i-toppery": {
+      "title": "მატრასის დამცავები და ტოპერები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-odnospalnye-matrasy": {
+      "title": "ერთადგილიანი მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-ortopedicheskie": {
+      "title": "ორთოპედიული მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "matrasy-pruzhinnye-matrasy": {
+      "title": "ზამბარიანი მატრასები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "myagkaya-mebel": {
+      "title": "დივნები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "myagkaya-mebel-divan-krovati": {
+      "title": "გასაშლელი დივნები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "myagkaya-mebel-uglovye-divany": {
+      "title": "კუთხის დივნები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "postelnoe-belye": {
+      "title": "თეთრეული",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "prikrovatnye-tumby": {
+      "title": "საწოლის ტუმბოები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "shkafy": {
+      "title": "კარადები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "stelazhi": {
+      "title": "სტელაჟები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "stoly": {
+      "title": "მაგიდები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "stulya": {
+      "title": "სკამები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "tekstil": {
+      "title": "ტექსტილი",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "toppery-i-namatrasniki": {
+      "title": "ტოპერები და მატრასის დამცავები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "tumby": {
+      "title": "ტუმბოები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "tumby-dlya-obuvi": {
+      "title": "ფეხსაცმლის კარადები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "tumby-pod-televizor": {
+      "title": "ტელევიზორის ტუმბოები",
+      "reviewedFields": [
+        "title"
+      ]
+    },
+    "zerkala": {
+      "title": "სარკეები",
+      "reviewedFields": [
+        "title"
+      ]
+    }
+  },
+  "report": {
+    "sourceTitleCount": 256,
+    "reviewedTitleCount": 255,
+    "changedTitleCount": 148,
+    "reviewedAttributeSets": 249,
+    "changedAttributeSets": 240,
+    "reviewedDescriptions": 3,
+    "reviewedCategories": 37,
+    "excludedIds": [
+      "13538"
+    ],
+    "residualCyrillicForReview": []
+  }
+}

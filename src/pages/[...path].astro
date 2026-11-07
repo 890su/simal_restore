@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/pages/Home.astro';
+import Listing from '../components/pages/Listing.astro';
+import Product from '../components/pages/Product.astro';
+import Selection from '../components/pages/Selection.astro';
+import Content from '../components/pages/Content.astro';
+import { getRoutes } from '../lib/catalog';
+import type { Route } from '../lib/types';
+export function getStaticPaths() {
+  return getRoutes().map((route) => ({
+    // Astro matches decoded path params during prerendering. Keep the original
+    // encoded URL in route metadata for canonical links and recovered URLs.
+    params: { path: route.path === '/' ? undefined : decodeURI(route.path.replace(/^\/|\/$/g, '')) },
+    props: { route },
+  }));
+}
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props;
+---
+
+<Base route={route}>
+  {route.kind === 'home' ? (
+    <Home lang={route.lang} />
+  ) : ['catalog', 'category', 'search'].includes(route.kind) ? (
+    <Listing route={route} />
+  ) : route.kind === 'product' ? (
+    <Product route={route} />
+  ) : ['favorites', 'cart'].includes(route.kind) ? (
+    <Selection route={route} />
+  ) : (
+    <Content route={route} />
+  )}
+</Base>

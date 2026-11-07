@@ -1,0 +1,16 @@
+---
+import Icon from './Icon.astro';
+import { messages } from '../lib/i18n';
+import type { Language } from '../lib/types';
+interface Props { productId: string; title: string; lang: Language; detail?: boolean; }
+const { productId, title, lang, detail = false } = Astro.props;
+---
+<button
+  class:list={['icon-button', 'favorite-button', { 'favorite-detail': detail }]}
+  data-favorite={productId}
+  data-product-title={title}
+  aria-label={`${messages(lang).favorite}: ${title}`}
+  aria-pressed="false"
+>
+  <Icon name="heart" size={21} />
+</button>

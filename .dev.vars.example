@@ -1,0 +1,20 @@
+# Copy to ignored .dev.vars for local `wrangler pages dev dist` only.
+# All values are intentionally blank. Never commit .dev.vars or real secrets.
+# QUOTES_DB must be configured as a D1 binding and migrated separately.
+
+# Required: generate a random secret of at least 24 characters.
+QUOTE_IP_HASH_SECRET=""
+
+# Optional service admin: separate random secret of at least 32 characters.
+QUOTE_ADMIN_TOKEN=""
+
+# Optional delivery. Leave blank for local tests; accepted requests stay pending.
+# Never reuse a production recipient for automated tests.
+TELEGRAM_BOT_TOKEN=""
+TELEGRAM_CHAT_ID=""
+
+# Optional exact origins separated by commas. Current origin is already allowed.
+QUOTE_ALLOWED_ORIGINS=""
+
+# Optional; requires a working UI widget and configured hostname/sitekey.
+TURNSTILE_SECRET_KEY=""

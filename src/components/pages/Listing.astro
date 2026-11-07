@@ -1,0 +1,160 @@
+---
+import Breadcrumbs from '../Breadcrumbs.astro';
+import Icon from '../Icon.astro';
+import ProductCard from '../ProductCard.astro';
+import {
+  categories,
+  productsForLanguage,
+  categoryUrl,
+  categoryTitle,
+  categoryProducts,
+} from '../../lib/catalog';
+import { messages, localePath, formatProductCount } from '../../lib/i18n';
+import type { Route } from '../../lib/types';
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props,
+  { lang, category, kind } = route,
+  t = messages(lang);
+const list = category ? categoryProducts(category, lang) : productsForLanguage(lang);
+const top = categories.filter((c) => !c.parentId && categoryProducts(c, lang).length > 0);
+const children = category
+  ? categories.filter((c) => c.parentId === category.id && categoryProducts(c, lang).length > 0)
+  : [];
+const parent = categories.find((c) => c.id === category?.parentId);
+const subcategoryLabel = lang === 'ru' ? 'Разделы категории' : lang === 'ka' ? 'ქვეკატეგორიები' : 'Subcategories';
+const title = category
+  ? categoryTitle(category, lang)
+  : kind === 'search'
+    ? t.searchTitle
+    : t.catalog;
+---
+
+<div class="container" data-catalog-list>
+  <Breadcrumbs
+    lang={lang}
+    items={[
+      { title: t.catalog, url: category ? localePath(lang, 'catalog') : undefined },
+      ...(parent ? [{ title: categoryTitle(parent, lang), url: categoryUrl(parent, lang) }] : []),
+      ...(category ? [{ title }] : []),
+    ]}
+  />
+  <div class="page-heading">
+    <h1>{title}</h1>
+    {!category && <p>{t.catalogIntro}</p>}
+    {kind === 'search' && (
+      <form class="search-form" action={localePath(lang, 'search')} role="search">
+        <label class="sr-only" for="page-search">
+          {t.search}
+        </label>
+        <input
+          id="page-search"
+          name="q"
+          type="search"
+          placeholder={t.searchPlaceholder}
+          data-query
+        />
+        <button class="button" type="submit">
+          <Icon name="search" size={20} />
+          {t.search}
+        </button>
+      </form>
+    )}
+  </div>
+  <div class="category-pills">
+    <a
+      class="category-pill"
+      href={localePath(lang, 'catalog')}
+      aria-current={kind === 'catalog' ? 'page' : undefined}
+    >
+      {t.all}
+    </a>
+    {top.map((c) => (
+      <a
+        class="category-pill"
+        href={categoryUrl(c, lang)}
+        aria-current={category?.id === c.id ? 'page' : undefined}
+      >
+        {categoryTitle(c, lang)}
+      </a>
+    ))}
+  </div>
+  {children.length > 0 && (
+    <nav class="category-subnav" aria-label={subcategoryLabel}>
+      <span>{subcategoryLabel}</span>
+      {children.map((child) => (
+        <a class="category-pill" href={categoryUrl(child, lang)}>{categoryTitle(child, lang)}</a>
+      ))}
+    </nav>
+  )}
+  <div class="catalog-layout">
+    <aside class="filter-panel" id="catalog-filters">
+      <h2>{t.filter}</h2>
+      <div class="filter-price">
+        <label>
+          {t.minPrice}
+          <input type="number" min="0" step="1" inputmode="numeric" data-price-min />
+        </label>
+        <label>
+          {t.maxPrice}
+          <input type="number" min="0" step="1" inputmode="numeric" data-price-max />
+        </label>
+      </div>
+      <label class="check-label">
+        <input type="checkbox" data-stock />
+        {t.onlyStock}
+      </label>
+      <button class="button button--outline" data-reset-filters>
+        {t.reset}
+      </button>
+      <div class="filter-category-list">
+        {top.map((c) => (
+          <a href={categoryUrl(c, lang)} aria-current={category?.id === c.id ? 'page' : undefined}>
+            {categoryTitle(c, lang)}
+          </a>
+        ))}
+      </div>
+    </aside>
+    <div>
+      <div class="catalog-toolbar">
+        <p aria-live="polite" data-result-summary>{formatProductCount(list.length, lang)}</p>
+        <button
+          class="filter-toggle"
+          aria-expanded="false"
+          aria-controls="catalog-filters"
+          data-filter-toggle
+        >
+          <Icon name="filter" size={16} />
+          {t.filter}
+        </button>
+        <label>
+          <span class="sr-only">{t.sort}</span>
+          <select data-sort>
+            <option value="default">{t.recommended}</option>
+            <option value="price-asc">{t.priceAsc}</option>
+            <option value="price-desc">{t.priceDesc}</option>
+            <option value="name">{t.nameAsc}</option>
+          </select>
+        </label>
+      </div>
+      <div class="product-grid" data-product-grid>
+        {list.map((p) => (
+          <ProductCard product={p} lang={lang} />
+        ))}
+      </div>
+      <div class="empty-state" data-no-results hidden>
+        <Icon name="search" size={35} />
+        <h2>{t.noResults}</h2>
+        <p>{t.noResultsHelp}</p>
+        <button class="button button--outline" data-reset-filters>
+          {t.reset}
+        </button>
+      </div>
+      <button class="button button--outline load-more" data-load-more hidden>
+        {lang === 'ru' ? 'Показать ещё' : lang === 'ka' ? 'მეტის ჩვენება' : 'Show more'}
+      </button>
+      <p class="archive-note">{t.archivedData}</p>
+    </div>
+  </div>
+</div>

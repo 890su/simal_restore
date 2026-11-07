@@ -1,0 +1,224 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { messages, basePath, localePath, infoPath } from '../lib/i18n';
+import { categories, categoryTitle, categoryUrl, categoryProducts } from '../lib/catalog';
+import type { Route } from '../lib/types';
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props;
+const { lang } = route,
+  t = messages(lang);
+const canonical = new URL(route.canonicalPath || route.path, Astro.site).href;
+const preview = import.meta.env.SITE_NOINDEX === 'true';
+const noindex = preview || route.noindex;
+const topCategories = categories.filter((c) => !c.parentId && categoryProducts(c, lang).length > 0).slice(0, 8);
+const translations = route.alternates || [{ lang, path: route.path }];
+const homeFallback = (l: 'ru' | 'en' | 'ka') =>
+  translations.find((a) => a.lang === l)?.path || basePath(l);
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'FurnitureStore',
+  name: 'SIMAL',
+  url: 'https://simal.ge/',
+  telephone: ['+995571100515', '+995579404041'],
+  email: 'info@simal.ge',
+  logo: 'https://simal.ge/images/brand-logo.png',
+};
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f2ed" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>{route.title}</title>
+    <meta name="description" content={route.description} />
+    <meta
+      name="robots"
+      content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
+    />
+    <link rel="canonical" href={canonical} />
+    {!noindex &&
+      translations
+        .map((a) => (
+          <link rel="alternate" hreflang={a.lang} href={new URL(a.path, Astro.site).href} />
+        ))}
+    {!noindex && translations.some((a) => a.lang === 'ru') && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={new URL(translations.find((a) => a.lang === 'ru')!.path, Astro.site).href}
+      />
+    )}
+    <meta property="og:type" content={route.kind === 'product' ? 'product' : 'website'} />
+    <meta property="og:title" content={route.title} />
+    <meta property="og:description" content={route.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="SIMAL" />
+    <meta
+      property="og:image"
+      content={
+        new URL(route.product?.images[0]?.src || '/images/hero/hero-1280.jpg', Astro.site).href
+      }
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(organization).replace(/</g, '\\u003c')}
+    />
+    <slot name="head" />
+  </head>
+  <body data-lang={lang}>
+    <a class="skip-link" href="#main">
+      {lang === 'ru' ? 'К содержанию' : lang === 'ka' ? 'შინაარსზე გადასვლა' : 'Skip to content'}
+    </a>
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span>{t.heroEyebrow}</span>
+        <a href="tel:+995571100515">+995 571 10 05 15</a>
+        <div class="language-switch" aria-label="Language">
+          {(['ru', 'en', 'ka'] as const).map((l) => (
+            <a href={homeFallback(l)} lang={l} aria-current={l === lang ? 'page' : undefined}>
+              {l === 'ka' ? 'ქარ' : l.toUpperCase()}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-main">
+        <a class="brand" href={basePath(lang)} aria-label="SIMAL"><img class="brand-logo" src="/images/brand-logo.png" alt="SIMAL" width="922" height="503" fetchpriority="high" /></a>
+        <a class="button button--dark header-catalog" href={localePath(lang, 'catalog')}>
+          <Icon name="menu" size={18} />
+          {t.catalog}
+        </a>
+        <form class="header-search" action={localePath(lang, 'search')} role="search">
+          <label class="sr-only" for="header-query">
+            {t.search}
+          </label>
+          <input
+            id="header-query"
+            name="q"
+            type="search"
+            placeholder={t.searchPlaceholder}
+            autocomplete="off"
+          />
+          <button class="icon-button" aria-label={t.search}>
+            <Icon name="search" size={21} />
+          </button>
+        </form>
+        <div class="header-actions">
+          <a class="header-action" href={localePath(lang, 'favorites')} aria-label={t.favorites}>
+            <span>
+              <Icon name="heart" />
+              <small data-count="favorites" hidden>
+                0
+              </small>
+            </span>
+            <span>{t.favorites}</span>
+          </a>
+          <a class="header-action" href={localePath(lang, 'cart')} aria-label={t.cart}>
+            <span>
+              <Icon name="bag" />
+              <small data-count="cart" hidden>
+                0
+              </small>
+            </span>
+            <span>{t.cart}</span>
+          </a>
+          <button
+            class="icon-button mobile-menu-button"
+            aria-label={t.menu}
+            aria-controls="mobile-navigation"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <Icon name="menu" />
+          </button>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label={t.catalog}>
+        <div class="container">
+          {topCategories.map((c) => (
+            <a
+              href={categoryUrl(c, lang)}
+              aria-current={route.category?.id === c.id ? 'page' : undefined}
+            >
+              {categoryTitle(c, lang)}
+            </a>
+          ))}
+          <a class="category-nav__contact" href={infoPath(lang, 'contact')}>
+            {t.contact}
+            <Icon name="arrow" size={16} />
+          </a>
+        </div>
+      </nav>
+      <nav id="mobile-navigation" class="mobile-navigation" hidden aria-label={t.menu}>
+        <div class="container">
+          <a href={localePath(lang, 'catalog')}>{t.allCatalog}</a>
+          {topCategories.map((c) => (
+            <a href={categoryUrl(c, lang)}>{categoryTitle(c, lang)}</a>
+          ))}
+          <a href={infoPath(lang, 'delivery')}>{t.delivery}</a>
+          <a href={infoPath(lang, 'contact')}>{t.contact}</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href={basePath(lang)}>
+            SIMAL<span class="brand-dot">.</span>
+          </a>
+          <p class="footer-tagline">{t.footerText}</p>
+          <a class="footer-email" href="mailto:info@simal.ge">
+            info@simal.ge
+            <Icon name="arrow" size={18} />
+          </a>
+        </div>
+        <div>
+          <h2>{t.catalog}</h2>
+          {topCategories.slice(0, 5).map((c) => (
+            <a href={categoryUrl(c, lang)}>{categoryTitle(c, lang)}</a>
+          ))}
+        </div>
+        <div>
+          <h2>SIMAL</h2>
+          <a href={infoPath(lang, 'about')}>{t.about}</a>
+          <a href={infoPath(lang, 'delivery')}>{t.delivery}</a>
+          <a href={infoPath(lang, 'contact')}>{t.contact}</a>
+          <a href={infoPath(lang, 'cooperation')}>{t.cooperation}</a>
+        </div>
+        <div>
+          <h2>{t.contactUs}</h2>
+          <span>{t.batumi}</span>
+          <a href="tel:+995571100515">+995 571 10 05 15</a>
+          <span>{t.tbilisi}</span>
+          <a href="tel:+995579404041">+995 579 40 40 41</a>
+          <a href="https://wa.me/995571100515" target="_blank" rel="noopener noreferrer">
+            WhatsApp ↗
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          © {new Date().getUTCFullYear()} {t.rights}
+        </span>
+        <a href={infoPath(lang, 'privacy')}>{t.privacy}</a>
+        <span>GEORGIA</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+    <script>
+      import '../scripts/storefront';
+    </script>
+  </body>
+</html>

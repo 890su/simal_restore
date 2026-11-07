@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-11-07",
+  "entries": [
+    {
+      "productId": "13497",
+      "src": "/images/recovered/13497-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/219/r1oebpq4gebb27z9ufcphwneezdfc5us.webp",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/myagkaya-mebel/divan-krovati/divan-gannover/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=250794ab6329cba4b4d158927ff3d7430b6348b5-5236101-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.419Z",
+      "dimensions": {
+        "width": 240,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 516,
+        "height": 688
+      },
+      "sha256": "ee53d310d10bee717b3c3b494fb116365e57e656700114b8c8aa082895a757b7",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    },
+    {
+      "productId": "10343",
+      "src": "/images/recovered/10343-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/05c/gfsmsitout65fw33nyneqk6868hkm42o.jpg",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/stoly/stol-enkel-50-belyy7328/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=02895a861b71518d225ef8909023e8a06b46ecd0-5315965-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.452Z",
+      "dimensions": {
+        "width": 320,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 800,
+        "height": 800
+      },
+      "sha256": "68618ba8fd9eff06229419e38992a8b148976019e176aeaf9dda4b1d0613564b",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    },
+    {
+      "productId": "11351",
+      "src": "/images/recovered/11351-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/88b/f4i1mlrdqxut6190zmxyjyr0odni4aut.jpg",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/myagkaya-mebel/divan-krovati/divan-krovat-atlanta/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=f9297a389d033813a8591c194bf6128e19a0785b-5886727-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.339Z",
+      "dimensions": {
+        "width": 480,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "sha256": "67fb23e9045ed4a0902616ddafcf1e2ebbfd14feec323c0ce0b527788cc434d0",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    },
+    {
+      "productId": "13042",
+      "src": "/images/recovered/13042-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/0b0/4uf8t89l0lhm0q6as7ut25lkr7p6b7a9.webp",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/shkafy/shkaf-sirius-3-venge-s-zerkalom/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=50d8c4b20588ade3ac1b1e482b40c10ac92dd3f2-10928745-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.469Z",
+      "dimensions": {
+        "width": 320,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 1000,
+        "height": 1000
+      },
+      "sha256": "de426939561fc5f2f20fe0c722d3bade54f079b2d40f63147516d86800cc09ae",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    },
+    {
+      "productId": "10672",
+      "src": "/images/recovered/10672-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/8a4/6gnfa9ilitp9t7ygf596c0ub4uzf7377.jpg",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/tekstil/podushka-memory-anatomic-2/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=333622d213dc616d3fa312c515093433a126daeb0b93badf-5251360-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.341Z",
+      "dimensions": {
+        "width": 480,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "sha256": "a2ff9dbac4f2800258020f7d3d4c8a139d7761c7e0bab2bd9f5b8b14f0556b90",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    },
+    {
+      "productId": "13397",
+      "src": "/images/recovered/13397-yandex.jpg",
+      "originalUrl": "https://simal.ge/upload/iblock/a25/zwvfdggcc077bmxyfzc7bh3pboubfvg4.webp",
+      "method": "yandex-thumbnail",
+      "sourcePageUrl": "https://simal.ge/catalog/kartiny/kartina-v-interer-nochnoe-more/",
+      "cacheUrl": "https://avatars.mds.yandex.net/i?id=0d723f1f687797fe18817e43c35416214cf8dadd-5234550-images-thumbs&n=13",
+      "retrievedAt": "2026-11-07T01:10:20.359Z",
+      "dimensions": {
+        "width": 382,
+        "height": 320
+      },
+      "sourceDimensions": {
+        "width": 1072,
+        "height": 897
+      },
+      "sha256": "3964450732d8a3685075fd80467625f26fd92016dd954cbaa7906f9056b65105",
+      "evidence": "Observed Yandex image record pairs this cache URL with the exact original source URL; local bytes visually inspected. Cached thumbnail, not full resolution."
+    }
+  ],
+  "attempts": [
+    {
+      "method": "original-url",
+      "productIds": [
+        "9753",
+        "13497",
+        "13708",
+        "11153",
+        "13053",
+        "10397"
+      ],
+      "result": "HTTP 200 text/html, identical 58529 byte HTML instead of image; no assets saved"
+    },
+    {
+      "method": "wayback-availability",
+      "productIds": [
+        "9753",
+        "13497",
+        "13708"
+      ],
+      "result": "HTTP 429; bounded probe stopped"
+    },
+    {
+      "method": "wayback-playback",
+      "productIds": [
+        "13497"
+      ],
+      "timestamp": "20260520000000",
+      "result": "HTTP 404"
+    },
+    {
+      "method": "google-image-search",
+      "productIds": [
+        "13497"
+      ],
+      "result": "Exact source URL confirmed in image index, but original URL returns HTML; no cached thumbnail bytes obtained"
+    },
+    {
+      "method": "browser-inventory",
+      "result": "Two cua.getState calls timed out and reset kernel; no tabs opened or user pages changed"
+    },
+    {
+      "method": "yandex-image-search",
+      "query": "site:simal.ge Gannover",
+      "checkedAt": "2026-11-07T01:09:08.837Z",
+      "result": "HTTP 200; exact source candidate and observed Yandex thumbnail cache paired in image metadata. One verified JPEG downloaded (240x320); no similar-model substitute used."
+    },
+    {
+      "method": "yandex-image-search-bounded-followup",
+      "queries": [
+        "site:simal.ge ODRI",
+        "site:simal.ge PRIMA кровать 1600",
+        "site:simal.ge ARIZONA диван",
+        "site:simal.ge SIRIUS тумба белая",
+        "site:simal.ge SIRIUS шкаф белый"
+      ],
+      "checkedAt": "2026-11-07T01:09:08.840Z",
+      "result": "Five transport fetch failures; no HTTP status or image bytes received, no repeated loop."
+    },
+    {
+      "method": "yandex-image-search-general",
+      "queries": [
+        "site:simal.ge мебель",
+        "site:simal.ge кровать"
+      ],
+      "checkedAt": "2026-11-07T01:11:27.452Z",
+      "result": "HTTP 200 for both general queries. Together with the Gannover query: 62 Simal image records, 6 exact original-URL matches to existing imageCandidates. Six JPEG cache assets downloaded and visually inspected. No filename-only, similar-model or vendor substitutions."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+---
+import Icon from '../Icon.astro';
+import ProductImage from '../ProductImage.astro';
+import FavoriteButton from '../FavoriteButton.astro';
+import ProductCard from '../ProductCard.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import { categories, productsForLanguage, categoryTitle, categoryUrl, textFor } from '../../lib/catalog';
+import { messages, formatPrice, localePath, infoPath } from '../../lib/i18n';
+import type { Route } from '../../lib/types';
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props,
+  { lang } = route,
+  product = route.product!,
+  t = messages(lang),
+  text = textFor(product, lang);
+const category = categories.find((c) => product.categoryIds.includes(c.id));
+const related = productsForLanguage(lang)
+  .filter(
+    (p) => p.id !== product.id && p.categoryIds.some((id) => product.categoryIds.includes(id)),
+  )
+  .slice(0, 4);
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: text.title,
+  description: text.description || text.summary,
+  sku: product.sku || product.id,
+  ...(product.images.length
+    ? { image: product.images.map((i) => new URL(i.src, Astro.site).href) }
+    : {}),
+};
+const breadcrumbs = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { name: t.home, item: new URL(lang === 'ru' ? '/' : lang === 'en' ? '/en/' : '/ge/', Astro.site).href },
+    { name: t.catalog, item: new URL(localePath(lang, 'catalog'), Astro.site).href },
+    ...(category
+      ? [
+          {
+            name: categoryTitle(category, lang),
+            item: new URL(categoryUrl(category, lang), Astro.site).href,
+          },
+        ]
+      : []),
+    { name: text.title, item: new URL(route.path, Astro.site).href },
+  ].map((x, i) => ({ '@type': 'ListItem', position: i + 1, ...x })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\u003c')} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbs).replace(/</g, '\u003c')} />
+<div class="container">
+  <Breadcrumbs
+    lang={lang}
+    items={[
+      { title: t.catalog, url: localePath(lang, 'catalog') },
+      ...(category
+        ? [{ title: categoryTitle(category, lang), url: categoryUrl(category, lang) }]
+        : []),
+      { title: text.title },
+    ]}
+  />
+  <article class="product-detail" data-detail-product={product.id}>
+    <div class="product-gallery">
+      <div class="product-gallery__main" data-main-image>
+        <ProductImage product={product} lang={lang} eager />
+      </div>
+      {product.images.length > 1 && (
+        <div class="product-gallery__thumbs">
+          {product.images.map((i) => (
+            <button data-gallery-src={i.src} aria-label={i.alt || text.title}>
+              <img src={i.src} alt={i.alt || text.title} width="70" height="62" loading="lazy" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+    <div class="product-info">
+      <p
+        class:list={[
+          'availability',
+          { 'availability--stock': product.availability === 'in_stock' },
+        ]}
+      >
+        <span></span>
+        {t[product.availability]}
+      </p>
+      <h1>{text.title}</h1>
+      <p class="product-sku">
+        {t.productCode}: {product.sku || product.id}
+      </p>
+      <p class="price">{formatPrice(product.price, lang)}</p>
+      {text.summary && <p class="product-summary">{text.summary}</p>}
+      <div class="purchase-actions">
+        <div class="quantity-control">
+          <button data-detail-minus aria-label={t.minus}>
+            <Icon name="minus" size={15} />
+          </button>
+          <label class="sr-only" for="product-quantity">
+            {t.quantity}
+          </label>
+          <input
+            id="product-quantity"
+            type="number"
+            value="1"
+            min="1"
+            max="9999"
+            inputmode="numeric"
+          />
+          <button data-detail-plus aria-label={t.plus}>
+            <Icon name="plus" size={15} />
+          </button>
+        </div>
+        <button
+          class="button"
+          data-add={product.id}
+          disabled={product.availability === 'out_of_stock'}
+        >
+          <Icon name="bag" size={19} />
+          <span>{t.add}</span>
+        </button>
+        <FavoriteButton productId={product.id} title={text.title} lang={lang} detail />
+      </div>
+      <p class="summary-help product-request-help">
+        {t.requestHelp}
+      </p>
+      <div class="product-delivery">
+        <h2>{t.delivery}</h2>
+        <p>{t.deliveryText}</p>
+        <a class="text-link" href={infoPath(lang, 'delivery')}>
+          {t.delivery}
+          <Icon name="arrow" size={16} />
+        </a>
+      </div>
+      <p class="archive-note">{t.archivedData}</p>
+    </div>
+  </article>
+  <div class="product-text-grid">
+    <section>
+      <h2>{t.details}</h2>
+      <p class="product-description">{text.description || text.summary || t.requestHelp}</p>
+    </section>
+    <section>
+      <h2>{t.specifications}</h2>
+      {text.attributes?.length ? (
+        <dl class="spec-list">
+          {text.attributes.map((a) => (
+            <div>
+              <dt>{a.name}</dt>
+              <dd>{a.value}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : (
+        <p class="product-description">{t.deliveryText}</p>
+      )}
+    </section>
+  </div>
+  <section class="section">
+    <div class="section-heading">
+      <h2>{t.related}</h2>
+      {category && (
+        <a class="text-link" href={categoryUrl(category, lang)}>
+          {t.all}
+          <Icon name="arrow" size={18} />
+        </a>
+      )}
+    </div>
+    <div class="product-grid">
+      {related.map((p) => (
+        <ProductCard product={p} lang={lang} />
+      ))}
+    </div>
+  </section>
+</div>

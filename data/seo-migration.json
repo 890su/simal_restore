@@ -1,0 +1,2871 @@
+{
+  "sourceHTMLCount": 387,
+  "preservedContentPaths": [
+    "/aktsii/",
+    "/aktsii/chernaya-pyatnitsa-28-11-2025/",
+    "/aktsii/krovat-matras-skidka-30/",
+    "/aktsii/pokupayte-krovat-s-podyemnym-mekhanizmom-i-poluchayte-priyatnyy-bonus-prikrovatnuyu-tumbu-sirius-v-p/",
+    "/aktsii/skidka-25-na-korpusnuyu-mebel-vystavochnykh-ekzemplyarov-v-shourume-v-tbilisi/",
+    "/aktsii/skidka-na-tumby-dlya-prikhozhey/",
+    "/aktsii/stilnye-divany-so-skidkoy-do-7/",
+    "/en/aktsii/",
+    "/en/aktsii/stylish-sofas-with-up-to-7-discount/",
+    "/en/cooperation/",
+    "/en/kompaniya/",
+    "/en/kontakty/",
+    "/en/kontakty/politika-konfidentsialnosti/",
+    "/en/news/",
+    "/en/oplata-dostavka/",
+    "/kompaniya/",
+    "/kontakty/",
+    "/kontakty/politika-konfidentsialnosti/",
+    "/news/",
+    "/oplata-dostavka/",
+    "/sotrudnichestvo/"
+  ],
+  "missingLinkedRoutes": [
+    {
+      "path": "/en/catalog/beds/",
+      "occurrences": 48,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/bed-prima-900541929894209/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/",
+      "occurrences": 48,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/bed-prima-900541929894209/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/",
+      "occurrences": 48,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/bed-prima-900541929894209/"
+      ]
+    },
+    {
+      "path": "/catalog/kukhni/",
+      "occurrences": 46,
+      "sourceExamples": [
+        "/catalog/",
+        "/catalog/komody/komod-sirius-3-belyy/",
+        "/catalog/komody/komod-sirius-3-belyy777888042729/"
+      ]
+    },
+    {
+      "path": "/catalog/mebel-dlya-vannoy-komnaty/",
+      "occurrences": 46,
+      "sourceExamples": [
+        "/catalog/",
+        "/catalog/komody/komod-sirius-3-belyy/",
+        "/catalog/komody/komod-sirius-3-belyy777888042729/"
+      ]
+    },
+    {
+      "path": "/catalog/myagkaya-mebel/modulnye-divany/",
+      "occurrences": 46,
+      "sourceExamples": [
+        "/catalog/",
+        "/catalog/komody/komod-sirius-3-belyy/",
+        "/catalog/komody/komod-sirius-3-belyy777888042729/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/single-mattresses/",
+      "occurrences": 43,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/daybed/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/double-bed/",
+      "occurrences": 35,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/beds/daybed/",
+        "/en/catalog/beds/lifting-mechanism/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/stol-tbilisi/",
+      "occurrences": 24,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/banketka-815524/",
+        "/catalog/dekorativnye-paneli-mdf/dekorativnye-paneli-2760x300-mm/",
+        "/catalog/kartiny/kartina-dlya-dekora-pomeshcheniya-devushka/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/krovat-batumi/",
+      "occurrences": 23,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/banketka-815524/",
+        "/catalog/dekorativnye-paneli-mdf/dekorativnye-paneli-2760x300-mm/",
+        "/catalog/kartiny/kartina-dlya-dekora-pomeshcheniya-devushka/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/topper-lux/",
+      "occurrences": 20,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/banketka-815524/",
+        "/catalog/dekorativnye-paneli-mdf/dekorativnye-paneli-2760x300-mm/",
+        "/catalog/kartiny/kartina-dlya-dekora-pomeshcheniya-devushka/"
+      ]
+    },
+    {
+      "path": "/catalog/tekstil/podushka-anatomicheskaya-memory-anatomic-3/",
+      "occurrences": 19,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/banketka-815524/",
+        "/catalog/dekorativnye-paneli-mdf/dekorativnye-paneli-2760x300-mm/",
+        "/catalog/kartiny/kartina-dlya-dekora-pomeshcheniya-devushka/"
+      ]
+    },
+    {
+      "path": "/catalog/myagkaya-mebel/uglovye-divany/divan-krovat-uglovoy-luigi-/",
+      "occurrences": 13,
+      "sourceExamples": [
+        "/catalog/kresla-test/",
+        "/catalog/kresla-test/kreslo-marsel-2/",
+        "/catalog/krovati/kreslo-krovat-siti/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-imperial-900120028165717/",
+      "occurrences": 13,
+      "sourceExamples": [
+        "/en/catalog/mattresses/custom-mattresses-the-mattress-is-individually-sized/",
+        "/en/catalog/mattresses/double-mattress-hard-180x200/",
+        "/en/catalog/mattresses/elite-1200-mattress-cover/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-1600/",
+      "occurrences": 12,
+      "sourceExamples": [
+        "/en/catalog/mattresses/custom-mattresses-the-mattress-is-individually-sized/",
+        "/en/catalog/mattresses/double-mattress-hard-180x200/",
+        "/en/catalog/mattresses/elite-1200-mattress-cover/"
+      ]
+    },
+    {
+      "path": "/catalog/prikrovatnye-tumby/tumba-castor-2/",
+      "occurrences": 8,
+      "sourceExamples": [
+        "/catalog/kresla-test/",
+        "/catalog/kresla-test/kreslo-marsel-2/",
+        "/catalog/krovati/kreslo-krovat-siti/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/shkaf-max-2-belyy/",
+      "occurrences": 8,
+      "sourceExamples": [
+        "/catalog/matrasy/matras-aktiv2812632/",
+        "/catalog/matrasy/matras-ekstra-khard294/",
+        "/catalog/matrasy/matras-imperial9235/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/mattress-topper-coconut-160-200/",
+      "occurrences": 7,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/elite-120-200-topper-/",
+        "/en/catalog/mattresses/mattress-toppers-/elite-140-200-topper-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/the-memory-foam-160-200-topper/",
+      "occurrences": 7,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/elite-120-200-topper-/",
+        "/en/catalog/mattresses/mattress-toppers-/elite-140-200-topper-/"
+      ]
+    },
+    {
+      "path": "/catalog/komody/tumba-castor-2/",
+      "occurrences": 5,
+      "sourceExamples": [
+        "/catalog/matrasy/matras-aktiv2812632/",
+        "/catalog/matrasy/matras-ekstra-khard294/",
+        "/catalog/stelazhi/stellazh-fora-4/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/krovat-transformer-krovat-shkaf/otkidnaya-krovat-s-divanom-s-sofa/",
+      "occurrences": 5,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/krovat-transformer-krovat-shkaf/gorizontalnaya-krovat-transformer-dlya-nebolshikh-komnat-w-18/",
+        "/catalog/krovati/krovat-transformer-krovat-shkaf/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/krovat-transformer-krovat-shkaf/gorizontalnaya-krovat-transformer/",
+      "occurrences": 4,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/krovat-transformer-krovat-shkaf/",
+        "/catalog/krovati/krovat-transformer-krovat-shkaf/krovat-shkaf-sm-18/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnye-matrasy/kombinirovannyy-lateksnyy-matras-l2/",
+      "occurrences": 4,
+      "sourceExamples": [
+        "/catalog/matrasy/bespruzhinnye-matrasy/",
+        "/catalog/matrasy/bespruzhinnye-matrasy/matras-bespruzhinnyy-carbon-140x200/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/pruzhinnye-matrasy/pruzhinnyy-matras-imperial-160x200/",
+      "occurrences": 4,
+      "sourceExamples": [
+        "/catalog/matrasy/bespruzhinnye-matrasy/matras-bespruzhinnyy-carbon-140x200/",
+        "/catalog/matrasy/dvuspalnye-matrasy/matras-dvuspalnyy-bespruzhinnyy-carbon-140x200/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/myagkaya-mebel/uglovye-divany/divan-uglovoy-sergio-230-sm/",
+      "occurrences": 4,
+      "sourceExamples": [
+        "/catalog/matrasy/matras-ekstra-khard/",
+        "/catalog/matrasy/matras-royal-lyuks/",
+        "/catalog/myagkaya-mebel/divan-krovati/divan-krovat-palermo-new-nezavisimyy-pruzhinnyy-blok/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-tokio/",
+      "occurrences": 4,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/catalog/kresla-i-kresla-krovati/kreslo-marsel-2/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/kresla-i-kresla-krovati/",
+        "/catalog/kresla-i-kresla-krovati/kreslo-krovat-siti/",
+        "/catalog/kresla-i-kresla-krovati/lld/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnye-matrasy/naturalnyy-lateksnyy-matras-l3/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/bespruzhinnye-matrasy/",
+        "/catalog/matrasy/bespruzhinnye-matrasy/matras-bespruzhinnyy-carbon-140x200/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/ortopedicheskiy-matras-askon-160x200/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/",
+        "/catalog/matrasy/ortopedicheskie/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-dvuspalnyy-grandis-160x200x33/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/dlya-gostinits-i-oteley/",
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/ortopedicheskiy-matras-dlya-myagkogo-sna-160x200/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/",
+        "/catalog/matrasy/ortopedicheskie/"
+      ]
+    },
+    {
+      "path": "/catalog/toppery-i-namatrasniki/namatrasnik-topper-memory-3-160x200/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/namatrasniki-i-toppery/",
+        "/catalog/toppery-i-namatrasniki/"
+      ]
+    },
+    {
+      "path": "/catalog/toppery-i-namatrasniki/namatrsanik-topper-kokos-160x200/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/namatrasniki-i-toppery/",
+        "/catalog/toppery-i-namatrasniki/"
+      ]
+    },
+    {
+      "path": "/en/aktsii/only-from-may-11-to-may-15-inclusive-get-25-off-showroom-display-furniture-in-our-tbilisi-showroom/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/tables/stand/",
+        "/en/catalog/tv-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-imperia-1600/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/bed-prima-900541929894209/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/corner-sofas/corner-sofa-bed-nikol-2700/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/corner-sofas/",
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/corner-sofas/corner-sofa-bed-nikolletti/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/corner-sofas/",
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/corner-sofas/corner-sofa-bed-santa/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/corner-sofas/",
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/corner-sofas/corner-sofa-bed-sergio-230-sm/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/corner-sofas/",
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/corner-sofas/sofa-bed-corner-luigi/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/corner-sofas/",
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-arizona/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-belini/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-bravo/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-city-compact/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-city/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-grand/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-junior/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-nikol/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-nikolletti-classic/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-palermo/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-prima-2/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/sofa-beds/sofa-bed-solo-mod-1/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/cushioned-furniture/",
+        "/en/catalog/cushioned-furniture/sofa-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-extra-hard-9002022/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-imperial-900/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-8-shelving-white5314/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/shelving/shelving-obi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-8-shelving-white54811560/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/shelving/shelving-obi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/wall-shelf-fora-1-6-white/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/shelving/shelving-obi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/computer-desk-castor-800-500-white/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/tables/stand/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/md-2-wenge-table/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/tables/stand/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/table-md-1/",
+      "occurrences": 3,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/tables/stand/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/catalog/kartiny/abstaktsiya-dlya-interera-feeriya/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/kreslo-krovat-siti/",
+        "/catalog/stulya/banketka-81/"
+      ]
+    },
+    {
+      "path": "/catalog/kresla-i-kresla-krovati/dizaynerskoe-kreslo-gloria/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/kresla-i-kresla-krovati/",
+        "/catalog/kresla-i-kresla-krovati/kreslo-krovat-siti/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/krovat-odnospalnaya-marsel-90x190/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/odnospalnye-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/krovat-transformer-krovat-shkaf/razdvizhnaya-krovat-80-160x200-sm/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/krovat-transformer-krovat-shkaf/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/odnospalnye-krovati/odnomestnaya-krovat-marsel-s-podemnym-mekhanizmom-900x190/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/odnospalnye-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/odnospalnye-krovati/odnospalnaya-krovat-takhta-s-matrasom-ontario-90x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/",
+        "/catalog/krovati/odnospalnye-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/paryashchaya-krovat-imperia-gold-1800/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/krovati/dvuspalnye-krovati/",
+        "/catalog/krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/anatomicheskiy-matras-s-naturalnym-lateksom-160x200-sm/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/ortopedicheskie/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnye-matrasy/bespruzhinnyy-matras-iz-lateksa-l1/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/bespruzhinnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnye-matrasy/matras-dvuspalnyy-bespruzhinnyy-carbon-140x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/bespruzhinnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnyy-matras-90x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/detskie-matrasy/detskiy-matras-iz-kokosa/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/detskie-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/detskie-matrasy/matras-dlya-mladentsa-60x120/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/detskie-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/detskie-matrasy/matras-dlya-novorozhdennogo-kokos-latex-60x120/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/detskie-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dlya-gostinits-i-oteley/dvuspalnyy-matras-dlya-otelya-160x200x30/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dlya-gostinits-i-oteley/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dlya-gostinits-i-oteley/matras-dlya-otelya-grandis-160x200x33/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dlya-gostinits-i-oteley/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dlya-gostinits-i-oteley/matras-imperial-1800/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dlya-gostinits-i-oteley/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvukhspalnyy-matras-hard-180x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/dvuspalnyy-matras-draco-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/dvuspalnyy-zhestkiy-dvustoronniy-matras-valor-160/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/dvuspalnyy-zhestkiy-matras-valor-180/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnyy-matras-dlya-idealnogo-sna-alusand-180x200-sm/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnyy-matras-lirasu-140x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnyy-matras-lirasu-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnyy-matras-lirasu-180x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/komfortnyy-matras-varberg-140x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/komfortnyy-matras-varberg-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-200x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-aktiv-1400/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-aktiv-1600/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-aktiv-900/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-bon-pruzhinnyy-900x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-extra-hard-1600/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-extra-hard-1800/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-extra-hard-900/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-imperial-900/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-kak-v-doroom-otele-extra-spring-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-kak-v-doroom-otele-extra-spring-180x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/matras-komfort-900x1900/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/namatrasnik-elit%20180x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/namatrasniki-i-toppery/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/ortopedicheskiy-matras-hard-1400/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/ortopedicheskiy-matras-vegas-bergamo-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/ortopedicheskiy-matras-vegas-bergamo-90x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/odnospalnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/premialnyy-matras-serenity-mocco-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/dvuspalnye-matrasy/",
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/pruzhinnye-matrasy/pruzhinnyy-matras-boss-160x200/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/pruzhinnye-matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/topper-lux-90x200x9-sm/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/matrasy/",
+        "/catalog/matrasy/namatrasniki-i-toppery/"
+      ]
+    },
+    {
+      "path": "/catalog/myagkaya-mebel/uglovye-divany/divan-krovat-uglovoy-san-remo/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/myagkaya-mebel/",
+        "/catalog/myagkaya-mebel/uglovye-divany/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/polka-75kh36-belaya-/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/catalog/shkafy/",
+        "/catalog/shkafy/shkaf-max-2-dub-venge-100-sm/"
+      ]
+    },
+    {
+      "path": "/en/catalog/armchairs-and-armchair-beds/Armchair-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/armchairs-and-armchair-beds/armchairbed-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/armchairs-and-armchair-beds/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/bathroom-furniture/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/stand/",
+        "/en/catalog/tv-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-imperia-1800/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/beds/bed-prima-900541929894209/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-90054192989/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/beds/bed-prima-9005419/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/benches-poufs/large-upholstered-bench/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/benches-poufs/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/benches-poufs/ottoman-on-legs-batumi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/benches-poufs/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/benches-poufs/ottoman-on-legs/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/benches-poufs/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/benches-poufs/ottoman-with-a-cushion/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/benches-poufs/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/cushioned-furniture/modular-sofas/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/stand/",
+        "/en/catalog/tv-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/castor-2-cabinet/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/castor-4-cabinet/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/castor-6-cabinet/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/castor-chest-of-drawers-wenge-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/chest-of-drawers-castor-3/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/chest-of-drawers-castor-5/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/chest-of-drawers-castor-6/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/dresser-castor-6-sonoma/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/sirius-3-chest-of-drawers-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/sirius-4-chest-of-drawers-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/varma-4d-chest-of-drawers.1/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/varma-4d-chest-of-drawers/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/dressers/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/kitchens/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/stand/",
+        "/en/catalog/tv-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-9006769/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-90067696046/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-900952711698816/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-9009527116988167059/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-90095271169881670598798/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-900952711698816705987989999/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-cover-memory-form-1400/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-cover-memory-form-1600/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-extra-hard-90020227559/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/elite-160-200-topper/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/elite-180-200-topper-/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/elite-90-200-cm-topper-/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/lux-90-200-elastic-topper/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-toppers-/memory%203%20160%20200%20cm%20elastic%20memory%20foam%20topper/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/mattresses/mattress-toppers-/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/namatrasnik-memory-form-1800/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/mattresses/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-castor-2-grey/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-castor-2-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-castor-2-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-mini-grey-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-mini-grey/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-mini-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-mini-white-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/nightstand-mini-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/sirius-bedside-table-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/nightstands/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/paintings/abstract-painting-for-interior-fairy-tale/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/paintings/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/paintings/interior-painting-phoenix/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/paintings/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/coat-rack-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/door-fora-4-3-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/door-fora-4-3-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-12-shelving-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-12-shelving-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-16-shelving-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-16-shelving-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-3-shelving-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-3-shelving-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-4-2-drawer-set-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-4-2-drawer-set-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-8-shelving-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/fora-8-shelving-white5481/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/nord-shelving-/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelf-fora-4-1-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelf-fora-4-1-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelf-fora-e100-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelf-fora-e100-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelving-fora-4-l/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/shelving-ovo/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/sirius-hanger-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/sirius-shelving-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/transformer-rack/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/wall-mounted-coat-rack-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shelving/wall-shelf-fora-1-4-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shelving/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/cabinet-sirius-2-hinged-doors/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/shoe-cabinet-sirius-1-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/shoe-cabinet-sirius-2-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/shoe-cabinet-sirius-3-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/sirius-cabinet-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/storage-cabinets-tbilisi/cabinet-batumi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/storage-cabinets-tbilisi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/storage-cabinets-tbilisi/cabinet-doors-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/storage-cabinets-tbilisi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/storage-cabinets-tbilisi/cabinet-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/storage-cabinets-tbilisi/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/computer-desk-castor-800-500-grey/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/computer-desk-castor-800-500-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/computer-desk-castor-800-500-wenge/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/desk-ingar-120-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/desk-ingar-120-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/desk-ingar-140-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/desk-ingar-140-white7969/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/enkel-50-table-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/enkel-50-table-bleached-oak313/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/enkel-50-table-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/enkel-90-table-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/md-2-enamel-table/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/md-4-enamel-table/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tables/table-md-3/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tables/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/memory-anatomic-pillow/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/memory-anatomic-pillow5652/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/memory-anatomic-pillow56523425/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/pillow-royal-lux/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/quilted-bedspread-imperia-140x230/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/quilted-bedspread-imperia-140x2308531/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/royal-bedding-set/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/royal-bedding-set8494/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/textile/royal-bedding-set84949305/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/textile/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tv-cabinets/tv-stand-enkel-12-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tv-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tv-cabinets/tv-stand-enkel-12-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tv-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tv-cabinets/tv-stand-enkel-12-white7313/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tv-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/tv-cabinets/tv-stand-enkel-16-bleached-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/tv-cabinets/",
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/zerkala/mirror-tbilisi/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/",
+        "/en/catalog/zerkala/"
+      ]
+    },
+    {
+      "path": "/en/catalog/zerkala/sirius-mirror-sonoma-oak/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/",
+        "/en/catalog/zerkala/"
+      ]
+    },
+    {
+      "path": "/en/catalog/zerkala/sirius-mirror-white/",
+      "occurrences": 2,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/",
+        "/en/catalog/zerkala/"
+      ]
+    },
+    {
+      "path": "/catalog/banketki-i-pufy/banketka-v-prikhozhuyu/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/"
+      ]
+    },
+    {
+      "path": "/catalog/komody/castor-2-cabinet/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/komody/"
+      ]
+    },
+    {
+      "path": "/catalog/komody/malta-komod-4-yashchika-80kh99-sonoma-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/komody/"
+      ]
+    },
+    {
+      "path": "/catalog/komody/tumba-mini-49-63/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/komody/"
+      ]
+    },
+    {
+      "path": "/catalog/komody/tumba-mio-tesoro/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/komody/"
+      ]
+    },
+    {
+      "path": "/catalog/kresla-i-kresla-krovati/kreslo-krovat-yunior/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/kresla-i-kresla-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/kresla-i-kresla-krovati/kreslo-luna-lounge/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/kresla-i-kresla-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/dvukhyarusnye-krovati/dvukhyarusnaya-krovat-rio-belaya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/krovati/dvukhyarusnye-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/krovati/dvukhyarusnye-krovati/krovat-dvukhetazhnaya-rio-sonoma-belyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/krovati/dvukhyarusnye-krovati/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/bespruzhinnyy-superzhestkiy-matras-160x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/dvuspalnyy-matras-boss-160x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/dvuspalnye-matrasy/zhestkiy-matras-valor-140x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/matras-odnospalnyy-liracu-80x190/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/matras-odnospalnyy-lirasu-80x190/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/odnospalnyy-matras-imperial-90x190/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/odnospalnyy-matras-lirasu-90x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/odnospalnyy-ortopedicheskiy-matras-draco-90x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/matrasy/odnospalnye-matrasy/odnospalnyy-zhestkiy-matras-valor-90x200/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/matrasy/"
+      ]
+    },
+    {
+      "path": "/catalog/prikrovatnye-tumby/tumba-s-yashchikami-mini-49kh63/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/prikrovatnye-tumby/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/navi-shkaf-s-vitrinoy-80kh190-belyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/shkafy/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/navi-shkaf-s-vitrinoy-80kh35kh190-kashemir/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/shkafy/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/saga-shkaf-3-dveri-s-zerkalom-belyy-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/shkafy/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/saga-shkaf-3-dveri-s-zerkalom-temno-biryuzovyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/shkafy/"
+      ]
+    },
+    {
+      "path": "/catalog/shkafy/shkaf-s-vitrinoy-80kh35kh190-seryy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/shkafy/"
+      ]
+    },
+    {
+      "path": "/catalog/stelazhi/sirius-stellazh-2-yashchika-78kh190-belyy-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stelazhi/"
+      ]
+    },
+    {
+      "path": "/catalog/stelazhi/sirius-stellazh-2-yashchika-78kh190-sonoma-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stelazhi/"
+      ]
+    },
+    {
+      "path": "/catalog/stelazhi/stellazh-fora-8-belenyy-dub/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stelazhi/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/castor-stol-pismennyy-116kh65-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/castor-stol-pismennyy-151x65-belyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/castor-stol-pismennyy-3-yashchika-116kh65/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/kastor-stol-pismennyy-120kh65-belyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/saga-stol-belyy-yasen-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/saga-stol-tualetnyy-92kh45-belyy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/saga-stol-tualetnyy-92x45-kashemir-yasen-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/stoly/stol-luna-table/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/stoly/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby-dlya-obuvi/saga-tumba-dlya-obuvi-92kh122-belaya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby-dlya-obuvi/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby-dlya-obuvi/saga-tumba-dlya-obuvi-92kh122-seraya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby-dlya-obuvi/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby-dlya-obuvi/saga-tumba-dlya-obuvi-92kh122-temno-biryuzovaya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby-dlya-obuvi/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby-dlya-obuvi/saga-tumba-dlya-obuvi-92x122-seraya-yasen-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby-dlya-obuvi/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby-dlya-obuvi/saga-tumba-dlya-obuvi-92x122-temno-biryuzovaya-yasen/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby-dlya-obuvi/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby/mini-tumba-2-yashchika-49kh343-chernaya-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby/mini-tumba-3-yashchika-49kh39kh63-belaya-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby/mini-tumba-3-yashchika-49kh39kh63-belaya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby/mini-tumba-3-yashchika-49kh39kh63-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby/"
+      ]
+    },
+    {
+      "path": "/catalog/tumby/tumba-s-dveryami-i-3-yashchikami-venge/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/catalog/tumby/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-eliza-gold/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-garmonia-1400-with-lifting-mechanism/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-garmonia-1600/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-garmonia-1800/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-loft-1600/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-loft-900/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-nikolletti-1400/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-nikolletti-16004733/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-nikolletti-1800/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-900/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-9002156/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-90021568447/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-9005419298942097239/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-900541929894209723966954721066/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-9005419298942097239669547210661312/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-900541929894209723966954726135/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-9005419298942097239669547261353174/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-90054192989420972397383/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/bed-prima-90054194570/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/floating-bed-imperia-gold-1400/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/floating-bed-imperia-gold-1800/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/floating-bed-tiffani-gold-1600/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/monaco-1600-bed-with-lifting-mechanism/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/beds/wall-beds-fold-away-beds/transformable-wall-bed/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/beds/wall-beds-fold-away-beds/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/banquette-81-1/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/banquette-81/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-2230-1.1/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-2230-1/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-82-1.1/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-82-1/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-christopher-63-cinnamon/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-christopher-63-lodi/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-rolan-99/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-timothy-66/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/chairs/chair-venge-82/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/castor-5-chest-of-drawers-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/malta-4-drawer-chest-80-99-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/dressers/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/mini-49-63-cabinet/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/dressers/"
+      ]
+    },
+    {
+      "path": "/en/catalog/dressers/mio-tesoro-bedside-cabinet/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/dressers/"
+      ]
+    },
+    {
+      "path": "/en/catalog/mattresses/mattress-aktiv-9009527/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/mini-cabinet-3-drawers-49-39-63-cm-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/nightstands/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/mini-cabinet-3-drawers-49-39-63-cm-white-sonoma/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/nightstands/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/mini-cabinet-3-drawers-49-63-cm-white/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/nightstands/"
+      ]
+    },
+    {
+      "path": "/en/catalog/nightstands/mio-tesoro-mini-2-drawer-nightstand-49-43-black/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/nightstands/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/saga-shoe-cabinet-92-122-dark-turquoise/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/saga-shoe-cabinet-92-122-gray/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/saga-shoe-cabinet-92-122-white/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/shoe-cabinets/shoe-cabinet-sirius-2-sonoma-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/shoe-cabinets/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/pull-out-drawer-max/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/wardrobe-max-grey/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/wardrobe-max-sonoma-oak/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/wardrobe-max-white/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/wardrobe-sirius-2-white7380/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/catalog/wardrobes/wardrobe-sirius-2-white73808882/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/catalog/wardrobes/wardrobe-sirius-2-white/"
+      ]
+    },
+    {
+      "path": "/en/news/discover-our-new-wall-beds-collection/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/how-to-choose-the-perfect-mattress-for-comfortable-and-healthy-sleep/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/in-2026-the-main-interior-trend-is-functionality-and-a-sense-of-space-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/mdf-or-chipboard-which-kitchen-should-you-choose-a-simple-guide-for-buyers/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/the-most-popular-models-of-the-swedish-brand-at-a-bargain-price-in-georgia/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/trend-2026-furniture-that-makes-your-home-look-more-expensive/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/why-are-more-and-more-people-replacing-their-mattress-before-their-furniture/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/en/news/why-have-people-stopped-buying-heavy-furniture/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/en/news/"
+      ]
+    },
+    {
+      "path": "/ge/aktsii/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/-fwve/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/-gr3efwq/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/-rfe3w/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/-tr3fewd/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%91%E1%83%90%E1%83%9C%E1%83%99%E1%83%94%E1%83%A2%E1%83%94%E1%83%91%E1%83%98%20%E1%83%93%E1%83%90%20%E1%83%9E%E1%83%A3%E1%83%A4%E1%83%94%E1%83%91%E1%83%98%20tbilisi/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98/%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C-%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%94%E1%83%91%E1%83%98%20%28%E1%83%92%E1%83%90%E1%83%A8%E1%83%9A%E1%83%90%E1%83%93%E1%83%98%20%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%29/%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C-%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%98%20%22TOKIO%22/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%99%E1%83%9D%E1%83%9B%E1%83%9D%E1%83%93%E1%83%94%E1%83%91%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%9C%E1%83%90%E1%83%AE%E1%83%90%E1%83%A2%E1%83%94%E1%83%91%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%A1%E1%83%90%E1%83%95%E1%83%90%E1%83%A0%E1%83%AB%E1%83%9A%E1%83%94%E1%83%91%E1%83%98%20%E1%83%93%E1%83%90%20%E1%83%A1%E1%83%90%E1%83%95%E1%83%90%E1%83%A0%E1%83%AB%E1%83%94%E1%83%9A%E1%83%98-%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%94%E1%83%91%E1%83%98-tbilisi/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%98%E1%83%A1%20%E1%83%92%E1%83%95%E1%83%94%E1%83%A0%E1%83%93%E1%83%98%E1%83%97%20%E1%83%A2%E1%83%A3%E1%83%9B%E1%83%91%E1%83%9D%E1%83%94%E1%83%91%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/karadebi/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/krovati/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/krovati/-1400%E1%83%9D%E1%83%93%E1%83%A0%E1%83%98%E1%83%A1%20%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/matrasy/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/stelazhi/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/stelazhi/-%E1%83%9D%E1%83%91%E1%83%98%20%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9A%E1%83%90%E1%83%9F%E1%83%98/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/stoly/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/stoly/-%E1%83%AA%E1%83%AE%E1%83%A0%E1%83%98%E1%83%9A%E1%83%98%20%E1%83%A1%E1%83%A2%E1%83%90%E1%83%9C/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/tekstil/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/catalog/toppery-i-namatrasniki/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/kompaniya/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/ge/kontakty/politika-konfidentsialnosti/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/ge/"
+      ]
+    },
+    {
+      "path": "/news/kak-vybrat-kachestvennyy-matras-iz-chego-sostoit-matras/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/malenkaya-kvartira-ne-znachit-malo-uyuta/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/mdf-ili-dsp-kakuyu-kukhnyu-vybrat-prostoe-obyasnenie-dlya-pokupateley/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/novinki-krovati-nransformery/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/osnovnye-pravila-vybora-matrasa-komfort-vo-sne/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/pochemu-vse-perestali-pokupat-tyazheluyu-mebel/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/prosypaetes-ustavshimi-chuvstvuete-napryazhenie-v-spine-i-spisyvaete-vsye-na-stress-i-nekhvatku-vrem/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    },
+    {
+      "path": "/news/trend-2026-mebel-kotoraya-delaet-dom-dorozhe-/",
+      "occurrences": 1,
+      "sourceExamples": [
+        "/news/"
+      ]
+    }
+  ],
+  "garbageLinks": [
+    {
+      "path": "/aktsii/abonement-fitnes-za-4900-rub-god/",
+      "occurrences": 40,
+      "sourceExamples": [
+        "/catalog/banketki-i-pufy/banketka-815524/",
+        "/catalog/dekorativnye-paneli-mdf/dekorativnye-paneli-2760x300-mm/",
+        "/catalog/kartiny/kartina-dlya-dekora-pomeshcheniya-devushka/"
+      ]
+    }
+  ],
+  "canonicalIssues": [
+    {
+      "path": "/en/favorites/",
+      "canonical": null
+    },
+    {
+      "path": "/en/request/",
+      "canonical": null
+    },
+    {
+      "path": "/ge/favorites/",
+      "canonical": null
+    },
+    {
+      "path": "/ge/request/",
+      "canonical": null
+    },
+    {
+      "path": "/izbrannoe/",
+      "canonical": null
+    },
+    {
+      "path": "/zayavka/",
+      "canonical": null
+    }
+  ],
+  "hreflangIssues": [],
+  "policy": {
+    "preserveExistingRoutes": true,
+    "redirectOnlyExactMatches": true,
+    "unpublishedTranslationsExcludedFromHreflang": true,
+    "archivedPromotionsNoindex": true,
+    "missingPages": "404 until recovered or matched; do not redirect every missing product to homepage"
+  }
+}

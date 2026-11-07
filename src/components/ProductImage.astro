@@ -1,0 +1,30 @@
+---
+import Icon from './Icon.astro';
+import type { Product, Language } from '../lib/types';
+import { messages } from '../lib/i18n';
+import { textFor } from '../lib/catalog';
+interface Props {
+  product: Product;
+  lang: Language;
+  eager?: boolean;
+}
+const { product, lang, eager = false } = Astro.props;
+const image = product.images[0];
+---
+
+{image ? (
+  <img
+    src={image.src}
+    alt={image.alt || textFor(product, lang).title}
+    width="640"
+    height="480"
+    loading={eager ? 'eager' : 'lazy'}
+    decoding="async"
+  />
+) : (
+  <span class="image-placeholder">
+    <Icon name="image" size={38} />
+    <span>{messages(lang).photoMissing}</span>
+    <small>SIMAL</small>
+  </span>
+)}

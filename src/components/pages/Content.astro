@@ -1,0 +1,136 @@
+---
+import Icon from '../Icon.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import { getRoutes, contentPages } from '../../lib/catalog';
+import { messages, infoPath, localePath } from '../../lib/i18n';
+import type { Route } from '../../lib/types';
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props,
+  { lang, content } = route,
+  t = messages(lang);
+const known = new Set(getRoutes().map((r) => r.path));
+function safeLinks(html: string) {
+  return html.replace(
+    /<a\b([^>]*?)href="([^"#]*)([^"]*)"([^>]*)>([\s\S]*?)<\/a>/gi,
+    (whole, _before, href, _suffix, _after, text) => {
+      if (href.startsWith('/') && !href.startsWith('//')) {
+        const path = href.split('?')[0].replace(/\/?$/, '/');
+        if (!known.has(path)) return text;
+      }
+      return whole;
+    },
+  );
+}
+const isContact = route.path === infoPath(lang, 'contact');
+const collection = route.kind === 'promotions' || route.kind === 'news';
+const entries = collection
+  ? contentPages.filter(
+      (p) =>
+        p.lang === lang &&
+        p.kind === (route.kind === 'promotions' ? 'promotion' : 'news') &&
+        p.path !== route.path,
+    )
+  : [];
+const reviewMessage =
+  lang === 'ru'
+    ? 'Страница восстановлена из архива. Актуальные условия и сведения уточняйте у менеджера.'
+    : lang === 'ka'
+      ? 'გვერდი აღდგენილია არქივიდან. მიმდინარე ინფორმაცია დააზუსტეთ მენეჯერთან.'
+      : 'This page was recovered from an archive. Please confirm current information with our team.';
+---
+
+<div class="container">
+  <Breadcrumbs
+    lang={lang}
+    items={[{ title: content?.heading || route.title.replace(/ \| SIMAL$/, '') }]}
+  />
+  <div class="page-heading">
+    <h1>{content?.heading || route.title.replace(/ \| SIMAL$/, '')}</h1>
+  </div>
+  {collection ? (
+    <>
+      <p class="notice">{t.archiveNotice}</p>
+      <div class="content-list">
+        {entries.map((p) => (
+          <article>
+            <p class="eyebrow muted">SIMAL · {t.promotions}</p>
+            <h2>
+              <a href={p.path}>{p.heading}</a>
+            </h2>
+            <p>{p.description}</p>
+            <a class="text-link" href={p.path}>
+              {t.details}
+              <Icon name="arrow" size={16} />
+            </a>
+          </article>
+        ))}
+      </div>
+      {!entries.length && (
+        <div class="empty-state content-empty">
+          <h2>{t.contactUs}</h2>
+          <p>{t.deliveryText}</p>
+          <a class="button" href={localePath(lang, 'catalog')}>
+            {t.allCatalog}
+          </a>
+        </div>
+      )}
+    </>
+  ) : (
+    <>
+      {content?.needsReview && (
+        <p class="notice">{content.kind === 'promotion' ? t.archiveNotice : reviewMessage}</p>
+      )}
+      {isContact && (
+        <div class="contact-cards">
+          <section class="contact-card">
+            <h2>{t.batumi}</h2>
+            <a href="tel:+995571100515">
+              <Icon name="phone" size={20} />
+              +995 571 10 05 15
+            </a>
+            <p>{t.visitText}</p>
+          </section>
+          <section class="contact-card">
+            <h2>{t.tbilisi}</h2>
+            <a href="tel:+995579404041">
+              <Icon name="phone" size={20} />
+              +995 579 40 40 41
+            </a>
+            <p>{t.deliveryText}</p>
+          </section>
+          <section class="contact-card">
+            <h2>Email</h2>
+            <a href="mailto:info@simal.ge">
+              <Icon name="mail" size={20} />
+              info@simal.ge
+            </a>
+          </section>
+          <section class="contact-card">
+            <h2>WhatsApp</h2>
+            <a href="https://wa.me/995571100515" target="_blank" rel="noopener noreferrer">
+              {t.contactUs}
+              <Icon name="arrow" size={20} />
+            </a>
+          </section>
+        </div>
+      )}
+      {!isContact && content?.html ? (
+        <div class="prose" set:html={safeLinks(content.html)} />
+      ) : (
+        !isContact && (
+          <div class="prose">
+            <p>{t.deliveryText}</p>
+            <p>
+              <a href="tel:+995571100515">+995 571 10 05 15</a>
+            </p>
+            <p>
+              <a href="mailto:info@simal.ge">info@simal.ge</a>
+            </p>
+          </div>
+        )
+      )}
+    </>
+  )}
+</div>

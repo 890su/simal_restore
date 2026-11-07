@@ -1,0 +1,146 @@
+---
+import Icon from '../Icon.astro';
+import ProductCard from '../ProductCard.astro';
+import {
+  categories,
+  productsForLanguage,
+  categoryUrl,
+  categoryTitle,
+  categoryProducts,
+} from '../../lib/catalog';
+import { messages, localePath, infoPath, formatProductCount } from '../../lib/i18n';
+import type { Language } from '../../lib/types';
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props,
+  t = messages(lang);
+const featuredCategories = categories.filter((c) => !c.parentId && categoryProducts(c, lang).length > 0).slice(0, 8);
+const picked = [...productsForLanguage(lang)]
+  .sort(
+    (a, b) =>
+      Number(b.images.length > 0) - Number(a.images.length > 0) ||
+      Number(a.availability !== 'in_stock') - Number(b.availability !== 'in_stock'),
+  )
+  .slice(0, 4);
+const categoryIcon = (slug: string) =>
+  /krovat|beds|mattress|matras/.test(slug)
+    ? 'bed'
+    : /divan|myag|sofa|cushion|kresl|armchair/.test(slug)
+      ? 'sofa'
+      : /stol|table|stul/.test(slug)
+        ? 'table'
+        : 'cabinet';
+---
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">{t.heroEyebrow}</p>
+      <h1>{t.heroTitle}</h1>
+      <p>{t.heroText}</p>
+      <a class="button" href={localePath(lang, 'catalog')}>
+        {t.allCatalog}
+        <Icon name="arrow" size={18} />
+      </a>
+    </div>
+    <div class="hero-art">
+      <img
+        src="/images/hero/hero-1280.webp"
+        srcset="/images/hero/hero-768.webp 768w, /images/hero/hero-1280.webp 1280w, /images/hero/hero-1920.webp 1920w"
+        sizes="(max-width: 767px) 810px, 1150px"
+        alt={
+          lang === 'ru'
+            ? 'Диван и кровать SIMAL'
+            : lang === 'ka'
+              ? 'SIMAL დივანი და საწოლი'
+              : 'SIMAL sofa and bed'
+        }
+        width="1280"
+        height="533"
+        fetchpriority="high"
+      />
+      <span class="hero-caption">SIMPLE THINGS. EVERYDAY COMFORT.</span>
+      <span class="hero-index">
+        01<span>/ SIMAL</span>
+      </span>
+    </div>
+  </div>
+</section>
+<section class="section container">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow muted">{t.categorySubtitle}</p>
+      <h2>{t.chooseCategory}</h2>
+    </div>
+    <a class="text-link" href={localePath(lang, 'catalog')}>
+      {t.allCatalog}
+      <Icon name="arrow" size={20} />
+    </a>
+  </div>
+  <div class="category-grid">
+    {featuredCategories.map((c) => (
+      <a class="category-tile" href={categoryUrl(c, lang)}>
+        <Icon name={categoryIcon(c.slug)} size={60} />
+        <div class="category-tile__bottom">
+          <div>
+            <h3>{categoryTitle(c, lang)}</h3>
+            <small>
+              {formatProductCount(categoryProducts(c, lang).length, lang)}
+            </small>
+          </div>
+          <Icon name="arrow" size={20} />
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+<div class="how-it-works">
+  <div class="container steps">
+    {[1, 2, 3].map((n) => (
+      <div class="step">
+        <span>0{n}</span>
+        <div>
+          <h3>{t[('step' + n) as 'step1']}</h3>
+          <p>{t[('step' + n + 'Text') as 'step1Text']}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+<section class="section container">
+  <div class="section-heading">
+    <div>
+      <h2>{t.curated}</h2>
+      <p>{t.curatedText}</p>
+    </div>
+    <a class="text-link" href={localePath(lang, 'catalog')}>
+      {t.allCatalog}
+      <Icon name="arrow" size={20} />
+    </a>
+  </div>
+  <div class="product-grid">
+    {picked.map((p) => (
+      <ProductCard product={p} lang={lang} />
+    ))}
+  </div>
+</section>
+<section class="container visit-section">
+  <div class="visit">
+    <div class="visit-copy">
+      <p class="eyebrow">{t.heroEyebrow}</p>
+      <h2 class="editorial-title">
+        {t.visitTitle}
+      </h2>
+      <p>{t.visitText}</p>
+      <a class="button button--dark" href={infoPath(lang, 'contact')}>
+        {t.contactUs}
+        <Icon name="arrow" size={18} />
+      </a>
+    </div>
+    <div class="visit-visual">
+      <Icon name="sofa" size={170} />
+      <span>BATUMI / TBILISI</span>
+    </div>
+  </div>
+</section>

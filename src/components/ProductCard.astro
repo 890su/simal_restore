@@ -1,0 +1,48 @@
+---
+import Icon from './Icon.astro';
+import ProductImage from './ProductImage.astro';
+import FavoriteButton from './FavoriteButton.astro';
+import { textFor, productUrl } from '../lib/catalog';
+import { messages, formatPrice } from '../lib/i18n';
+import type { Product, Language } from '../lib/types';
+interface Props {
+  product: Product;
+  lang: Language;
+  eager?: boolean;
+}
+const { product, lang, eager = false } = Astro.props;
+const t = messages(lang),
+  title = textFor(product, lang).title,
+  url = productUrl(product, lang);
+---
+
+<article class="product-card" data-product-id={product.id}>
+  <div class="product-card__media">
+    <a href={url} aria-label={title} tabindex="-1">
+      <ProductImage product={product} lang={lang} eager={eager} />
+    </a>
+    <FavoriteButton productId={product.id} title={title} lang={lang} />
+  </div>
+  <div class="product-card__body">
+    <p
+      class:list={['availability', { 'availability--stock': product.availability === 'in_stock' }]}
+    >
+      <span></span>
+      {t[product.availability]}
+    </p>
+    <h3>
+      <a href={url}>{title}</a>
+    </h3>
+    <div class="product-card__bottom">
+      <p class="price">{formatPrice(product.price, lang)}</p>
+      <button
+        class="icon-button add-button"
+        data-add={product.id}
+        disabled={product.availability === 'out_of_stock'}
+        aria-label={`${t.add}: ${title}`}
+      >
+        <Icon name="plus" size={22} />
+      </button>
+    </div>
+  </div>
+</article>

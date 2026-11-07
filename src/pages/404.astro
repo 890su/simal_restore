@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+const route = {
+  path: '/404/',
+  lang: 'ru' as const,
+  kind: 'content' as const,
+  title: 'Страница не найдена | SIMAL',
+  description: 'Вернитесь в каталог мебели SIMAL.',
+  noindex: true,
+};
+---
+
+<Base route={route}>
+  <div class="container not-found">
+    <h1>404</h1>
+    <p>Эта страница не найдена. Возможно, товар сменил адрес.</p>
+    <a class="button" href="/catalog/">
+      Перейти в каталог
+    </a>
+  </div>
+</Base>

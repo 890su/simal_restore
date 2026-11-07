@@ -1,0 +1,173 @@
+---
+import Breadcrumbs from '../Breadcrumbs.astro';
+import Icon from '../Icon.astro';
+import { messages, localePath, infoPath } from '../../lib/i18n';
+import type { Route } from '../../lib/types';
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props,
+  { lang, kind } = route,
+  t = messages(lang),
+  favorites = kind === 'favorites';
+---
+
+<div class="container" data-selection-page={favorites ? 'favorites' : 'cart'}>
+  <Breadcrumbs lang={lang} items={[{ title: favorites ? t.favorites : t.cart }]} />
+  <div class="page-heading">
+    <h1>{favorites ? t.favorites : t.cart}</h1>
+    {!favorites && <p>{t.requestHelp}</p>}
+  </div>
+  <div class="notice" data-storage-warning hidden>
+    {t.storageWarning}
+  </div>
+  <section class="success-card" data-quote-success hidden role="status" aria-live="polite">
+    <Icon name="check" size={30} />
+    <h2>{t.received}</h2>
+    <strong data-quote-number></strong>
+    <p>{t.receivedHelp}</p>
+    <p data-notification-pending hidden>
+      {t.pendingNotification}
+    </p>
+  </section>
+  <div class="empty-state" data-selection-empty hidden>
+    <Icon name={favorites ? 'heart' : 'bag'} size={40} />
+    <h2>{favorites ? t.emptyFavorites : t.emptyCart}</h2>
+    <p>{favorites ? t.emptyFavoritesHelp : t.emptyCartHelp}</p>
+    <a class="button" href={localePath(lang, 'catalog')}>
+      {t.allCatalog}
+      <Icon name="arrow" size={18} />
+    </a>
+  </div>
+  <noscript>
+    <p class="notice">
+      {lang === 'ru'
+        ? 'Для корзины и избранного включите JavaScript. Вы также можете позвонить менеджеру.'
+        : 'Please enable JavaScript or call our team.'}
+    </p>
+  </noscript>
+  <div
+    class:list={['selection-layout', { 'selection-layout--favorites': favorites }]}
+    data-selection-content
+  >
+    <section aria-label={favorites ? t.favorites : t.cart}>
+      <div data-selection-rows aria-live="polite"></div>
+      <div class="selection-list-tools">
+        <button data-clear-selection>{t.clear}</button>
+      </div>
+    </section>
+    {!favorites && (
+      <aside class="selection-summary">
+        <h2>{t.request}</h2>
+        <div class="selection-total">
+          <span>{t.subtotal}</span>
+          <strong data-subtotal>—</strong>
+        </div>
+        <p class="summary-help" data-unknown-prices hidden>
+          {t.itemsUnknownPrice}
+        </p>
+        <p class="summary-help">{t.subtotalHelp}</p>
+        <form class="quote-form" data-quote-form novalidate>
+          <fieldset class="quote-fields" data-quote-fields>
+            <label class="field">
+              <span>{t.name}</span>
+              <input
+                name="customerName"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="100"
+              />
+            </label>
+            <label class="field">
+              <span>{t.contactLabel}</span>
+              <input name="contact" autocomplete="tel" required maxlength="120" />
+            </label>
+            <label class="field">
+              <span>
+                {t.city} <small>({t.optional})</small>
+              </span>
+              <input name="city" autocomplete="address-level2" maxlength="100" />
+            </label>
+            <label class="field">
+              <span>
+                {t.comment} <small>({t.optional})</small>
+              </span>
+              <textarea name="comment" maxlength="1400" rows="3"></textarea>
+            </label>
+            <div class="sr-only" aria-hidden="true">
+              <label>
+                Website
+                <input name="website" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <button type="submit" class="button" data-quote-submit>
+              {t.submit}
+              <Icon name="arrow" size={17} />
+            </button>
+          </fieldset>
+          <p class="form-policy">
+            {t.consent} <a href={infoPath(lang, 'privacy')}>{t.consentLink}</a>.
+          </p>
+          <p class="form-message" data-quote-status role="status" aria-live="polite"></p>
+        </form>
+        <a
+          class="whatsapp-link"
+          data-whatsapp
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/995571100515"
+        >
+          {t.whatsapp}
+          <Icon name="arrow" size={15} />
+        </a>
+        <p class="whatsapp-help">{t.whatsappHelp}</p>
+      </aside>
+    )}
+  </div>
+  <template id="selection-row-template">
+    <article class="selection-row">
+      <a class="selection-row__image" data-row-link>
+        <img data-row-image width="100" height="100" alt="" loading="lazy" />
+        <span class="image-placeholder" data-row-placeholder>
+          <Icon name="image" size={25} />
+          <span>{t.photoMissing}</span>
+          <small>SIMAL</small>
+        </span>
+      </a>
+      <div>
+        <h3>
+          <a data-row-title></a>
+        </h3>
+        <p class="selection-row__price" data-row-price></p>
+        <p class="summary-help" data-row-unavailable hidden>
+          {t.productUnavailable}
+        </p>
+        <div class="selection-row__controls">
+          <div class="quantity-control" data-row-quantity>
+            <button data-row-minus aria-label={t.minus}>
+              <Icon name="minus" size={14} />
+            </button>
+            <input
+              type="number"
+              min="1"
+              max="9999"
+              value="1"
+              inputmode="numeric"
+              aria-label={t.quantity}
+            />
+            <button data-row-plus aria-label={t.plus}>
+              <Icon name="plus" size={14} />
+            </button>
+          </div>
+          <button class="button button--outline" data-row-add>
+            {t.add}
+          </button>
+        </div>
+      </div>
+      <button class="icon-button remove-button" data-row-remove aria-label={t.remove}>
+        <Icon name="close" size={19} />
+      </button>
+    </article>
+  </template>
+</div>

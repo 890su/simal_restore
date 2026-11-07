@@ -1,0 +1,71 @@
+{
+  "status": "google_sheets_build_source_verified",
+  "spreadsheetId": "1vLx2KoR4AR3YvzcjLLvd_Q3-5Q8RyMpqnyDAQwV4hVg",
+  "url": "https://docs.google.com/spreadsheets/d/1vLx2KoR4AR3YvzcjLLvd_Q3-5Q8RyMpqnyDAQwV4hVg/edit",
+  "productsSheetId": 391044452,
+  "productsSheetTitle": "Products",
+  "rowCount": 519,
+  "columnCount": 26,
+  "source": "data/normalized-catalog.json",
+  "localWorkbook": "deliverables/simal-catalog.xlsx",
+  "sharingChanged": true,
+  "publiclyPublished": false,
+  "liveSyncConfigured": true,
+  "syncMode": "import_during_build",
+  "verifiedCsvSha256": "6b0f1fd349c3c0377d994c6b588e73adfe98f73df850adc5b5cc3cdf2d68ec49",
+  "blocker": null,
+  "verification": {
+    "localFormulaErrors": 0,
+    "firstProductId": "9753",
+    "lastProductId": "13929",
+    "missingPrice": 34,
+    "missingImage": 512,
+    "unknownAvailability": 45,
+    "nativeReadbackComplete": true,
+    "activeProductCount": 518,
+    "translationReviews": {
+      "en": 424,
+      "ka": 255
+    },
+    "nativeFormulaCounts": {
+      "total": 519,
+      "missingPrice": 34,
+      "missingImage": 512,
+      "unknownAvailability": 45,
+      "active": 518
+    },
+    "nativeHeaderFont": "Arial 10 bold",
+    "nativeFreezeRows": 1,
+    "nativeFreezeColumns": 1,
+    "ownerOnlyPermissionVerified": false,
+    "anonymousCsvReadback": {
+      "productCount": 519,
+      "activeProductCount": 518,
+      "categoryCount": 37,
+      "productsWithImages": 7,
+      "enProductUrls": 424,
+      "kaProductUrls": 255,
+      "missingPriceCount": 34
+    },
+    "nativeVisualVerification": "Browser policy stopped UI interaction; values, formulas, table structure and cell formatting were verified through the connector."
+  },
+  "localCSV": "deliverables/simal-catalog.csv",
+  "activeProductCount": 518,
+  "productsWithImages": 7,
+  "sourceGeneratedAt": "2026-11-07T01:13:55.272Z",
+  "readmeSheetId": 1573207553,
+  "readerLinkEnabled": true,
+  "readerLinkPermissionPending": false,
+  "csvExportUrl": "https://docs.google.com/spreadsheets/d/1vLx2KoR4AR3YvzcjLLvd_Q3-5Q8RyMpqnyDAQwV4hVg/export?format=csv&gid=391044452",
+  "csvExportVerified": true,
+  "nativeTable": {
+    "tableId": "245613847",
+    "name": "SimalProducts",
+    "range": "Products!A1:Z520",
+    "dropdownColumns": [
+      "active",
+      "currency",
+      "availability"
+    ]
+  }
+}

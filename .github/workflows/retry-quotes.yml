@@ -1,0 +1,63 @@
+name: Retry saved quote notifications
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: quote-notification-retry
+  cancel-in-progress: false
+
+jobs:
+  retry:
+    # Opt in explicitly after D1, migration and the intended recipient are ready.
+    if: ${{ vars.QUOTE_RETRY_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      QUOTE_RETRY_URL: ${{ secrets.QUOTE_RETRY_URL }}
+      QUOTE_RETRY_TOKEN: ${{ secrets.QUOTE_RETRY_TOKEN }}
+    steps:
+      - name: Retry up to five due outbox entries
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          url = os.environ.get('QUOTE_RETRY_URL', '')
+          token = os.environ.get('QUOTE_RETRY_TOKEN', '')
+          parsed = urllib.parse.urlsplit(url)
+          allowed_hosts = {'simal.ge', 'www.simal.ge', 'simal.pages.dev'}
+          if (parsed.scheme != 'https' or parsed.hostname not in allowed_hosts
+              or parsed.path != '/api/admin/retry' or parsed.query or parsed.fragment
+              or parsed.username or parsed.password or parsed.port not in (None, 443)
+              or len(token) < 32):
+              print('Configure valid production QUOTE_RETRY_URL and QUOTE_RETRY_TOKEN secrets.')
+              sys.exit(1)
+          request = urllib.request.Request(url, method='POST', data=b'', headers={
+              'Authorization': 'Bearer ' + token,
+              'Accept': 'application/json',
+          })
+          # Do not follow redirects with an Authorization header to another host.
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          try:
+              with urllib.request.build_opener(NoRedirect).open(request, timeout=120) as response:
+                  result = json.loads(response.read(32768))
+              print('Outbox entries processed:', result.get('processed', 0))
+          except urllib.error.HTTPError as error:
+              print('Retry endpoint returned HTTP', error.code)
+              sys.exit(1)
+          except Exception:
+              print('Retry endpoint did not confirm completion; saved outbox will be retried.')
+              sys.exit(1)
+          PY
