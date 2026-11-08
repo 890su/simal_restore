@@ -1,0 +1,34 @@
+---
+import Icon from './Icon.astro';
+import { localePath, messages } from '../lib/i18n';
+import type { Language } from '../lib/types';
+
+interface Props {
+  lang: Language;
+  compact?: boolean;
+}
+
+const { lang, compact = false } = Astro.props;
+const t = messages(lang);
+const actions = [
+  { route: 'favorites', icon: 'heart', label: t.favorites },
+  { route: 'cart', icon: 'bag', label: t.cart },
+] as const;
+---
+
+<div class:list={['header-actions', { 'header-actions--compact': compact }]}>
+  {actions.map(({ route, icon, label }) => (
+    <a class="header-action" href={localePath(lang, route)} aria-label={label}>
+      <span>
+        <Icon name={icon} />
+        <small data-count={route} hidden>0</small>
+      </span>
+      <span class="header-action__label">{label}</span>
+    </a>
+  ))}
+  <button class="button button--outline header-call" type="button"
+    aria-label={t.callUs} popovertarget="header-call-options">
+    <Icon name="phone" size={18} />
+    <span>{t.callUs}</span>
+  </button>
+</div>

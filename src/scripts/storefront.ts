@@ -591,6 +591,24 @@ function initListing() {
   });
   apply();
 }
+const headerMain = $('[data-header-main]');
+if (headerMain) {
+  const callOptions = $<HTMLElement>('#header-call-options');
+  const observer = new IntersectionObserver(([entry]) => {
+    const compact = entry.intersectionRatio < 0.01 && entry.boundingClientRect.top < 0;
+    document.body.toggleAttribute('data-compact-header', compact);
+    callOptions?.hidePopover?.();
+  }, { threshold: 0.01 });
+  observer.observe(headerMain);
+  $$<HTMLButtonElement>('[popovertarget="header-call-options"]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const { bottom, right } = button.getBoundingClientRect();
+      callOptions?.style.setProperty('--call-options-top', `${bottom + 6}px`);
+      callOptions?.style.setProperty('--call-options-right', `${Math.max(18, document.documentElement.clientWidth - right)}px`);
+    });
+  });
+}
+
 $('[data-menu-toggle]')?.addEventListener('click', (event) => {
   const button = event.currentTarget as HTMLButtonElement;
   const open = button.getAttribute('aria-expanded') !== 'true';
@@ -599,7 +617,7 @@ $('[data-menu-toggle]')?.addEventListener('click', (event) => {
 });
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && !$('dialog[open]')) {
-    if (CSS.supports('selector(:popover-open)') && $('.mobile-call-options:popover-open')) return;
+    if (CSS.supports('selector(:popover-open)') && $('.call-options:popover-open')) return;
     const menu = $<HTMLElement>('#mobile-navigation');
     if (menu && !menu.hidden) {
       menu.hidden = true;

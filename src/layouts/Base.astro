@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
+import HeaderActions from '../components/HeaderActions.astro';
 import { messages, basePath, localePath, infoPath } from '../lib/i18n';
 import { categories, categoryTitle, categoryUrl, categoryProducts } from '../lib/catalog';
 import type { Route } from '../lib/types';
@@ -22,12 +23,22 @@ const languageLinks = (['ru', 'en', 'ka'] as const).map((language) => ({
   lang: language,
   label: language === 'ka' ? 'ქარ' : language.toUpperCase(),
 }));
+const phones = [
+  { city: t.batumi, number: '+995571100515', display: '+995 571 10 05 15' },
+  { city: t.tbilisi, number: '+995579404041', display: '+995 579 40 40 41' },
+];
+const menuPages = [
+  { href: infoPath(lang, 'about'), label: t.about },
+  { href: localePath(lang, 'catalog'), label: t.catalog, catalog: true },
+  { href: infoPath(lang, 'delivery'), label: t.delivery },
+  { href: infoPath(lang, 'contact'), label: t.contact },
+];
 const organization = {
   '@context': 'https://schema.org',
   '@type': 'FurnitureStore',
   name: 'SIMAL',
   url: 'https://simal.ge/',
-  telephone: ['+995571100515', '+995579404041'],
+  telephone: phones.map(({ number }) => number),
   email: 'info@simal.ge',
   logo: 'https://simal.ge/images/brand-logo.png',
 };
@@ -85,14 +96,16 @@ const organization = {
     <div class="topbar">
       <div class="container topbar__inner">
         <span>SIMAL · {t.headerTagline}</span>
-        <a href="tel:+995571100515">+995 571 10 05 15</a>
-        <div class="language-switch" aria-label="Language">
+        <div class="topbar__phones">
+          {phones.map(({ city, number, display }) => <a href={`tel:${number}`}>{display} ({city})</a>)}
+        </div>
+        <nav class="language-switch" aria-label="Language">
           {languageLinks.map((link) => (
             <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
               {link.label}
             </a>
           ))}
-        </div>
+        </nav>
       </div>
     </div>
     <div class="mobile-header">
@@ -108,19 +121,38 @@ const organization = {
             </a>
           ))}
         </nav>
+        <HeaderActions lang={lang} compact />
         <button type="button" class="icon-button mobile-menu-button" aria-label={t.menu}
           aria-controls="mobile-navigation" aria-expanded="false" data-menu-toggle>
           <Icon name="menu" />
         </button>
       </div>
       <nav id="mobile-navigation" class="mobile-navigation" hidden aria-label={t.menu}>
-        <div class="container">
-          <a href={localePath(lang, 'catalog')}>{t.allCatalog}</a>
-          {topCategories.map((c) => (
-            <a href={categoryUrl(c, lang)}>{categoryTitle(c, lang)}</a>
-          ))}
-          <a href={infoPath(lang, 'delivery')}>{t.delivery}</a>
-          <a href={infoPath(lang, 'contact')}>{t.contact}</a>
+        <div class="container mobile-navigation__inner">
+          <div class="language-switch mobile-navigation__languages" aria-label="Language">
+            {languageLinks.map((link) => (
+              <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <div class="mobile-navigation__links">
+            {menuPages.map(({ href, label, catalog }) => catalog ? (
+              <details class="mobile-navigation__catalog">
+                <summary>{label}</summary>
+                <div>
+                  <a href={href} aria-current={route.path === href ? 'page' : undefined}>{t.allCatalog}</a>
+                  {topCategories.map((c) => (
+                    <a href={categoryUrl(c, lang)} aria-current={route.category?.id === c.id ? 'page' : undefined}>
+                      {categoryTitle(c, lang)}
+                    </a>
+                  ))}
+                </div>
+              </details>
+            ) : (
+              <a href={href} aria-current={route.path === href ? 'page' : undefined}>{label}</a>
+            ))}
+          </div>
           <div class="mobile-navigation__actions">
             <div class="mobile-contact-links">
               <a class="icon-button" href="tel:+995571100515" aria-label={t.callUs}><Icon name="phone" /></a>
@@ -134,12 +166,8 @@ const organization = {
       </nav>
     </div>
     <header class="site-header">
-      <div class="container header-main">
+      <div class="container header-main" data-header-main>
         <a class="brand" href={basePath(lang)} aria-label="SIMAL"><img class="brand-logo" src="/images/brand-logo.png" alt="SIMAL" width="922" height="503" fetchpriority="high" /></a>
-        <a class="button button--dark header-catalog" href={localePath(lang, 'catalog')}>
-          <Icon name="menu" size={18} />
-          {t.catalog}
-        </a>
         <form class="header-search" action={localePath(lang, 'search')} role="search">
           <label class="sr-only" for="header-query">
             {t.search}
@@ -155,44 +183,34 @@ const organization = {
             <Icon name="search" size={21} />
           </button>
         </form>
-        <div class="header-actions">
-          <a class="header-action" href={localePath(lang, 'favorites')} aria-label={t.favorites}>
-            <span>
-              <Icon name="heart" />
-              <small data-count="favorites" hidden>
-                0
-              </small>
-            </span>
-            <span>{t.favorites}</span>
-          </a>
-          <a class="header-action" href={localePath(lang, 'cart')} aria-label={t.cart}>
-            <span>
-              <Icon name="bag" />
-              <small data-count="cart" hidden>
-                0
-              </small>
-            </span>
-            <span>{t.cart}</span>
-          </a>
-        </div>
+        <HeaderActions lang={lang} />
       </div>
-      <nav class="category-nav" aria-label={t.catalog}>
+      <nav class="category-nav" aria-label={t.menu}>
         <div class="container">
-          {topCategories.map((c) => (
-            <a
-              href={categoryUrl(c, lang)}
-              aria-current={route.category?.id === c.id ? 'page' : undefined}
-            >
-              {categoryTitle(c, lang)}
-            </a>
-          ))}
-          <a class="category-nav__contact" href={infoPath(lang, 'contact')}>
-            {t.contact}
-            <Icon name="arrow" size={16} />
+          <a class="category-nav__brand" href={basePath(lang)} aria-label="SIMAL">
+            <img src="/images/brand-logo.png" alt="" width="922" height="503" />
           </a>
+          <div class="category-nav__links category-nav__pages">
+            {menuPages.map(({ href, label }) => (
+              <a href={href} aria-current={route.path === href ? 'page' : undefined}>{label}</a>
+            ))}
+          </div>
+          <HeaderActions lang={lang} compact />
         </div>
       </nav>
     </header>
+    <nav class="category-nav__sections" aria-label={t.catalog}>
+      <div class="container category-nav__links">
+        {topCategories.map((c) => (
+          <a href={categoryUrl(c, lang)} aria-current={route.category?.id === c.id ? 'page' : undefined}>
+            {categoryTitle(c, lang)}
+          </a>
+        ))}
+      </div>
+    </nav>
+    <div id="header-call-options" class="call-options call-options--header" popover>
+      {phones.map(({ city, number, display }) => <a href={`tel:${number}`}><strong>{city}</strong><span>{display}</span></a>)}
+    </div>
     <div class="mobile-actions">
       <div class="container mobile-actions__inner">
         <button type="button" class="button" aria-haspopup="dialog"
@@ -201,9 +219,8 @@ const organization = {
           <Icon name="phone" size={18} />
           {t.callUs}
         </button>
-        <div id="mobile-call-options" class="mobile-call-options" popover>
-          <a href="tel:+995571100515"><strong>{t.batumi}</strong><span>+995 571 10 05 15</span></a>
-          <a href="tel:+995579404041"><strong>{t.tbilisi}</strong><span>+995 579 40 40 41</span></a>
+        <div id="mobile-call-options" class="call-options call-options--bottom" popover>
+          {phones.map(({ city, number, display }) => <a href={`tel:${number}`}><strong>{city}</strong><span>{display}</span></a>)}
         </div>
       </div>
     </div>
