@@ -1,5 +1,4 @@
 /** Public UI/API payload. Keep restoration evidence and source reports server-side. */
-import { publishedPath } from '../src/lib/locale-routing.mjs';
 const LANGUAGES = ['ru', 'en', 'ka'];
 const image = ({ src, alt }) => ({ src, alt: alt ?? '' });
 const attributes = (values) => (values ?? []).map(({ name, value }) => ({ name, value }));
@@ -7,13 +6,12 @@ const attributes = (values) => (values ?? []).map(({ name, value }) => ({ name, 
 function translations(source, product = false) {
   return Object.fromEntries(LANGUAGES.filter((lang) => source?.[lang]).map((lang) => {
     const entry = source[lang];
-    const url = entry.url ? publishedPath(entry.url, lang) : '';
     return [lang, product ? {
       title: entry.title,
       summary: (entry.summary ?? '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 320),
-      url,
+      url: entry.url ?? '',
       attributes: attributes(entry.attributes),
-    } : { title: entry.title, url }];
+    } : { title: entry.title, url: entry.url ?? '' }];
   }));
 }
 

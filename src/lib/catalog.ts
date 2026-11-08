@@ -1,24 +1,14 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Catalog, Category, ContentPage, Language, Product, Route } from './types';
-import {
-  legacyBasePath as basePath,
-  legacyInfoPath as infoPath,
-  legacyLocalePath as localePath,
-  messages,
-} from './i18n.ts';
-import { publishedPath } from './locale-routing.mjs';
+import { basePath, infoPath, localePath, messages } from './i18n.ts';
 
 export const catalog: Catalog = JSON.parse(
   readFileSync(resolve(process.cwd(), 'data/normalized-catalog.json'), 'utf8'),
 );
-const archivedContentPages: ContentPage[] = JSON.parse(
+export const contentPages: ContentPage[] = JSON.parse(
   readFileSync(resolve(process.cwd(), 'data/pages.json'), 'utf8'),
 ).pages;
-export const contentPages = archivedContentPages.map((page) => ({
-  ...page,
-  path: publishedPath(page.path, page.lang),
-}));
 export const products = catalog.products.filter((p) => p.active);
 export function productsForLanguage(lang: Language) {
   return products.filter((product) => Boolean(product.translations[lang]?.title));
@@ -51,22 +41,17 @@ export function textFor(product: Product, lang: Language) {
 export function categoryTitle(category: Category, lang: Language) {
   return category.translations[lang]?.title || category.translations.ru?.title || category.slug;
 }
-function productSource(product: Product, lang: Language) {
-  for (const locale of [lang, 'ru', 'en', 'ka'] as const) {
-    const path = product.translations[locale]?.url;
-    if (path) return { path, lang: locale };
-  }
-  return { path: `/product/${encodeURIComponent(product.id)}/`, lang: 'ru' as const };
-}
 export function productUrl(product: Product, lang: Language) {
-  const source = productSource(product, lang);
-  return publishedPath(source.path, source.lang);
-}
-function legacyCategoryUrl(category: Category, lang: Language) {
-  return category.translations[lang]?.url || `${localePath(lang, 'catalog')}${category.slug}/`;
+  return (
+    textFor(product, lang).url ||
+    product.translations.ru?.url ||
+    product.translations.en?.url ||
+    product.translations.ka?.url ||
+    `/product/${encodeURIComponent(product.id)}/`
+  );
 }
 export function categoryUrl(category: Category, lang: Language) {
-  return publishedPath(legacyCategoryUrl(category, lang), lang);
+  return category.translations[lang]?.url || `${localePath(lang, 'catalog')}${category.slug}/`;
 }
 export function categoryProducts(category: Category, lang?: Language) {
   return (lang ? productsForLanguage(lang) : products).filter((p) => p.categoryIds.includes(category.id));
@@ -83,7 +68,7 @@ export function routeAlternates(product: Product) {
     product.translations[lang]?.url ? [{ lang, path: product.translations[lang]!.url! }] : [],
   );
 }
-export function getLegacyRoutes(): Route[] {
+export function getRoutes(): Route[] {
   const routes = new Map<string, Route>();
   const add = (route: Route) => {
     if (!routes.has(route.path)) routes.set(route.path, route);
@@ -129,7 +114,7 @@ export function getLegacyRoutes(): Route[] {
       const title = categoryTitle(category, lang);
       add({
         ...common,
-        path: legacyCategoryUrl(category, lang),
+        path: categoryUrl(category, lang),
         kind: 'category',
         category,
         title: `${title} — ${lang === 'ru' ? 'мебель в Тбилиси и Батуми' : 'SIMAL'}`,
@@ -139,7 +124,7 @@ export function getLegacyRoutes(): Route[] {
             : `${title}. ${t.catalogIntro}`,
         alternates: (['ru', 'en', 'ka'] as const).map((l) => ({
           lang: l,
-          path: legacyCategoryUrl(category, l),
+          path: categoryUrl(category, l),
         })),
         noindex: categoryProducts(category, lang).length === 0,
       });
@@ -170,7 +155,7 @@ export function getLegacyRoutes(): Route[] {
     }
     if (!product.translations.ru?.url)
       add({
-        path: productSource(product, 'ru').path,
+        path: productUrl(product, 'ru'),
         lang: 'ru',
         kind: 'product',
         product,
@@ -179,8 +164,13 @@ export function getLegacyRoutes(): Route[] {
         noindex: true,
       });
   }
-  for (const content of archivedContentPages) {
-    if ((['news', 'promotions'] as const).some((kind) => infoPath(content.lang, kind) === content.path)) continue;
+  for (const content of contentPages) {
+    if (
+      ['/news/', '/en/news/', '/ge/news/', '/aktsii/', '/en/aktsii/', '/ge/aktsii/'].includes(
+        content.path,
+      )
+    )
+      continue;
     add({
       path: content.path,
       lang: content.lang,
@@ -235,25 +225,6 @@ export function getLegacyRoutes(): Route[] {
     return {
       ...route,
       alternates: alternates?.filter((alternate) => indexed.get(alternate.path) === alternate.lang),
-    };
-  });
-}
-
-export function getRoutes(legacyRoutes = getLegacyRoutes()): Route[] {
-  const published = new Set<string>();
-  return legacyRoutes.map((route) => {
-    const path = publishedPath(route.path, route.lang);
-    if (published.has(path)) throw new Error(`Duplicate published route: ${path}`);
-    published.add(path);
-    return {
-      ...route,
-      path,
-      content: route.content && { ...route.content, path },
-      canonicalPath: route.canonicalPath && publishedPath(route.canonicalPath, route.lang),
-      alternates: route.alternates?.map((alternate) => ({
-        lang: alternate.lang,
-        path: publishedPath(alternate.path, alternate.lang),
-      })),
     };
   });
 }

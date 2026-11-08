@@ -1,4 +1,4 @@
-// Source URLs keep their archived prefixes. Only the published site moves.
+// Translate restored paths to the URLs used during the short language migration.
 const georgianSections = {
   catalog: 'shop',
   product: 'item',
@@ -11,7 +11,7 @@ const georgianSections = {
 };
 
 /** @param {string} sourcePath @param {'ru' | 'en' | 'ka'} lang */
-export function publishedPath(sourcePath, lang) {
+export function migrationPath(sourcePath, lang) {
   if (lang === 'en') return sourcePath;
   if (lang === 'ru') return '/ru' + sourcePath;
   if (!sourcePath.startsWith('/ge/')) {

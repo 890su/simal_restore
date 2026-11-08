@@ -1,5 +1,4 @@
 import type { Language } from './types';
-import { publishedPath } from './locale-routing.mjs';
 
 const ru = {
   catalog: 'Каталог',
@@ -392,10 +391,10 @@ const ka: Messages = {
 export function messages(lang: Language): Messages {
   return { ru, en, ka }[lang];
 }
-export function legacyBasePath(lang: Language): string {
+export function basePath(lang: Language): string {
   return lang === 'ru' ? '/' : lang === 'en' ? '/en/' : '/ge/';
 }
-export function legacyLocalePath(
+export function localePath(
   lang: Language,
   kind: 'catalog' | 'favorites' | 'cart' | 'search',
 ): string {
@@ -403,9 +402,9 @@ export function legacyLocalePath(
     lang === 'ru'
       ? { catalog: 'catalog', favorites: 'izbrannoe', cart: 'zayavka', search: 'poisk' }
       : { catalog: 'catalog', favorites: 'favorites', cart: 'request', search: 'search' };
-  return `${legacyBasePath(lang)}${names[kind]}/`;
+  return `${basePath(lang)}${names[kind]}/`;
 }
-export function legacyInfoPath(
+export function infoPath(
   lang: Language,
   kind: 'about' | 'contact' | 'delivery' | 'privacy' | 'cooperation' | 'promotions' | 'news',
 ): string {
@@ -418,13 +417,8 @@ export function legacyInfoPath(
     promotions: 'aktsii',
     news: 'news',
   };
-  return `${legacyBasePath(lang)}${names[kind]}/`;
+  return `${basePath(lang)}${names[kind]}/`;
 }
-export const basePath = (lang: Language) => publishedPath(legacyBasePath(lang), lang);
-export const localePath = (lang: Language, kind: Parameters<typeof legacyLocalePath>[1]) =>
-  publishedPath(legacyLocalePath(lang, kind), lang);
-export const infoPath = (lang: Language, kind: Parameters<typeof legacyInfoPath>[1]) =>
-  publishedPath(legacyInfoPath(lang, kind), lang);
 export function formatPrice(value: number | null, lang: Language): string {
   return value === null
     ? messages(lang).priceRequest

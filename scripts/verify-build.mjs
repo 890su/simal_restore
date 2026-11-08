@@ -104,7 +104,7 @@ for (const file of htmlFiles) {
 for (const [route, page] of pages) {
   for (const [lang, target] of page.alternates) {
     const alternate = pages.get(target);
-    const expected = lang === 'x-default' ? 'ka' : lang;
+    const expected = lang === 'x-default' ? 'ru' : lang;
     if (!alternate || alternate.noindex || alternate.lang !== expected || redirects.has(target))
       issue('invalid-hreflang', page.file, `${lang}: ${target}`);
     else if (alternate.alternates.get(page.lang) !== route)

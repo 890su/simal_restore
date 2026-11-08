@@ -1,9 +1,8 @@
 ---
 import Icon from '../Icon.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
-import { getLegacyRoutes, contentPages } from '../../lib/catalog';
-import { basePath, messages, infoPath, localePath } from '../../lib/i18n';
-import { publishedPath } from '../../lib/locale-routing.mjs';
+import { getRoutes, contentPages } from '../../lib/catalog';
+import { messages, infoPath, localePath } from '../../lib/i18n';
 import type { Route } from '../../lib/types';
 interface Props {
   route: Route;
@@ -11,16 +10,14 @@ interface Props {
 const { route } = Astro.props,
   { lang, content } = route,
   t = messages(lang);
-const archivedLinks = new Map(getLegacyRoutes().map((r) => [r.path, publishedPath(r.path, r.lang)]));
+const known = new Set(getRoutes().map((r) => r.path));
 function safeLinks(html: string) {
   return html.replace(
-    /<a\b([^>]*?)href="([^"?#]*)([^"]*)"([^>]*)>([\s\S]*?)<\/a>/gi,
-    (whole, before, href, suffix, after, text) => {
+    /<a\b([^>]*?)href="([^"#]*)([^"]*)"([^>]*)>([\s\S]*?)<\/a>/gi,
+    (whole, _before, href, _suffix, _after, text) => {
       if (href.startsWith('/') && !href.startsWith('//')) {
-        const path = href.replace(/\/?$/, '/');
-        const target = path === '/' ? basePath(lang) : archivedLinks.get(path);
-        if (!target) return text;
-        return `<a${before}href="${target}${suffix}"${after}>${text}</a>`;
+        const path = href.split('?')[0].replace(/\/?$/, '/');
+        if (!known.has(path)) return text;
       }
       return whole;
     },

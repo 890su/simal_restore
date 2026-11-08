@@ -15,7 +15,6 @@ const preview = import.meta.env.SITE_NOINDEX === 'true';
 const noindex = preview || route.noindex;
 const topCategories = categories.filter((c) => !c.parentId && categoryProducts(c, lang).length > 0).slice(0, 8);
 const translations = route.alternates || [{ lang, path: route.path }];
-const defaultAlternate = translations.find((a) => a.lang === 'ka');
 const homeFallback = (l: 'ru' | 'en' | 'ka') =>
   translations.find((a) => a.lang === l)?.path || basePath(l);
 const languageLinks = (['ru', 'en', 'ka'] as const).map((language) => ({
@@ -53,11 +52,11 @@ const organization = {
         .map((a) => (
           <link rel="alternate" hreflang={a.lang} href={new URL(a.path, Astro.site).href} />
         ))}
-    {!noindex && defaultAlternate && (
+    {!noindex && translations.some((a) => a.lang === 'ru') && (
       <link
         rel="alternate"
         hreflang="x-default"
-        href={new URL(defaultAlternate.path, Astro.site).href}
+        href={new URL(translations.find((a) => a.lang === 'ru')!.path, Astro.site).href}
       />
     )}
     <meta property="og:type" content={route.kind === 'product' ? 'product' : 'website'} />
