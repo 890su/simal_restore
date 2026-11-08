@@ -19,6 +19,7 @@ export interface Product {
   images: { src: string; alt: string; sourceUrl?: string }[];
   variants: { id: string; title: string; price?: number | null }[];
   reviewFlags: string[];
+  provenance?: { source: string }[];
   active: boolean;
 }
 export interface Category {

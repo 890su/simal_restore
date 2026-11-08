@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from '../Breadcrumbs.astro';
+import CatalogCategoryList from '../CatalogCategoryList.astro';
 import Icon from '../Icon.astro';
 import ProductCard from '../ProductCard.astro';
 import {
@@ -10,20 +11,30 @@ import {
   categoryProducts,
 } from '../../lib/catalog';
 import { messages, localePath, formatProductCount } from '../../lib/i18n';
-import type { Route } from '../../lib/types';
+import type { Category, Route } from '../../lib/types';
 interface Props {
   route: Route;
 }
 const { route } = Astro.props,
   { lang, category, kind } = route,
   t = messages(lang);
-const list = category ? categoryProducts(category, lang) : productsForLanguage(lang);
-const top = categories.filter((c) => !c.parentId && categoryProducts(c, lang).length > 0);
-const children = category
-  ? categories.filter((c) => c.parentId === category.id && categoryProducts(c, lang).length > 0)
-  : [];
-const parent = categories.find((c) => c.id === category?.parentId);
-const subcategoryLabel = lang === 'ru' ? 'Разделы категории' : lang === 'ka' ? 'ქვეკატეგორიები' : 'Subcategories';
+const languageProducts = productsForLanguage(lang);
+const list = category ? categoryProducts(category, lang) : languageProducts;
+const categoryIds = new Set(languageProducts.flatMap((product) => product.categoryIds));
+const visibleCategories = new Map(categories.filter((item) => categoryIds.has(item.id)).map((item) => [item.id, item]));
+const childrenByParent = new Map<string | undefined, Category[]>();
+for (const item of visibleCategories.values()) {
+  const parentId = item.parentId && visibleCategories.has(item.parentId) ? item.parentId : undefined;
+  const children = childrenByParent.get(parentId) ?? [];
+  children.push(item);
+  childrenByParent.set(parentId, children);
+}
+const parent = category?.parentId ? visibleCategories.get(category.parentId) : undefined;
+const activeBranch = new Set<string>();
+for (let item = category; item && !activeBranch.has(item.id);) {
+  activeBranch.add(item.id);
+  item = item.parentId ? visibleCategories.get(item.parentId) : undefined;
+}
 const title = category
   ? categoryTitle(category, lang)
   : kind === 'search'
@@ -43,6 +54,7 @@ const title = category
   <div class="page-heading">
     <h1>{title}</h1>
     {!category && <p>{t.catalogIntro}</p>}
+    {category?.id === 'myagkaya-mebel-divan-krovati' && <p>{t.sofaBedsGuide}</p>}
     {kind === 'search' && (
       <form class="search-form" action={localePath(lang, 'search')} role="search">
         <label class="sr-only" for="page-search">
@@ -62,34 +74,18 @@ const title = category
       </form>
     )}
   </div>
-  <div class="category-pills">
-    <a
-      class="category-pill"
-      href={localePath(lang, 'catalog')}
-      aria-current={kind === 'catalog' ? 'page' : undefined}
-    >
-      {t.all}
-    </a>
-    {top.map((c) => (
-      <a
-        class="category-pill"
-        href={categoryUrl(c, lang)}
-        aria-current={category?.id === c.id ? 'page' : undefined}
-      >
-        {categoryTitle(c, lang)}
-      </a>
-    ))}
-  </div>
-  {children.length > 0 && (
-    <nav class="category-subnav" aria-label={subcategoryLabel}>
-      <span>{subcategoryLabel}</span>
-      {children.map((child) => (
-        <a class="category-pill" href={categoryUrl(child, lang)}>{categoryTitle(child, lang)}</a>
-      ))}
-    </nav>
-  )}
   <div class="catalog-layout">
+    <button type="button" class="filter-toggle" aria-expanded="false"
+      aria-controls="catalog-filters" data-filter-toggle hidden>
+      <Icon name="filter" size={16} />
+      {t.catalogFilters}
+    </button>
     <aside class="filter-panel" id="catalog-filters">
+      <nav class="catalog-category-nav" aria-label={t.catalogSections}>
+        <a href={localePath(lang, 'catalog')} aria-current={kind === 'catalog' ? 'page' : undefined}>{t.all}</a>
+        <CatalogCategoryList lang={lang} categories={childrenByParent.get(undefined) ?? []}
+          childrenByParent={childrenByParent} activeId={category?.id} activeBranch={activeBranch} />
+      </nav>
       <h2>{t.filter}</h2>
       <div class="filter-price">
         <label>
@@ -108,26 +104,10 @@ const title = category
       <button class="button button--outline" data-reset-filters>
         {t.reset}
       </button>
-      <div class="filter-category-list">
-        {top.map((c) => (
-          <a href={categoryUrl(c, lang)} aria-current={category?.id === c.id ? 'page' : undefined}>
-            {categoryTitle(c, lang)}
-          </a>
-        ))}
-      </div>
     </aside>
     <div>
       <div class="catalog-toolbar">
         <p aria-live="polite" data-result-summary>{formatProductCount(list.length, lang)}</p>
-        <button
-          class="filter-toggle"
-          aria-expanded="false"
-          aria-controls="catalog-filters"
-          data-filter-toggle
-        >
-          <Icon name="filter" size={16} />
-          {t.filter}
-        </button>
         <label>
           <span class="sr-only">{t.sort}</span>
           <select data-sort>

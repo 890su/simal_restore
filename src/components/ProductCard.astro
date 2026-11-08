@@ -17,7 +17,7 @@ const t = messages(lang),
 ---
 
 <article class="product-card" data-product-id={product.id}>
-  <div class="product-card__media">
+  <div class:list={['product-card__media', { 'product-card__media--without-photo': !product.images.length }]}>
     <a href={url} aria-label={title} tabindex="-1">
       <ProductImage product={product} lang={lang} eager={eager} />
     </a>

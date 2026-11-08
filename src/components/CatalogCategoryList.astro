@@ -1,0 +1,41 @@
+---
+import { categoryTitle, categoryUrl } from '../lib/catalog';
+import { messages } from '../lib/i18n';
+import type { Category, Language } from '../lib/types';
+
+interface Props {
+  lang: Language;
+  categories: Category[];
+  childrenByParent: Map<string | undefined, Category[]>;
+  activeId?: string;
+  activeBranch: Set<string>;
+}
+
+const { lang, categories, childrenByParent, activeId, activeBranch } = Astro.props;
+const t = messages(lang);
+---
+
+<ul class="catalog-category-list">
+  {categories.map((category) => {
+    const title = categoryTitle(category, lang);
+    const href = categoryUrl(category, lang);
+    const current = category.id === activeId ? 'page' : undefined;
+    const children = childrenByParent.get(category.id);
+    return (
+      <li>
+        {children ? (
+          <details open={activeBranch.has(category.id)}>
+            <summary class:list={{ 'catalog-category-active': current }}>{title}</summary>
+            <div class="catalog-category-children">
+              <a href={href} aria-current={current}>{t.all}</a>
+              <Astro.self lang={lang} categories={children} childrenByParent={childrenByParent}
+                activeId={activeId} activeBranch={activeBranch} />
+            </div>
+          </details>
+        ) : (
+          <a href={href} aria-current={current}>{title}</a>
+        )}
+      </li>
+    );
+  })}
+</ul>

@@ -3,6 +3,7 @@ import Icon from '../Icon.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
 import { getRoutes, contentPages } from '../../lib/catalog';
 import { messages, infoPath, localePath } from '../../lib/i18n';
+import { storeHours, storeLocations } from '../../lib/store-locations';
 import type { Route } from '../../lib/types';
 interface Props {
   route: Route;
@@ -24,6 +25,27 @@ function safeLinks(html: string) {
   );
 }
 const isContact = route.path === infoPath(lang, 'contact');
+const isDelivery = route.path === infoPath(lang, 'delivery');
+const storeSchema = storeLocations.map((store) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FurnitureStore',
+  '@id': new URL(`${infoPath('ru', 'contact')}#${store.id}`, Astro.site).href,
+  name: `SIMAL — ${t[store.id]}`,
+  url: new URL(`${route.path}#${store.id}`, Astro.site).href,
+  telephone: store.telephone,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: store.street[lang],
+    addressLocality: t[store.id],
+    addressCountry: 'GE',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    ...storeHours,
+  },
+  parentOrganization: { '@id': new URL('/#organization', Astro.site).href },
+}));
 const collection = route.kind === 'promotions' || route.kind === 'news';
 const entries = collection
   ? contentPages.filter(
@@ -41,6 +63,9 @@ const reviewMessage =
       : 'This page was recovered from an archive. Please confirm current information with our team.';
 ---
 
+{isContact && storeSchema.map((store) => (
+  <script type="application/ld+json" set:html={JSON.stringify(store).replace(/</g, '\\u003c')} />
+))}
 <div class="container">
   <Breadcrumbs
     lang={lang}
@@ -84,22 +109,17 @@ const reviewMessage =
       )}
       {isContact && (
         <div class="contact-cards">
-          <section class="contact-card">
-            <h2>{t.batumi}</h2>
-            <a href="tel:+995571100515">
-              <Icon name="phone" size={20} />
-              +995 571 10 05 15
-            </a>
-            <p>{t.visitText}</p>
-          </section>
-          <section class="contact-card">
-            <h2>{t.tbilisi}</h2>
-            <a href="tel:+995579404041">
-              <Icon name="phone" size={20} />
-              +995 579 40 40 41
-            </a>
-            <p>{t.deliveryText}</p>
-          </section>
+          {storeLocations.map((store) => (
+            <section class="contact-card" id={store.id}>
+              <h2>{t[store.id]}</h2>
+              <p>{store.street[lang]}</p>
+              <p>{t.dailyHours} {storeHours.opens}–{storeHours.closes}</p>
+              <a href={`tel:${store.telephone}`}>
+                <Icon name="phone" size={20} />
+                {store.displayPhone}
+              </a>
+            </section>
+          ))}
           <section class="contact-card">
             <h2>Email</h2>
             <a href="mailto:info@simal.ge">
@@ -116,7 +136,13 @@ const reviewMessage =
           </section>
         </div>
       )}
-      {!isContact && content?.html ? (
+      {isDelivery ? (
+        <div class="prose">
+          <p>{t.deliveryPaymentHelp}</p>
+          <p><a href={infoPath(lang, 'contact')}>{t.contactUs}</a></p>
+          <p><a href={localePath(lang, 'catalog')}>{t.allCatalog}</a></p>
+        </div>
+      ) : !isContact && content?.html ? (
         <div class="prose" set:html={safeLinks(content.html)} />
       ) : (
         !isContact && (

@@ -95,12 +95,45 @@ test('translation-only content review is indexable and has reciprocal language a
 test('cart, wishlist, search, archived promotions and actual content gaps keep noindex', () => {
   const pages = [
     { ...information('ka', '/ge/aktsii/old-promotion/', [translationReason]), kind: 'promotion' },
-    information('en', '/en/oplata-dostavka/', [translationReason, 'Recovered company details and terms; check current addresses, policy and delivery conditions.']),
+    information('en', '/en/kompaniya/', [translationReason, 'Recovered company details and terms; check current addresses, policy and delivery conditions.']),
   ];
   const routes = routesFor(fixture(), pages);
   for (const route of routes.filter(entry => ['cart', 'favorites', 'search'].includes(entry.kind) || entry.product?.id === 'bed-gap')) assert.equal(route.noindex, true);
   assert.equal(routes.find(route => route.path === pages[0].path).noindex, true);
   assert.equal(routes.find(route => route.path === pages[1].path).noindex, true);
+});
+
+test('reviewed contacts and delivery override archived terms and have reciprocal language alternatives', () => {
+  const archived = information('en', '/en/oplata-dostavka/', ['Unverified archived terms.']);
+  const routes = routesFor(fixture(), [archived]);
+  for (const path of ['kontakty', 'oplata-dostavka']) {
+    for (const prefix of ['', '/en', '/ge']) {
+      const route = routes.find(entry => entry.path === `${prefix}/${path}/`);
+      assert.equal(route.noindex, false);
+      assert.equal(route.content.needsReview, false);
+      assert.equal(route.content.html, '');
+      assert.deepEqual(route.alternates.map(alternate => alternate.lang), ['ru', 'en', 'ka']);
+    }
+  }
+});
+
+test('verified sleeping area differentiates duplicate product metadata without moving the URL', () => {
+  const data = fixture();
+  const original = data.products[0];
+  original.translations.ru.attributes = [{ name: 'Спальное место', value: '140×200 см' }];
+  const variant = structuredClone(original);
+  variant.id = 'bed-2';
+  variant.translations.ru.url = '/product/bed-2/';
+  variant.translations.ru.attributes[0].value = '160×200 см';
+  variant.translations.en = undefined;
+  variant.translations.ka = undefined;
+  data.products.push(variant);
+  const routes = routesFor(data);
+  for (const [path, size] of [['/product/bed-1/', '140×200 см'], ['/product/bed-2/', '160×200 см']]) {
+    const route = routes.find(entry => entry.path === path);
+    assert.ok(route.title.includes(size));
+    assert.ok(route.description.includes(size));
+  }
 });
 
 test('detail gap flag ceases to block indexing once real descriptive data is supplied', () => {

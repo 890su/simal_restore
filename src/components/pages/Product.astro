@@ -16,6 +16,16 @@ const { route } = Astro.props,
   t = messages(lang),
   text = textFor(product, lang);
 const category = categories.find((c) => product.categoryIds.includes(c.id));
+const hasPhotos = product.images.length > 0;
+const offerAvailability = {
+  in_stock: 'https://schema.org/InStock',
+  out_of_stock: 'https://schema.org/OutOfStock',
+  on_order: undefined,
+  unknown: undefined,
+}[product.availability];
+const hasOffer = !route.noindex && product.price !== null && product.price > 0 &&
+  product.provenance?.some(({ source }) => source === 'sheet') &&
+  !product.variants.some((variant) => variant.price != null && variant.price !== product.price);
 const related = productsForLanguage(lang)
   .filter(
     (p) => p.id !== product.id && p.categoryIds.some((id) => product.categoryIds.includes(id)),
@@ -30,6 +40,15 @@ const schema = {
   ...(product.images.length
     ? { image: product.images.map((i) => new URL(i.src, Astro.site).href) }
     : {}),
+  ...(hasOffer && {
+    offers: {
+      '@type': 'Offer',
+      url: new URL(route.canonicalPath || route.path, Astro.site).href,
+      price: product.price,
+      priceCurrency: product.currency,
+      availability: offerAvailability,
+    },
+  }),
 };
 const breadcrumbs = {
   '@context': 'https://schema.org',
@@ -63,8 +82,9 @@ const breadcrumbs = {
       { title: text.title },
     ]}
   />
-  <article class="product-detail" data-detail-product={product.id}>
-    <div class="product-gallery">
+  <article class:list={['product-detail', { 'product-detail--without-photo': !hasPhotos }]}
+    data-detail-product={product.id}>
+    {hasPhotos && <div class="product-gallery">
       <div class="product-gallery__main" data-main-image>
         <ProductImage product={product} lang={lang} eager />
       </div>
@@ -77,7 +97,7 @@ const breadcrumbs = {
           ))}
         </div>
       )}
-    </div>
+    </div>}
     <div class="product-info">
       <p
         class:list={[
@@ -93,6 +113,7 @@ const breadcrumbs = {
         {t.productCode}: {product.sku || product.id}
       </p>
       <p class="price">{formatPrice(product.price, lang)}</p>
+      {!hasPhotos && <p class="product-photo-note">{t.photoMissing}</p>}
       {text.summary && <p class="product-summary">{text.summary}</p>}
       <div class="purchase-actions">
         <div class="quantity-control">

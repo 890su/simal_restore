@@ -583,13 +583,17 @@ function initListing() {
     limit += 24;
     apply();
   });
-  $('[data-filter-toggle]', root)?.addEventListener('click', (event) => {
-    const button = event.currentTarget as HTMLButtonElement;
-    const open = button.getAttribute('aria-expanded') !== 'true';
-    button.setAttribute('aria-expanded', String(open));
-    $('[data-price-min]', root)?.closest('.filter-panel')?.classList.toggle('is-open', open);
-  });
   apply();
+}
+const filterToggle = $<HTMLButtonElement>('[data-filter-toggle]');
+const filterPanel = $('#catalog-filters');
+if (filterToggle && filterPanel) {
+  filterPanel.classList.add('is-collapsible');
+  filterToggle.hidden = false;
+  filterToggle.addEventListener('click', () => {
+    const open = filterPanel.classList.toggle('is-open');
+    filterToggle.setAttribute('aria-expanded', String(open));
+  });
 }
 const headerMain = $('[data-header-main]');
 if (headerMain) {

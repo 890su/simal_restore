@@ -4,6 +4,7 @@ import Icon from '../components/Icon.astro';
 import HeaderActions from '../components/HeaderActions.astro';
 import { messages, basePath, localePath, infoPath } from '../lib/i18n';
 import { categories, categoryTitle, categoryUrl, categoryProducts } from '../lib/catalog';
+import { storeLocations } from '../lib/store-locations';
 import type { Route } from '../lib/types';
 interface Props {
   route: Route;
@@ -23,10 +24,9 @@ const languageLinks = (['ru', 'en', 'ka'] as const).map((language) => ({
   lang: language,
   label: language === 'ka' ? 'ქარ' : language.toUpperCase(),
 }));
-const phones = [
-  { city: t.batumi, number: '+995571100515', display: '+995 571 10 05 15' },
-  { city: t.tbilisi, number: '+995579404041', display: '+995 579 40 40 41' },
-];
+const phones = storeLocations.map((store) => ({
+  city: t[store.id], number: store.telephone, display: store.displayPhone,
+}));
 const menuPages = [
   { href: infoPath(lang, 'about'), label: t.about },
   { href: localePath(lang, 'catalog'), label: t.catalog, catalog: true },
@@ -35,7 +35,8 @@ const menuPages = [
 ];
 const organization = {
   '@context': 'https://schema.org',
-  '@type': 'FurnitureStore',
+  '@type': 'Organization',
+  '@id': new URL('/#organization', Astro.site).href,
   name: 'SIMAL',
   url: 'https://simal.ge/',
   telephone: phones.map(({ number }) => number),
@@ -95,7 +96,7 @@ const organization = {
     </a>
     <div class="topbar">
       <div class="container topbar__inner">
-        <span>SIMAL · {t.headerTagline}</span>
+        <span>SIMAL · {t.topbarTagline}</span>
         <div class="topbar__phones">
           {phones.map(({ city, number, display }) => <a href={`tel:${number}`}>{display} ({city})</a>)}
         </div>
@@ -193,6 +194,13 @@ const organization = {
           <div class="category-nav__links category-nav__pages">
             {menuPages.map(({ href, label }) => (
               <a href={href} aria-current={route.path === href ? 'page' : undefined}>{label}</a>
+            ))}
+          </div>
+          <div class="language-switch category-nav__languages" role="group" aria-label="Language">
+            {languageLinks.map((link) => (
+              <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
+                {link.label}
+              </a>
             ))}
           </div>
           <HeaderActions lang={lang} compact />

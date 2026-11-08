@@ -68,6 +68,31 @@ export function routeAlternates(product: Product) {
     product.translations[lang]?.url ? [{ lang, path: product.translations[lang]!.url! }] : [],
   );
 }
+function duplicateMetadata(routes: Route[], field: 'title' | 'description') {
+  const seen = new Set<string>();
+  const duplicates = new Set<string>();
+  for (const route of routes) {
+    if (route.noindex) continue;
+    const value = route[field];
+    if (seen.has(value)) duplicates.add(value);
+    seen.add(value);
+  }
+  return duplicates;
+}
+
+function productSeoDetail(product: Product, lang: Language) {
+  const attributes = product.translations[lang]?.attributes ?? [];
+  for (const pattern of [
+    /^(спальное место|sleeping area|საძილე ადგილი)$/i,
+    /^(размеры?|dimensions|size|ზომები|ზომა)$/i,
+    /^(ширина|width|სიგანე)$/i,
+    /^(цвет|colou?r|ფერი)$/i,
+  ]) {
+    const value = attributes.find(({ name }) => pattern.test(name.trim()))?.value.trim();
+    if (value && value.length <= 28) return value;
+  }
+}
+
 export function getRoutes(): Route[] {
   const routes = new Map<string, Route>();
   const add = (route: Route) => {
@@ -112,14 +137,15 @@ export function getRoutes(): Route[] {
       });
     for (const category of categories) {
       const title = categoryTitle(category, lang);
+      const sofaBeds = category.id === 'myagkaya-mebel-divan-krovati';
       add({
         ...common,
         path: categoryUrl(category, lang),
         kind: 'category',
         category,
-        title: `${title} — ${lang === 'ru' ? 'мебель в Тбилиси и Батуми' : 'SIMAL'}`,
+        title: sofaBeds ? t.sofaBedsTitle : `${title} — ${lang === 'ru' ? 'мебель в Тбилиси и Батуми' : 'SIMAL'}`,
         description:
-          lang === 'ru'
+          sofaBeds ? t.sofaBedsGuide : lang === 'ru'
             ? `${title} в каталоге SIMAL. Размеры, характеристики и цены. Добавьте товары в корзину и уточните наличие и доставку у менеджера.`
             : `${title}. ${t.catalogIntro}`,
         alternates: (['ru', 'en', 'ka'] as const).map((l) => ({
@@ -165,6 +191,7 @@ export function getRoutes(): Route[] {
       });
   }
   for (const content of contentPages) {
+    if (content.path === infoPath(content.lang, 'contact') || content.path === infoPath(content.lang, 'delivery')) continue;
     if (
       ['/news/', '/en/news/', '/ge/news/', '/aktsii/', '/en/aktsii/', '/ge/aktsii/'].includes(
         content.path,
@@ -185,36 +212,50 @@ export function getRoutes(): Route[] {
         ),
     });
   }
-  // Locale information pages missing from the archive use the verified contact action,
-  // rather than publishing fabricated translations or dead navigation links.
+  // Contacts and delivery use reviewed storefront copy instead of conflicting archived terms.
   for (const lang of ['ru', 'en', 'ka'] as const)
     for (const kind of ['about', 'contact', 'delivery', 'privacy', 'cooperation'] as const) {
       const path = infoPath(lang, kind);
-      if (!routes.has(path))
+      if (!routes.has(path)) {
+        const t = messages(lang);
+        const reviewed = kind === 'contact' || kind === 'delivery';
         add({
           path,
           lang,
           kind: 'content',
-          title: `${messages(lang)[kind]} | SIMAL`,
-          description: messages(lang).deliveryText,
-          noindex: true,
+          title: `${t[kind]} | SIMAL`,
+          description: kind === 'contact' ? t.contactDescription : kind === 'delivery' ? t.deliveryPaymentHelp : t.deliveryText,
+          noindex: !reviewed,
           content: {
             path,
             lang,
-            title: messages(lang)[kind],
-            heading: messages(lang)[kind],
+            title: t[kind],
+            heading: t[kind],
             description: '',
             kind: 'information',
             html: '',
             images: [],
-            needsReview: true,
+            needsReview: !reviewed,
             sourcePath: '',
           },
         });
+      }
     }
   const values = [...routes.values()];
+  const duplicateTitles = duplicateMetadata(values, 'title');
+  const duplicateDescriptions = duplicateMetadata(values, 'description');
   const indexed = new Map(values.filter((r) => !r.noindex).map((r) => [r.path, r.lang]));
   return values.map((route) => {
+    let { title, description } = route;
+    if (route.product && !route.noindex && (duplicateTitles.has(title) || duplicateDescriptions.has(description))) {
+      const name = textFor(route.product, route.lang).title;
+      const detail = productSeoDetail(route.product, route.lang);
+      const label = detail && !name.includes(detail) ? `${name}, ${detail}` : name;
+      if (duplicateTitles.has(title)) title = `${label} | SIMAL`;
+      if (duplicateDescriptions.has(description) && !description.startsWith(label)) {
+        description = excerpt(`${label}. ${description}`);
+      }
+    }
     const informationKind = route.kind === 'content'
       ? (['about', 'contact', 'delivery', 'privacy', 'cooperation'] as const)
         .find((kind) => infoPath(route.lang, kind) === route.path)
@@ -224,6 +265,8 @@ export function getRoutes(): Route[] {
       : undefined);
     return {
       ...route,
+      title,
+      description,
       alternates: alternates?.filter((alternate) => indexed.get(alternate.path) === alternate.lang),
     };
   });
