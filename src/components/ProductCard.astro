@@ -17,32 +17,36 @@ const t = messages(lang),
 ---
 
 <article class="product-card" data-product-id={product.id}>
-  <div class:list={['product-card__media', { 'product-card__media--without-photo': !product.images.length }]}>
-    <a href={url} aria-label={title} tabindex="-1">
-      <ProductImage product={product} lang={lang} eager={eager} />
-    </a>
-    <FavoriteButton productId={product.id} title={title} lang={lang} />
-  </div>
+  {product.images.length > 0 && (
+    <div class="product-card__media">
+      <a href={url} aria-label={title} tabindex="-1">
+        <ProductImage product={product} lang={lang} eager={eager} />
+      </a>
+    </div>
+  )}
   <div class="product-card__body">
+    <h3>
+      <a href={url}>{title}</a>
+    </h3>
     <p
       class:list={['availability', { 'availability--stock': product.availability === 'in_stock' }]}
     >
       <span></span>
       {t[product.availability]}
     </p>
-    <h3>
-      <a href={url}>{title}</a>
-    </h3>
     <div class="product-card__bottom">
       <p class="price">{formatPrice(product.price, lang)}</p>
-      <button
-        class="icon-button add-button"
-        data-add={product.id}
-        disabled={product.availability === 'out_of_stock'}
-        aria-label={`${t.add}: ${title}`}
-      >
-        <Icon name="plus" size={22} />
-      </button>
+      <div class="product-card__actions">
+        <FavoriteButton productId={product.id} title={title} lang={lang} />
+        <button
+          class="icon-button add-button"
+          data-add={product.id}
+          disabled={product.availability === 'out_of_stock'}
+          aria-label={`${t.add}: ${title}`}
+        >
+          <Icon name="plus" size={22} />
+        </button>
+      </div>
     </div>
   </div>
 </article>

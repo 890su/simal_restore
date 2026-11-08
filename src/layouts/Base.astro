@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import HeaderActions from '../components/HeaderActions.astro';
+import HeaderNavigation from '../components/HeaderNavigation.astro';
 import { messages, basePath, localePath, infoPath } from '../lib/i18n';
 import { categories, categoryTitle, categoryUrl, categoryProducts } from '../lib/catalog';
 import { storeLocations } from '../lib/store-locations';
@@ -33,6 +34,13 @@ const menuPages = [
   { href: infoPath(lang, 'delivery'), label: t.delivery },
   { href: infoPath(lang, 'contact'), label: t.contact },
 ];
+const menuSections = topCategories.map((category) => ({
+  href: categoryUrl(category, lang),
+  label: categoryTitle(category, lang),
+}));
+const menuProps = {
+  pages: menuPages, sections: menuSections, currentPath: route.path, catalogLabel: t.allCatalog,
+};
 const organization = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -91,10 +99,10 @@ const organization = {
     <slot name="head" />
   </head>
   <body data-lang={lang}>
-    <a class="skip-link" href="#main">
+    <a class="skip-link" href="#main" data-menu-background>
       {lang === 'ru' ? 'К содержанию' : lang === 'ka' ? 'შინაარსზე გადასვლა' : 'Skip to content'}
     </a>
-    <div class="topbar">
+    <div class="topbar" data-menu-background>
       <div class="container topbar__inner">
         <span>SIMAL · {t.topbarTagline}</span>
         <div class="topbar__phones">
@@ -109,7 +117,7 @@ const organization = {
         </nav>
       </div>
     </div>
-    <div class="mobile-header">
+    <header class="mobile-header">
       <div class="container mobile-topbar">
         <a class="mobile-brand" href={basePath(lang)}>
           <img src="/images/brand-logo.png" alt="" width="922" height="503" />
@@ -122,37 +130,17 @@ const organization = {
             </a>
           ))}
         </nav>
-        <HeaderActions lang={lang} compact />
         <button type="button" class="icon-button mobile-menu-button" aria-label={t.menu}
           aria-controls="mobile-navigation" aria-expanded="false" data-menu-toggle>
           <Icon name="menu" />
+          <Icon name="close" />
         </button>
       </div>
       <nav id="mobile-navigation" class="mobile-navigation" hidden aria-label={t.menu}>
         <div class="container mobile-navigation__inner">
-          <div class="language-switch mobile-navigation__languages" aria-label="Language">
-            {languageLinks.map((link) => (
-              <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
-                {link.label}
-              </a>
-            ))}
-          </div>
           <div class="mobile-navigation__links">
-            {menuPages.map(({ href, label, catalog }) => catalog ? (
-              <details class="mobile-navigation__catalog">
-                <summary>{label}</summary>
-                <div>
-                  <a href={href} aria-current={route.path === href ? 'page' : undefined}>{t.allCatalog}</a>
-                  {topCategories.map((c) => (
-                    <a href={categoryUrl(c, lang)} aria-current={route.category?.id === c.id ? 'page' : undefined}>
-                      {categoryTitle(c, lang)}
-                    </a>
-                  ))}
-                </div>
-              </details>
-            ) : (
-              <a href={href} aria-current={route.path === href ? 'page' : undefined}>{label}</a>
-            ))}
+            <HeaderNavigation {...menuProps} />
+            <HeaderActions lang={lang} showCall={false} />
           </div>
           <div class="mobile-navigation__actions">
             <div class="mobile-contact-links">
@@ -165,8 +153,8 @@ const organization = {
           </div>
         </div>
       </nav>
-    </div>
-    <header class="site-header">
+    </header>
+    <header class="site-header" data-menu-background>
       <div class="container header-main" data-header-main>
         <a class="brand" href={basePath(lang)} aria-label="SIMAL"><img class="brand-logo" src="/images/brand-logo.png" alt="SIMAL" width="922" height="503" fetchpriority="high" /></a>
         <form class="header-search" action={localePath(lang, 'search')} role="search">
@@ -191,11 +179,7 @@ const organization = {
           <a class="category-nav__brand" href={basePath(lang)} aria-label="SIMAL">
             <img src="/images/brand-logo.png" alt="" width="922" height="503" />
           </a>
-          <div class="category-nav__links category-nav__pages">
-            {menuPages.map(({ href, label }) => (
-              <a href={href} aria-current={route.path === href ? 'page' : undefined}>{label}</a>
-            ))}
-          </div>
+          <HeaderNavigation {...menuProps} />
           <div class="language-switch category-nav__languages" role="group" aria-label="Language">
             {languageLinks.map((link) => (
               <a href={link.href} lang={link.lang} aria-current={link.lang === lang ? 'page' : undefined}>
@@ -207,19 +191,10 @@ const organization = {
         </div>
       </nav>
     </header>
-    <nav class="category-nav__sections" aria-label={t.catalog}>
-      <div class="container category-nav__links">
-        {topCategories.map((c) => (
-          <a href={categoryUrl(c, lang)} aria-current={route.category?.id === c.id ? 'page' : undefined}>
-            {categoryTitle(c, lang)}
-          </a>
-        ))}
-      </div>
-    </nav>
     <div id="header-call-options" class="call-options call-options--header" popover>
       {phones.map(({ city, number, display }) => <a href={`tel:${number}`}><strong>{city}</strong><span>{display}</span></a>)}
     </div>
-    <div class="mobile-actions">
+    <div class="mobile-actions" data-menu-background>
       <div class="container mobile-actions__inner">
         <button type="button" class="button" aria-haspopup="dialog"
           aria-controls="mobile-enquiry" data-enquiry-open>{t.leaveEnquiry}</button>
@@ -257,10 +232,10 @@ const organization = {
         <p class="form-message" role="status" data-enquiry-status></p>
       </form>
     </dialog>
-    <main id="main">
+    <main id="main" data-menu-background>
       <slot />
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer" data-menu-background>
       <div class="container footer-grid">
         <div>
           <a class="brand" href={basePath(lang)}>

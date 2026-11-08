@@ -613,22 +613,37 @@ if (headerMain) {
   });
 }
 
-$('[data-menu-toggle]')?.addEventListener('click', (event) => {
-  const button = event.currentTarget as HTMLButtonElement;
-  const open = button.getAttribute('aria-expanded') !== 'true';
-  button.setAttribute('aria-expanded', String(open));
-  $<HTMLElement>('#mobile-navigation')!.hidden = !open;
+const menuButton = $<HTMLButtonElement>('[data-menu-toggle]');
+const mobileMenu = $('#mobile-navigation');
+const menuBackground = $$<HTMLElement>('[data-menu-background]');
+const desktopCatalog = $<HTMLDetailsElement>('.category-nav [data-header-catalog]');
+
+function setMobileMenu(open: boolean) {
+  if (!menuButton || !mobileMenu) return;
+  menuButton.setAttribute('aria-expanded', String(open));
+  mobileMenu.hidden = !open;
+  menuBackground.forEach((element) => { element.inert = open; });
+}
+
+menuButton?.addEventListener('click', () => setMobileMenu(!!mobileMenu?.hidden));
+const mobileViewport = matchMedia('(max-width: 767px)');
+mobileViewport.addEventListener('change', () => {
+  if (!mobileViewport.matches) setMobileMenu(false);
+  else if (desktopCatalog) desktopCatalog.open = false;
+});
+document.addEventListener('click', (event) => {
+  if (desktopCatalog?.open && !desktopCatalog.contains(event.target as Node)) {
+    desktopCatalog.open = false;
+  }
 });
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && !$('dialog[open]')) {
-    if (CSS.supports('selector(:popover-open)') && $('.call-options:popover-open')) return;
-    const menu = $<HTMLElement>('#mobile-navigation');
-    if (menu && !menu.hidden) {
-      menu.hidden = true;
-      const button = $<HTMLButtonElement>('[data-menu-toggle]');
-      button?.setAttribute('aria-expanded', 'false');
-      button?.focus();
-    }
+  if (event.key !== 'Escape' || $('dialog[open]') || $('.call-options:popover-open')) return;
+  if (mobileMenu && !mobileMenu.hidden) {
+    setMobileMenu(false);
+    menuButton?.focus();
+  } else if (desktopCatalog?.open) {
+    desktopCatalog.open = false;
+    desktopCatalog.querySelector('summary')?.focus();
   }
 });
 document.addEventListener('click', (event) => {

@@ -21,10 +21,13 @@ const { route } = Astro.props,
 const languageProducts = productsForLanguage(lang);
 const list = category ? categoryProducts(category, lang) : languageProducts;
 const categoryIds = new Set(languageProducts.flatMap((product) => product.categoryIds));
-const visibleCategories = new Map(categories.filter((item) => categoryIds.has(item.id)).map((item) => [item.id, item]));
+const visibleCategories = new Map(
+  categories.filter((item) => categoryIds.has(item.id)).map((item) => [item.id, item]),
+);
 const childrenByParent = new Map<string | undefined, Category[]>();
 for (const item of visibleCategories.values()) {
-  const parentId = item.parentId && visibleCategories.has(item.parentId) ? item.parentId : undefined;
+  const parentId =
+    item.parentId && visibleCategories.has(item.parentId) ? item.parentId : undefined;
   const children = childrenByParent.get(parentId) ?? [];
   children.push(item);
   childrenByParent.set(parentId, children);
@@ -42,72 +45,107 @@ const title = category
     : t.catalog;
 ---
 
-<div class="container" data-catalog-list>
-  <Breadcrumbs
-    lang={lang}
-    items={[
-      { title: t.catalog, url: category ? localePath(lang, 'catalog') : undefined },
-      ...(parent ? [{ title: categoryTitle(parent, lang), url: categoryUrl(parent, lang) }] : []),
-      ...(category ? [{ title }] : []),
-    ]}
-  />
-  <div class="page-heading">
-    <h1>{title}</h1>
-    {!category && <p>{t.catalogIntro}</p>}
-    {category?.id === 'myagkaya-mebel-divan-krovati' && <p>{t.sofaBedsGuide}</p>}
-    {kind === 'search' && (
-      <form class="search-form" action={localePath(lang, 'search')} role="search">
-        <label class="sr-only" for="page-search">
-          {t.search}
-        </label>
-        <input
-          id="page-search"
-          name="q"
-          type="search"
-          placeholder={t.searchPlaceholder}
-          data-query
-        />
-        <button class="button" type="submit">
-          <Icon name="search" size={20} />
-          {t.search}
-        </button>
-      </form>
-    )}
+<div data-catalog-list>
+  <div class="catalog-intro">
+    <div class="container">
+      <Breadcrumbs
+        lang={lang}
+        items={[
+          {
+            title: t.catalog,
+            url: category || kind === 'search' ? localePath(lang, 'catalog') : undefined,
+          },
+          ...(parent
+            ? [{ title: categoryTitle(parent, lang), url: categoryUrl(parent, lang) }]
+            : []),
+          ...(category || kind === 'search' ? [{ title }] : []),
+        ]}
+      />
+      <div class="page-heading">
+        <h1>{title}</h1>
+        {kind === 'catalog' && <p>{t.catalogIntro}</p>}
+        {category?.id === 'myagkaya-mebel-divan-krovati' && <p>{t.sofaBedsGuide}</p>}
+        {kind === 'search' && (
+          <form class="search-form" action={localePath(lang, 'search')} role="search">
+            <label class="sr-only" for="page-search">
+              {t.search}
+            </label>
+            <input
+              id="page-search"
+              name="q"
+              type="search"
+              placeholder={t.searchPlaceholder}
+              data-query
+            />
+            <button class="button" type="submit">
+              <Icon name="search" size={20} />
+              {t.search}
+            </button>
+          </form>
+        )}
+      </div>
+    </div>
   </div>
-  <div class="catalog-layout">
-    <button type="button" class="filter-toggle" aria-expanded="false"
-      aria-controls="catalog-filters" data-filter-toggle hidden>
+  <div class="container catalog-layout">
+    <button
+      type="button"
+      class="filter-toggle"
+      aria-expanded="false"
+      aria-controls="catalog-filters"
+      data-filter-toggle
+      hidden
+    >
       <Icon name="filter" size={16} />
       {t.catalogFilters}
     </button>
     <aside class="filter-panel" id="catalog-filters">
+      <details class="catalog-price-filters">
+        <summary>
+          <Icon name="filter" size={17} />
+          {t.filter}
+          <Icon name="chevron-down" size={15} />
+        </summary>
+        <div class="catalog-price-filters__body">
+          <div class="filter-price">
+            <label>
+              {t.minPrice}
+              <input type="number" min="0" step="1" inputmode="numeric" data-price-min />
+            </label>
+            <label>
+              {t.maxPrice}
+              <input type="number" min="0" step="1" inputmode="numeric" data-price-max />
+            </label>
+          </div>
+          <label class="check-label">
+            <input type="checkbox" data-stock />
+            {t.onlyStock}
+          </label>
+          <button class="button button--outline" type="button" data-reset-filters>
+            {t.reset}
+          </button>
+        </div>
+      </details>
       <nav class="catalog-category-nav" aria-label={t.catalogSections}>
-        <a href={localePath(lang, 'catalog')} aria-current={kind === 'catalog' ? 'page' : undefined}>{t.all}</a>
-        <CatalogCategoryList lang={lang} categories={childrenByParent.get(undefined) ?? []}
-          childrenByParent={childrenByParent} activeId={category?.id} activeBranch={activeBranch} />
+        <a
+          href={localePath(lang, 'catalog')}
+          aria-current={kind === 'catalog' ? 'page' : undefined}
+        >
+          {t.all}
+        </a>
+        <CatalogCategoryList
+          lang={lang}
+          categories={childrenByParent.get(undefined) ?? []}
+          childrenByParent={childrenByParent}
+          activeId={category?.id}
+          activeBranch={activeBranch}
+        />
       </nav>
-      <h2>{t.filter}</h2>
-      <div class="filter-price">
-        <label>
-          {t.minPrice}
-          <input type="number" min="0" step="1" inputmode="numeric" data-price-min />
-        </label>
-        <label>
-          {t.maxPrice}
-          <input type="number" min="0" step="1" inputmode="numeric" data-price-max />
-        </label>
-      </div>
-      <label class="check-label">
-        <input type="checkbox" data-stock />
-        {t.onlyStock}
-      </label>
-      <button class="button button--outline" data-reset-filters>
-        {t.reset}
-      </button>
     </aside>
     <div>
       <div class="catalog-toolbar">
-        <p aria-live="polite" data-result-summary>{formatProductCount(list.length, lang)}</p>
+        <p aria-live="polite" data-result-summary>
+          {formatProductCount(list.length, lang)}
+        </p>
         <label>
           <span class="sr-only">{t.sort}</span>
           <select data-sort>

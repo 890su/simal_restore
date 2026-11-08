@@ -1,0 +1,39 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  pages: { href: string; label: string; catalog?: boolean }[];
+  sections: { href: string; label: string }[];
+  currentPath: string;
+  catalogLabel: string;
+}
+
+const { pages, sections, currentPath, catalogLabel } = Astro.props;
+---
+
+<div class="header-nav-links">
+  {pages.map(({ href, label, catalog }) =>
+    catalog ? (
+      <details class="header-catalog" data-header-catalog>
+        <summary class:list={{ 'is-current': currentPath.startsWith(href) }}>
+          {label}
+          <Icon name="chevron-down" size={15} />
+        </summary>
+        <div class="header-catalog__links">
+          <a href={href} aria-current={currentPath === href ? 'page' : undefined}>
+            {catalogLabel}
+          </a>
+          {sections.map((section) => (
+            <a href={section.href} aria-current={currentPath === section.href ? 'page' : undefined}>
+              {section.label}
+            </a>
+          ))}
+        </div>
+      </details>
+    ) : (
+      <a href={href} aria-current={currentPath === href ? 'page' : undefined}>
+        {label}
+      </a>
+    ),
+  )}
+</div>
