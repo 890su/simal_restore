@@ -4,7 +4,7 @@ import ProductImage from '../ProductImage.astro';
 import FavoriteButton from '../FavoriteButton.astro';
 import ProductCard from '../ProductCard.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
-import { categories, productsForLanguage, categoryTitle, categoryUrl, textFor } from '../../lib/catalog';
+import { categories, productsForLanguage, categoryTitle, categoryUrl, excerpt, textFor } from '../../lib/catalog';
 import { basePath, messages, formatPrice, localePath, infoPath } from '../../lib/i18n';
 import type { Route } from '../../lib/types';
 interface Props {
@@ -23,33 +23,31 @@ const offerAvailability = {
   on_order: undefined,
   unknown: undefined,
 }[product.availability];
-const hasOffer = !route.noindex && product.price !== null && product.price > 0 &&
+const price = product.price;
+const canMarkUpOffer = !route.noindex && import.meta.env.SITE_NOINDEX !== 'true' && hasPhotos &&
+  typeof price === 'number' && Number.isFinite(price) && price > 0 &&
   product.provenance?.some(({ source }) => source === 'sheet') &&
-  !product.variants.some((variant) => variant.price != null && variant.price !== product.price);
+  !product.variants.some((variant) => variant.price != null && variant.price !== price);
 const related = productsForLanguage(lang)
   .filter(
     (p) => p.id !== product.id && p.categoryIds.some((id) => product.categoryIds.includes(id)),
   )
   .slice(0, 4);
-const schema = {
+const schema = canMarkUpOffer ? {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: text.title,
-  description: text.description || text.summary,
+  description: excerpt(text.summary, 1000) || excerpt(text.description, 1000) || undefined,
   sku: product.sku || product.id,
-  ...(product.images.length
-    ? { image: product.images.map((i) => new URL(i.src, Astro.site).href) }
-    : {}),
-  ...(hasOffer && {
-    offers: {
-      '@type': 'Offer',
-      url: new URL(route.canonicalPath || route.path, Astro.site).href,
-      price: product.price,
-      priceCurrency: product.currency,
-      availability: offerAvailability,
-    },
-  }),
-};
+  image: product.images.map((i) => new URL(i.src, Astro.site).href),
+  offers: {
+    '@type': 'Offer',
+    url: new URL(route.canonicalPath || route.path, Astro.site).href,
+    price,
+    priceCurrency: product.currency,
+    availability: offerAvailability,
+  },
+} : null;
 const breadcrumbs = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -69,8 +67,10 @@ const breadcrumbs = {
 };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\u003c')} />
-<script type="application/ld+json" set:html={JSON.stringify(breadcrumbs).replace(/</g, '\u003c')} />
+{schema && (
+  <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />
+)}
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbs).replace(/</g, '\\u003c')} />
 <div class="container">
   <Breadcrumbs
     lang={lang}

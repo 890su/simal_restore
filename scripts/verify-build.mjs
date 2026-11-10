@@ -84,6 +84,26 @@ for (const file of htmlFiles) {
     if (!matches && route !== '/404.html')
       issue('canonical-path', file, canonical.attrs.href);
   }
+  for (const [, value] of source.matchAll(/<script\b[^>]*\btype="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
+    let schema;
+    try {
+      schema = JSON.parse(value);
+    } catch {
+      issue('invalid-json-ld', file, 'Structured data must be valid JSON.');
+      continue;
+    }
+    if (schema?.['@type'] !== 'Product') continue;
+    const offer = schema.offers;
+    if (noindex || !Number.isFinite(offer?.price) || offer.price <= 0 || !/^[A-Z]{3}$/.test(offer.priceCurrency))
+      issue('invalid-product-offer', file, 'Expected an indexable page with a positive numeric price and currency.');
+    if (!Array.isArray(schema.image) || !schema.image.length || schema.image.some((image) => {
+      const url = typeof image === 'string' && localURL(image, route);
+      return !url || !exists(url) || !nodes.some((node) => node.tag === 'img' && localURL(node.attrs.src, route) === url);
+    })) issue('invalid-product-image', file, 'Expected a product image displayed on the page.');
+    if (schema.description !== undefined &&
+      (typeof schema.description !== 'string' || !schema.description.trim() || schema.description.length > 1000))
+      issue('invalid-product-description', file, 'Expected a concise product description.');
+  }
   for (const node of nodes) {
     for (const name of ['href', 'src', 'poster']) {
       const url = localURL(node.attrs?.[name], route);

@@ -149,6 +149,8 @@ for (const [source, target] of Object.entries({
   '/ge/catalog/krovati/oradgiliani-sawoli/': '/ge/catalog/krovati-dvuspalnye-krovati/',
   '/ge/catalog/matrasy/leibi/': '/ge/catalog/matrasy-namatrasniki-i-toppery/',
   '/ge/catalog/matrasy/-oradgiliani-matrasi-georgia/': '/ge/catalog/matrasy-dvuspalnye-matrasy/',
+  '/en/catalog/beds/single-bed/': '/en/catalog/krovati-odnospalnye-krovati/',
+  '/en/catalog/mattresses/double-mattresses/': '/en/catalog/matrasy-dvuspalnye-matrasy/',
 })) {
   recoverAlias(source, target);
 }
