@@ -39,7 +39,7 @@ const schema = canMarkUpOffer ? {
   name: text.title,
   description: excerpt(text.summary, 1000) || excerpt(text.description, 1000) || undefined,
   sku: product.sku || product.id,
-  image: product.images.map((i) => new URL(i.src, Astro.site).href),
+  image: [new URL(product.images[0].src, Astro.site).href],
   offers: {
     '@type': 'Offer',
     url: new URL(route.canonicalPath || route.path, Astro.site).href,
@@ -86,13 +86,15 @@ const breadcrumbs = {
     data-detail-product={product.id}>
     {hasPhotos && <div class="product-gallery">
       <div class="product-gallery__main" data-main-image>
-        <ProductImage product={product} lang={lang} eager />
+        <ProductImage product={product} lang={lang} eager fullSize />
       </div>
       {product.images.length > 1 && (
         <div class="product-gallery__thumbs">
           {product.images.map((i) => (
-            <button data-gallery-src={i.src} aria-label={i.alt || text.title}>
-              <img src={i.src} alt={i.alt || text.title} width="70" height="62" loading="lazy" />
+            <button data-gallery-src={i.src} data-gallery-alt={i.alt || text.title}
+              data-gallery-width={i.width || 640} data-gallery-height={i.height || 480}
+              aria-label={i.alt || text.title}>
+              <img src={i.thumbnail || i.src} alt="" width="70" height="62" loading="lazy" />
             </button>
           ))}
         </div>

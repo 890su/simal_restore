@@ -1,6 +1,6 @@
 /** Public UI/API payload. Keep restoration evidence and source reports server-side. */
 const LANGUAGES = ['ru', 'en', 'ka'];
-const image = ({ src, alt }) => ({ src, alt: alt ?? '' });
+const image = ({ src, alt, thumbnail }) => ({ src, alt: alt ?? '', ...(thumbnail && { thumbnail }) });
 const attributes = (values) => (values ?? []).map(({ name, value }) => ({ name, value }));
 
 function translations(source, product = false) {

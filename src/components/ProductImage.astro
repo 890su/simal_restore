@@ -7,17 +7,18 @@ interface Props {
   product: Product;
   lang: Language;
   eager?: boolean;
+  fullSize?: boolean;
 }
-const { product, lang, eager = false } = Astro.props;
+const { product, lang, eager = false, fullSize = false } = Astro.props;
 const image = product.images[0];
 ---
 
 {image ? (
   <img
-    src={image.src}
+    src={fullSize ? image.src : image.thumbnail || image.src}
     alt={image.alt || textFor(product, lang).title}
-    width="640"
-    height="480"
+    width={image.width || 640}
+    height={image.height || 480}
     loading={eager ? 'eager' : 'lazy'}
     decoding="async"
   />

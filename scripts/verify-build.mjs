@@ -105,7 +105,7 @@ for (const file of htmlFiles) {
       issue('invalid-product-description', file, 'Expected a concise product description.');
   }
   for (const node of nodes) {
-    for (const name of ['href', 'src', 'poster']) {
+    for (const name of ['href', 'src', 'poster', 'data-gallery-src']) {
       const url = localURL(node.attrs?.[name], route);
       if (url && !exists(url)) issue('missing-resource', file, `${name}=${url}`);
       if (node.tag === 'a' && name === 'href' && redirects.has(url))

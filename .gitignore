@@ -13,3 +13,4 @@ dist/
 !.dev.vars.example
 public/
 deliverables/
+/upload/

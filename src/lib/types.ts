@@ -16,7 +16,7 @@ export interface Product {
   price: number | null;
   currency: 'GEL';
   availability: Availability;
-  images: { src: string; alt: string; sourceUrl?: string }[];
+  images: { src: string; alt: string; sourceUrl?: string; thumbnail?: string; width?: number; height?: number }[];
   variants: { id: string; title: string; price?: number | null }[];
   reviewFlags: string[];
   provenance?: { source: string }[];

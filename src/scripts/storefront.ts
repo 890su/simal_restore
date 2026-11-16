@@ -232,7 +232,7 @@ function renderSelection() {
     const image = $<HTMLImageElement>('[data-row-image]', clone)!;
     const placeholder = $('[data-row-placeholder]', clone)!;
     if (product?.images[0]) {
-      image.src = product.images[0].src;
+      image.src = product.images[0].thumbnail || product.images[0].src;
       image.alt = product.images[0].alt || title;
       placeholder.hidden = true;
       image.addEventListener(
@@ -666,6 +666,9 @@ document.addEventListener('click', (event) => {
     const image = $<HTMLImageElement>('[data-main-image] img');
     if (image) {
       image.src = gallery.dataset.gallerySrc!;
+      image.alt = gallery.dataset.galleryAlt || '';
+      image.width = Number(gallery.dataset.galleryWidth);
+      image.height = Number(gallery.dataset.galleryHeight);
       image.removeAttribute('srcset');
     }
   }

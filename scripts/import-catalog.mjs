@@ -510,6 +510,38 @@ export async function normalizeCSV(rows, { baseline, siteDir, source = 'CSV', no
   return assertCatalog({ schemaVersion: SCHEMA_VERSION, generatedAt: now, source: { type: 'csv', location: source, sha256: createHash('sha256').update(JSON.stringify(rows)).digest('hex') }, categories, products, report: reportFor(products, categories) });
 }
 
+/** Merge verified local photos after importing the latest catalog fields. */
+export async function applyRestoredPhotos(catalog, manifest, siteDir) {
+  if (manifest.schemaVersion !== SCHEMA_VERSION || !manifest.products) {
+    throw new Error('Unsupported restored product photo manifest');
+  }
+  for (const product of catalog.products) {
+    const entries = manifest.products[product.id];
+    if (!product.active || !entries?.length) continue;
+    const restored = [];
+    for (const { src, thumbnail, width, height, originalPath, referencePath, pageUrl } of entries) {
+      const sourceUrl = new URL(originalPath, 'https://simal.ge').href;
+      const image = await localImage(siteDir, src, '', 'recovered-beget', sourceUrl);
+      if (!image || (thumbnail && !(await localImage(siteDir, thumbnail)))) {
+        throw new Error(`Restored photo is missing for ${product.id}: ${src}`);
+      }
+      restored.push({ ...image, ...(thumbnail && { thumbnail }), width, height, referencePath, sourcePageUrl: pageUrl });
+    }
+    const current = product.images.filter(image => image.sourceType !== 'recovered-beget' &&
+      !/^\/images\/recovered\/\d+-(?:yandex|google)\./.test(image.src));
+    // Explicitly curated sheet images take precedence over restored defaults.
+    const ordered = current.some(image => image.sourceType === 'sheet-local')
+      ? [...current, ...restored]
+      : [...restored, ...current];
+    const byPath = new Map();
+    for (const image of ordered) if (!byPath.has(image.src)) byPath.set(image.src, image);
+    product.images = [...byPath.values()];
+    product.reviewFlags = product.reviewFlags.filter(flag => flag !== 'image_missing');
+  }
+  catalog.report = { ...catalog.report, ...reportFor(catalog.products, catalog.categories) };
+  return assertCatalog(catalog);
+}
+
 /** Write only after every check succeeds; never truncate the last good snapshot. */
 export async function writeCatalogAtomic(output, catalog) {
   assertCatalog(catalog);
@@ -569,6 +601,8 @@ export async function runImport({ root = ROOT, source, archive: archiveOnly = fa
     const location = /^https?:/i.test(source) ? new URL(source).origin + new URL(source).pathname : path.basename(source);
     catalog = await normalizeCSV(parseCSV(text), { baseline, siteDir: path.join(root, 'site'), source: location, now });
   }
+  const restoredPhotos = await optionalText(path.join(root, 'data/product-photos.json'));
+  if (restoredPhotos) await applyRestoredPhotos(catalog, JSON.parse(restoredPhotos), path.join(root, 'site'));
   catalog.source.selectedBy = selection.selectedBy;
   if (!check) await writeCatalogAtomic(output, catalog);
   return catalog;
